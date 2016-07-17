@@ -1,0 +1,14 @@
+@import "core/_fonts.scss";
+@import "core/_var.scss";
+@import "core/_mixin";
+@import "core/_main.scss";
+
+@import "parts/_footer.scss";
+@import "parts/_header.scss";
+
+
+@import "pages/_contact.scss";
+@import "pages/_home.scss";
+@import "pages/_about.scss";
+
+@import "_editor.scss";
