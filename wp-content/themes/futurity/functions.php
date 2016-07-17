@@ -77,7 +77,7 @@ function tsg_scripts() {
     }
 
     $styles = array(
-        '/css/bootstrap.min.css',
+//        '/css/bootstrap.min.css',
         '/css/font-awesome.min.css'
     );
     foreach ($styles as $key => $url){

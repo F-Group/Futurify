@@ -1,2 +1,4 @@
 /.idea
 wp-content/themes/futurity/sass/layout.css.map
+.htaccess
+wp-content/themes/futurity/.sass-cache/
