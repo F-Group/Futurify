@@ -8,7 +8,7 @@
             this._initFP();
             this._initGMap();
             this._initMenuPage();
-            this._initEventCountDown();
+            //this._initEventCountDown();
         },
         
         _initFP: function () {

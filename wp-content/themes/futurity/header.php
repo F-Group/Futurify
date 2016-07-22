@@ -11,6 +11,7 @@
     <meta charset="<?php bloginfo('charset'); ?>"/>
     <link rel="profile" href="http://gmgp.org/xfn/11"/>
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>"/>
+
     <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_url') ?>/js/lib/respond.min.js"/>
     </script><![endif]-->
@@ -23,11 +24,17 @@
 <body <?php body_class(); ?> >
 <div id="wrapper">
     <div class="page">
-        <header class="row items-group vertical-center align-row">
-            <?php get_template_part("parts/part", "navigation"); ?>
-        </header>
-        <input type="checkbox" id="nav-trigger" class="visible-xs-block visible-sm-block nav-trigger">
-        <label for="nav-trigger" class="visible-xs-block visible-sm-block">
-            <a><i class="fa fa-bars"></i></a>
-        </label>
-        <div id="main" class="clearfix">
+            <header class="header">
+                <div class="container">
+                    <div class="row">
+                        <?php get_template_part("parts/part", "navigation"); ?>
+                    </div>
+                </div>
+            </header>
+           <!--  <input type="checkbox" id="nav-trigger" class="visible-xs-block visible-sm-block nav-trigger">
+            <label for="nav-trigger" class="visible-xs-block visible-sm-block">
+                <a><i class="fa fa-bars"></i></a>
+            </label> -->
+            <div id="main" class="clearfix">
+                <?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
+                <div class="container">
