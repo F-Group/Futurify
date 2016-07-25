@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="block">
-    <section class="section banner bg-img" style="background: url('<?php echo get_background(); ?>')">
+    <!-- <section class="section banner bg-img" style="background: url('<?php echo get_background(); ?>')">
         <div class="mask fp-table">
             <div class="fp-tableCell">
                 <div class="content container">
@@ -13,7 +13,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <section class="section">
 
     </section>

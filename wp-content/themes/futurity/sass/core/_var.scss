@@ -6,6 +6,8 @@ $color_overlay: rgba(0,0,0,0.6);
 
 $font_roboto: 'Raleway', sans-serif;
 $font_raleway: 'Roboto', sans-serif;
+$font_montserrat: 'Montserrat', sans-serif;
+$font_cabin: 'Cabin', sans-serif;
 
 $font_size_base: 14px;
 $font_size_header: 16px;
@@ -43,3 +45,5 @@ $tablet: "only screen and (min-width:#{$screen-tablet}) and (max-width:#{$screen
 $desktop: "only screen and (min-width:#{$screen-desktop})";
 $desktop_small: "only screen and (min-width:#{$screen-desktop}) and (max-width:#{$screen-md-max})";
 $desktop_large: "only screen and (min-width:#{$screen-lg-desktop})";
+
+$container-large-desktop: 1000px !default;
