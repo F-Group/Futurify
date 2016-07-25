@@ -17,6 +17,10 @@
 			margin-right: 10px;
 			padding-left: 0;
 			font-size: 14px;
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
 		}
 		.btn {
 			float: right;
@@ -86,6 +90,29 @@
 
 @media #{$mobile} {
   .footer {
-
+  	padding-top: 35px;
+  	min-height: 190px;
+  	.newsletter {
+  		margin-top: 15px;
+  		input[type="text"] {
+  			width: 80%;
+  		}
+  	}
+  	.footer-03 {
+  		padding-right: 20px;
+  		&:before {
+	  		content: none;
+	  	}
+	  	p {
+	  		padding-right: 0;
+	  	}
+  	}
+  	.footer-social {
+  		margin-top: 29px;
+  		.fa {
+  			font-size: 17px;
+  			margin-right: 20px;
+  		}
+  	}
   }
 } 

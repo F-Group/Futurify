@@ -156,6 +156,7 @@ h1 {
             font-size: 16px;
             font-weight: 500;
             padding: 0 93px;
+            line-height: 26px;
         }
     }
   }
@@ -194,7 +195,8 @@ h1 {
 .carousel.vertical {
   .carousel-control {
     left: auto;
-    width: 50px;
+    width: 11px;
+    right: 60px !important;
     &.up {
       top: 0;
       right: 0;
@@ -214,6 +216,11 @@ h1 {
       top: 50%;
       z-index: 5;
       display: inline-block;
+      width: 11px;
+      height: 55px;
+      &:before {
+        content: none;
+      }
     }
     .icon-prev,
     .glyphicon-chevron-up {
@@ -221,6 +228,8 @@ h1 {
       margin-left: -10px;
       top: 50%;
       margin-top: -10px;
+      background-image: url('../img/common/arrowup.png');
+      background-repeat: no-repeat;
     }
     .icon-next,
     .glyphicon-chevron-down {
@@ -228,6 +237,8 @@ h1 {
       margin-left: -10px;
       top: 50%;
       margin-top: -10px;
+      background-image: url('../img/common/arrowdown.png');
+      background-repeat: no-repeat;
     }
     .icon-up,
     .icon-down {
@@ -252,4 +263,11 @@ h1 {
       }
     }
   }
+}
+.carousel-indicators {
+    right: 60px;
+    left: auto;
+    width: 11px;
+    margin: 0;
+    top: 50%;
 }

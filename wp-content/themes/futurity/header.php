@@ -50,15 +50,19 @@
                         </div>
                     
                   </div>
-
+                  <div class="slider-control">
                   <!-- Controls -->
-                  <a class="up carousel-control" href="#carousel-example-vertical" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="down carousel-control" href="#carousel-example-vertical" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
+                      <a class="up carousel-control" href="#carousel-example-vertical" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                      </a>
+                      <a class="down carousel-control" href="#carousel-example-vertical" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>                    
+                      </a>
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                      </ol>
+                  </div>
                 </div>
                 <div class="container">

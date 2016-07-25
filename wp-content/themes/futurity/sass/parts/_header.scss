@@ -2,7 +2,7 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
-	padding-top: 75px;
+	padding-top: 45px;
 	z-index: 9;
 	#logo-header {
 		padding-left: 0;
@@ -13,15 +13,42 @@
 	}
 	.main-menu {
 		padding-top: 4px;
-		.menu ul {
+		.menu-desktop ul {
 			@include clearfix;
 			padding: 0;
 			text-align: right;
+			.dropdown:hover .dropdown-menu {
+				display: block;
+			}
+			.dropdown-menu {
+				background-color: transparent;
+				border: 0;
+				box-shadow: none;
+				min-width: inherit;
+				width: 100%;
+				text-align: center !important;
+				margin-top: 0;
+				padding-top: 10px !important;
+				li {
+					display: inline-block;
+					text-align: center;
+					float: left;
+					a {
+						padding: 0px 10px !important;
+						&:hover {
+							background-color: transparent;
+						}
+					}
+					&:first-child {
+						border-right: solid 1px #e4e4e4;
+					}
+				}
+			}
 		}
-		li {
+		.menu-desktop > ul > li {
 			display: inline-block;
 			list-style: none;
-			margin-left: 50px;
+			margin-left: 43px;
 			a {
 				font-size: 12px;
 				text-transform: uppercase;
@@ -30,9 +57,83 @@
 				letter-spacing: 0.9px;
 				line-height: 14px;
 				text-shadow: initial;
+				font-weight: normal;
+				padding: 4px 6px;
+				&.active {
+					background-color: #fa4945;
+					color: #fff;
+					&:hover {
+						background-color: #fa4945;	
+						color: #fff;
+						opacity: 0.8;
+					}
+				}
+				&:hover {
+					color: #fa4945;
+					text-decoration: none;
+				}
 			}
 			&:last-child {
 				margin-left: 40px;
+			}
+
+		}
+	}
+}
+
+@media #{$mobile} {
+	.header {
+		padding-top: 15px;
+		#logo-header {
+			padding-left: 15px;
+			.logo {
+				max-width: 65px;
+			}
+		}
+		#nav-header {
+			float: none;
+		}
+		.menu-mobile {
+			button {
+				position: absolute;
+			    right: 15px;
+			    top: -32px;
+			    background: transparent;
+				border: 0;
+				box-shadow: none;
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+		.dropdown-menu {
+			background-color: #fa4945;
+			border: 0;
+			box-shadow: none;
+			width: 100%;
+			li {
+				margin: 28px 0;
+				a {
+					font-size: 16px;
+					font-family: $font_montserrat;
+					font-weight: 500;
+					text-transform: uppercase;
+					color: #fff;
+					padding-left: 38px;
+					&:hover, &:focus {
+						background-color: transparent;
+					}
+				}
+				ul {
+					padding-left: 25px;
+					li {
+						list-style: none;
+						margin: 20px 0;
+						a {
+							color: #ffd8d8;
+						}
+					}
+				}
 			}
 		}
 	}
