@@ -1,32 +1,39 @@
 <?php
     $options = get_option("eto_settings");
 ?>
-<footer id="footer" class="footer">
-    <div class="newsletter table tk-container">
-            <div class="table-cell">
-                <label>registrieren sie sich für den newsletter</label>
-                <input type="text" value="" class="form-control">
-                <button class="btn btn-black">REGISTRIEREN</button>
+                </div>
             </div>
-        </div>
-    <div class="footer-bottom">
-        <div class="footer-mask">
-            <div class="footer-logo">
-                <a href="<?php echo esc_url( get_home_url() ) ?>">
-                    <img class="logo" src="<?php echo get_bloginfo('template_url').'/img/common/logo.jpg'; ?>">
-                </a>
-            </div>
-            <div class="footer-info container">
-                <div class="location"><i class="fa fa-map-marker"></i></div>
-                <p class="address"><?php echo $options['eto_address'];?></p>
-                <p class="telephone"><?php echo $options['eto_phone'];?></p>
-                <p class="email"><?php echo $options['eto_email'];?></p>
-            </div>
-            <div class="footer-social"><a target="_blank" href="<?php echo $options['eto_facebook'];?>"><i class="fa fa-facebook"></i></a></div>
+            <footer id="footer" class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-01 col-xs-12 col-md-5">
+                            <a href="<?php echo esc_url( get_home_url() ) ?>">
+                                <img class="logo" src="<?php echo get_bloginfo('template_url').'/img/common/white-logo.png'; ?>">
+                            </a>
+                            <p class="sologan">Empower your business’s future</p>
+                            <p class="copyright">2016 Futurify. All rights reserved</p>
+                        </div>
+                        <div class="footer-02 col-xs-12 col-md-4">
+                            <p>Stay in touch! We’re social and we love to be followed!</p>
+                            <div class="footer-social">
+                                <a target="_blank" href="<?php echo $options['eto_facebook'];?>"><i class="fa fa-facebook"></i></a>
+                                <a target="_blank" href="<?php echo $options['eto_twitter'];?>"><i class="fa fa-twitter"></i></a>
+                                <a target="_blank" href="<?php echo $options['eto_linkedin'];?>"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-03 col-xs-12 col-md-3">
+                            <p>Subscribe to our newsletter! </p>
+                            <div class="newsletter">
+                                <input type="text" value="Email Address" class="form-control">
+                                <button class="btn btn-play"><i class="fa fa-caret-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
-</footer>
-</div></div></div>
+</div>
 <?php wp_footer(); ?>
 </body> <!--end body-->
 </html> <!--end html -->
