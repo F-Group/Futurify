@@ -70,6 +70,7 @@ function tsg_scripts() {
 
     // custom js
     $scripts = array(
+        '/js/lib/bootstrap.min.js',
         '/js/app.js'
     );
     foreach ($scripts as $key => $url){

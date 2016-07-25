@@ -40,6 +40,7 @@
             //         disableMouse: true
             //     }
             // });
+
         },
 
         _initGMap: function () {

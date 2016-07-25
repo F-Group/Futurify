@@ -1,9 +1,9 @@
-<div id="logo-header" class="col-md-4 hidden-sm hidden-xs">
+<div id="logo-header" class="col-md-2 hidden-sm hidden-xs">
     <a class="logo" href="<?php echo esc_url( get_home_url() ) ?>">
         <span><img class="logo" src="<?php bloginfo('template_url') ?>/img/common/darklogo.png" alt="Logo" /></span>
     </a>
 </div>
-<div id="nav-header" class="nav-header hidden-sm hidden-xs col-md-8 row">
+<div id="nav-header" class="nav-header hidden-sm hidden-xs col-md-10 row">
     <div class="main-menu">
         <?php
         // wp_nav_menu();
