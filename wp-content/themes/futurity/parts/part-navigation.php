@@ -3,7 +3,7 @@
         <span><img class="logo" src="<?php bloginfo('template_url') ?>/img/common/darklogo.png" alt="Logo" /></span>
     </a>
 </div>
-<div id="nav-header" class="nav-header col-md-10 row">
+<div id="nav-header" class="nav-header col-md-10">
     <div class="main-menu">
         <?php
         // wp_nav_menu();
