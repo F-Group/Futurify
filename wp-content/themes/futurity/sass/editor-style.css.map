@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,wCAA6B;ACA7B,6HAAqH;AACrH,uEAA+D;AAC/D,kHAA0G;ACoClH;;+EAE+E;ACxC/E,qDAAqD",
+"sources": ["editor-style.scss","core/_fonts.scss","core/_var.scss","_editor.scss"],
+"names": [],
+"file": "editor-style.css"
+}
