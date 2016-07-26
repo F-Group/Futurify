@@ -1,7 +1,6 @@
 <?php
     $options = get_option("eto_settings");
 ?>
-                <!--</div>-->
             </div>
             <footer id="footer" class="footer">
                 <div class="container">
@@ -24,7 +23,7 @@
                         <div class="footer-03 col-xs-12 col-md-3">
                             <p>Subscribe to our newsletter! </p>
                             <div class="newsletter">
-                                <input type="text" value="Email Address" class="form-control">
+                                <input type="text" class="form-control" placeholder="Email Address">
                                 <button class="btn btn-play"><i class="fa fa-caret-right"></i></button>
                             </div>                            
                         </div>

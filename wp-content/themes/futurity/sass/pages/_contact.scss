@@ -1,3 +1,45 @@
-#gMap {
-  height: 350px;
+.contact-page {
+
+  .contact-center {
+    @include flex();
+  }
+
+  .contact-form-container {
+    @include make-col-span(7);
+    background: $color_main url("../img/content/contact/contact-bg.png");
+    color: $color_light;
+    padding: 20px 20px 20px calc((100% - #{$container-large-desktop})/2);
+
+    >.form-content {
+      max-width: 470px;
+    }
+
+    .wpcf7-form-control-wrap {
+      input, textarea {
+        background: transparent;
+        color: $color_light;
+        border-color: $color_light;
+        @include border-radius(0px);
+        @include placeholder($color_light);
+
+        &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder {
+          color: $color_light;
+        }
+      }
+    }
+
+    .btn-main {
+      float: right;
+    }
+  }
+
+  .contact-info {
+    @include make-col-span(5);
+    background: $color_base;
+    color: $color_light;
+  }
+
+  #gMap {
+    height: 350px;
+  }
 }
