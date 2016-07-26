@@ -13,11 +13,11 @@ $google_map = get_field('location');
 <div class="block contact-page">
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row paragraph">
                 <h2>HELLO</h2>
-                <p>We always have good taste Vietnamese coffee.
-                    Come in our nest, have a cup of coffee and a talk with us.
-                    Work together. Do amazing projects.
+                <p>We always have good taste Vietnamese coffee.<br>
+                    Come in our nest, have a cup of coffee and a talk with us.<br>
+                    Work together. Do amazing projects.<br>
                     Bring success to your business, we know how.</p>
             </div>
         </div>

@@ -14,16 +14,22 @@
       max-width: 470px;
     }
 
-    input, textarea {
-      background: transparent;
-      color: $color_light;
-      border-color: $color_light;
-      @include border-radius(0px);
-      @include placeholder($color_light);
-
-      &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder {
+    .wpcf7-form-control-wrap {
+      input, textarea {
+        background: transparent;
         color: $color_light;
+        border-color: $color_light;
+        @include border-radius(0px);
+        @include placeholder($color_light);
+
+        &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder {
+          color: $color_light;
+        }
       }
+    }
+
+    .btn-main {
+      float: right;
     }
   }
 
