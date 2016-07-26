@@ -55,11 +55,18 @@ $google_map = get_field('location');
                                     </ul>
                                 </div>
                             </form>
-                            <ul class="nav navbar-nav col-xs-12 col-sm-8 col-md-8">
-                                <li><a href="#">TECH CORNER</a></li>
-                                <li><a href="#">OUR CULTURE</a></li>
-                                <li><a href="#">TECH MASHUP</a></li>
-                            </ul>
+                            <?php
+                                $tags = get_tags();
+                                if($tags) {
+                                    $html = '<ul class="nav navbar-nav col-xs-12 col-sm-8 col-md-8">';
+                                    foreach ($tags as $tag) {
+                                        $tag_link = get_tag_link($tag->term_id);
+                                        $html .= "<li><a href='{$tag_link}'>{$tag->name}</a></li>";
+                                    }
+                                    $html .= '</ul>';
+                                }
+                                echo $html;
+                            ?>
                         </div>
                     </div>
                     <div class="row list-blog">
