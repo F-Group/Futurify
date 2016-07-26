@@ -20,7 +20,7 @@
 			    display: inline-block;
 			    width: 10px;
 			    height: 10px;
-			    background: $main-color-1;
+			    background: $color_main;
 		        margin-left: 8px;
 		    }
 		}
@@ -48,7 +48,7 @@
 		}
 		#formSearch{
 			.form-control-feedback{
-				background: $main-color-1;
+				background: $color_main;
 				color: #fff;
 			}
 			.bl-search{
@@ -60,7 +60,7 @@
 				    top: 10px;
 				    bottom: 0;
 				    left: 10px;
-				    color: $main-color-1;
+				    color: $color_main;
 				}
 				.inputSearch{
 					display: inline-block;
@@ -76,7 +76,7 @@
 				    top: 0;
 				    right: 0;
 				    bottom: 0;
-				    background: $main-color-1;
+				    background: $color_main;
 				    color: #fff;
 				    border: none;
 				    width: 31px;
@@ -131,7 +131,7 @@
 		ul.navbar-nav{
 			li{
 				a{
-					color: $main-color-1;
+					color: $color_main;
 					font-size: 11px;
 					line-height: 31px;
 					letter-spacing: 0.9px;
@@ -159,11 +159,20 @@
 					margin-bottom: 19px;
 				}
 				h3{
-					color: $main-color-1;
+					color: $color_main;
 					font-size: 11px;
 					font-family: $font_montserrat;
 					line-height: 31px;
 					margin: 0px;
+
+					span:not(:first-child) {
+						padding-left: 5px;
+					}
+
+					span:not(:last-child) {
+						border-right: 1px solid $color_main;
+						padding-right: 5px;
+					}
 				}
 				h2{
 					font-size: 18px;
@@ -190,22 +199,29 @@
 			}
 		}
 	}
-	.bl-btn-load
+	.bl-btn-load, .alm-btn-wrap
 	{
 		text-align: center;
 	    margin: 54px 0px;
-		#btnLoadMore{
-			background: url('../img/content/blog_list/loadmore.png');
+		#btnLoadMore, .alm-load-more-btn{
+			background: transparent url('../img/content/blog_list/loadmore.png') no-repeat center center;
 		    width: 56px;
 		    height: 56px;
 		    border: none;
+			color: transparent;
 		    &:focus{
 		    	outline: none;
 		    }
+
+			&:before {
+				width: 0;
+				height: 0;
+				background: none;
+			}
 		}
 	}
 	.bl-list-share{
-		background: $main-color-1;
+		background: $color_main;
 		padding: 100px 0px;
 		h1{
 			font-size: 38px;
