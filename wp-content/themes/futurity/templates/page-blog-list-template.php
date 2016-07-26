@@ -65,64 +65,64 @@ $google_map = get_field('location');
                     <div class="row list-blog">
                         <div class="col-xs-12 col-sm-12 col-md-12">
                             <div class="col-xs-12 col-sm-4 col-md-4">
-                                <div class="bl-blog-list-item">
+                                <a href="#"><div class="bl-blog-list-item">
                                     <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
                                     <div class="bl-blog-list-item-des">
                                         <h3>TECH MASHUP</h3>
                                         <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
                                         <p>by Joey</p>
                                     </div>
-                                </div>
+                                </div></a>
                             </div>
                             <div class="col-xs-12 col-sm-4 col-md-4">
-                                <div class="bl-blog-list-item">
+                                <a href="#"><div class="bl-blog-list-item">
                                     <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
                                     <div class="bl-blog-list-item-des">
                                         <h3>TECH MASHUP</h3>
                                         <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
                                         <p>by Joey</p>
                                     </div>
-                                </div>
+                                </div></a>
                             </div>
                             <div class="col-xs-12 col-sm-4 col-md-4">
-                                <div class="bl-blog-list-item">
+                                <a href="#"><div class="bl-blog-list-item">
                                     <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
                                     <div class="bl-blog-list-item-des">
                                         <h3>TECH MASHUP</h3>
                                         <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
                                         <p>by Joey</p>
                                     </div>
-                                </div>
+                                </div></a>
                             </div>
                             <div class="col-xs-12 col-sm-4 col-md-4">
-                                <div class="bl-blog-list-item">
+                                <a href="#"><div class="bl-blog-list-item">
                                     <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
                                     <div class="bl-blog-list-item-des">
                                         <h3>TECH MASHUP</h3>
                                         <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
                                         <p>by Joey</p>
                                     </div>
-                                </div>
+                                </div></a>
                             </div>
                             <div class="col-xs-12 col-sm-4 col-md-4">
-                                <div class="bl-blog-list-item">
+                                <a href="#"><div class="bl-blog-list-item">
                                     <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
                                     <div class="bl-blog-list-item-des">
                                         <h3>TECH MASHUP</h3>
                                         <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
                                         <p>by Joey</p>
                                     </div>
-                                </div>
+                                </div></a>
                             </div>
                             <div class="col-xs-12 col-sm-4 col-md-4">
-                                <div class="bl-blog-list-item">
+                                <a href="#"><div class="bl-blog-list-item">
                                     <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
                                     <div class="bl-blog-list-item-des">
                                         <h3>TECH MASHUP</h3>
                                         <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
                                         <p>by Joey</p>
                                     </div>
-                                </div>
+                                </div></a>
                             </div>
                         </div>
                     </div>
