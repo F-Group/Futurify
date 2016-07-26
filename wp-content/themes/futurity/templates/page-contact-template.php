@@ -10,27 +10,36 @@ get_header();
 $options = get_option("eto_settings");
 $google_map = get_field('location');
 ?>
-<div class="block">
-    <section class="section bg-img page" style="background: url('<?php echo get_background(); ?>')">
-        <div class="mask"></div>
-    </section>
-    <section class="tk-page">
+<div class="block contact-page">
+    <section>
         <div class="container">
-            <div class="contact-map clearfix">
-                <div class="map-container col-xs-12 col-md-5"">
-                    <div id="gMap"
-                         data-lat="<?php echo $google_map['lat'] ? $google_map['lat'] : 0; ?>"
-                         data-lng="<?php echo $google_map['lng'] ? $google_map['lng'] : 0; ?>">
-                    </div>
+            <div class="row">
+                <h2>HELLO</h2>
+                <p>We always have good taste Vietnamese coffee.
+                    Come in our nest, have a cup of coffee and a talk with us.
+                    Work together. Do amazing projects.
+                    Bring success to your business, we know how.</p>
+            </div>
+        </div>
+        <div class="clearfix contact-center">
+            <div class="contact-form-container">
+                <div class="form-content">
+                    <?php echo get_field("contact_form")?>
                 </div>
-                <div class="col-xs-12 col-md-4 contact-info">
+            </div>
+            <div class="contact-info">
+                <div class="contact-content">
                     <?php echo get_field("contact_info"); ?>
                 </div>
-            <div class="col-xs-12 col-md-3 contact-form-container">
-                <?php echo get_field("contact_form")?>
             </div>
+        </div>
+        <div class="contact-map">
+            <div class="clearfix">
+                <div id="gMap"
+                     data-lat="<?php echo $google_map['lat'] ? $google_map['lat'] : 0; ?>"
+                     data-lng="<?php echo $google_map['lng'] ? $google_map['lng'] : 0; ?>">
+                </div>
             </div>
-
         </div>
     </section>
 </div>

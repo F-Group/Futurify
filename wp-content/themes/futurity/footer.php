@@ -1,7 +1,6 @@
 <?php
     $options = get_option("eto_settings");
 ?>
-                </div>
             </div>
             <footer id="footer" class="footer">
                 <div class="container">

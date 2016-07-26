@@ -120,3 +120,8 @@
     right: percentage(($columns / $grid-columns));
   }
 }
+
+// Set a width (to be used in or out of media queries)
+@mixin make-col-span($columns) {
+  width: percentage(($columns / $grid-columns));
+}

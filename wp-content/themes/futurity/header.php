@@ -31,4 +31,3 @@
                 </div>
             </header>
             <div id="main" class="clearfix">
-                <div class="container">
