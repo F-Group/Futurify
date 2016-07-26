@@ -170,6 +170,7 @@
 					font-family: $font_montserrat;
 					font-weight: 700;
 					margin: 0px;
+					color: #000;
 				}
 				p{
 					font-size: 12px;
@@ -238,7 +239,7 @@
 		}
 	}
 }
-@media only screen and (min-width: 321px )and (max-width: 767px){
+@media only screen and  (min-width: 768px){
 	.bl-blog-list{
 		.bl-blog-list-content {
 			.navbar-nav{
@@ -260,7 +261,7 @@
 	}
 
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 767px){
 	.bl-blog-list{
 	    margin: 48px 0px 0px;
 		.bl-blog-list-title {
