@@ -23,28 +23,50 @@ $google_map = get_field('location');
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="bl-blog-list-content">
+                <div class="bl-blog-list-content ">
                     <div class="row">
-                        <div class="col-md-8">
-                            <form id="formSearch" class="clearfix col-md-4" method="post" action="#">
-                                <div class="input-group">
-                                    <span class="glyphicon glyphicon-search input-group-addon"></span>
-                                    <input class="form-control" type="text" name="blSearch">
-                                    <span class="glyphicon glyphicon-triangle-right form-control-feedback" aria-hidden="true"></span>
+                        <div class="col-xs-12 col-sm-12 col-md-12 bl-form-search">
+                            <form id="formSearch" class="clearfix col-xs-12 col-sm-4 col-md-4 " method="post" action="#">
+                                <div class="bl-search">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                    <input class="form-control inputSearch" type="text" name="inputSearch" placeholder="Search">
+                                    <button class="btnSearch" type="submit" name="btnSearch"><span class="glyphicon glyphicon-triangle-right"></span></button>
+                                </div>
+                                <div class="bl-result">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Tech stories</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tech corner</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tech Mashup</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tech stories</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tech corner</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tech Mashup</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </form>
-                            <ul class="nav navbar-nav col-md-8">
+                            <ul class="nav navbar-nav col-xs-12 col-sm-8 col-md-8">
                                 <li><a href="#">TECH CORNER</a></li>
                                 <li><a href="#">OUR CULTURE</a></li>
                                 <li><a href="#">TECH MASHUP</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="col-md-4">
+                    <div class="row list-blog">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="col-xs-12 col-sm-4 col-md-4">
                                 <div class="bl-blog-list-item">
-                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>">
+                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
                                     <div class="bl-blog-list-item-des">
                                         <h3>TECH MASHUP</h3>
                                         <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
@@ -52,9 +74,9 @@ $google_map = get_field('location');
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-xs-12 col-sm-4 col-md-4">
                                 <div class="bl-blog-list-item">
-                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>">
+                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
                                     <div class="bl-blog-list-item-des">
                                         <h3>TECH MASHUP</h3>
                                         <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
@@ -62,9 +84,39 @@ $google_map = get_field('location');
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-xs-12 col-sm-4 col-md-4">
                                 <div class="bl-blog-list-item">
-                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>">
+                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
+                                    <div class="bl-blog-list-item-des">
+                                        <h3>TECH MASHUP</h3>
+                                        <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
+                                        <p>by Joey</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <div class="bl-blog-list-item">
+                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
+                                    <div class="bl-blog-list-item-des">
+                                        <h3>TECH MASHUP</h3>
+                                        <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
+                                        <p>by Joey</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <div class="bl-blog-list-item">
+                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
+                                    <div class="bl-blog-list-item-des">
+                                        <h3>TECH MASHUP</h3>
+                                        <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
+                                        <p>by Joey</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <div class="bl-blog-list-item">
+                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
                                     <div class="bl-blog-list-item-des">
                                         <h3>TECH MASHUP</h3>
                                         <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
@@ -73,37 +125,27 @@ $google_map = get_field('location');
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="col-md-4">
-                                <div class="bl-blog-list-item">
-                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>">
-                                    <div class="bl-blog-list-item-des">
-                                        <h3>TECH MASHUP</h3>
-                                        <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
-                                        <p>by Joey</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="bl-blog-list-item">
-                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>">
-                                    <div class="bl-blog-list-item-des">
-                                        <h3>TECH MASHUP</h3>
-                                        <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
-                                        <p>by Joey</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="bl-blog-list-item">
-                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>">
-                                    <div class="bl-blog-list-item-des">
-                                        <h3>TECH MASHUP</h3>
-                                        <h2>TOP 10 BREAKING NEWS OF THE GIANTS </h2>
-                                        <p>by Joey</p>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 bl-btn-load">
+                            <button id="btnLoadMore" type="button" name="btnLoadMore"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bl-list-share">
+        <div class="row gutter">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="container">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h1>MAY YOU WANT TO SHARE WITH US? COME IN, HAVE A CUP OF COFFEE AND
+                        <a href="#">LET'S TALK!</a></h1>
+                    </div>
+                    <div class=" col-xs-12 col-sm-8 col-md-8">
+                        <div class="bl-img">
+                            <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
                         </div>
                     </div>
                 </div>
