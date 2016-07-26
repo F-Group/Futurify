@@ -2,14 +2,14 @@
 <div id="carousel-example-vertical" class="carousel vertical slide">
     <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img src="<?php bloginfo('template_url') ?>/img/menu.jpg">
+            <img src="<?php bloginfo('template_url') ?>/img/menu.png">
             <div class="caption">
                 <h2>OUR MISSION</h2>
                 <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
             </div>
         </div>
         <div class="item">
-            <img src="<?php bloginfo('template_url') ?>/img/menu.jpg">
+            <img src="<?php bloginfo('template_url') ?>/img/menu.png">
             <div class="caption">
                 <h2>OUR MISSION</h2>
                 <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
