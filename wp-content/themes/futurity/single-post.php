@@ -1,25 +1,14 @@
-<?php
-/**
- * Template Name: Page Blog Detail template
- *
- * @package WordPress
- * @subpackage Lse
- * @since Lse 1.0
- */
-get_header();
-$options = get_option("eto_settings");
-$google_map = get_field('location');
-?>
+<?php get_header(); ?>
 <div class="bl-blog-detail">
-       <div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="bl-blog-detail-title">
-                    <h4>TECH CORNER</h4> 
+                    <h4>TECH CORNER</h4>
                     <h1>MARCH 2016 COMPANY RETREAT</h1>
                     <h5><span class="user-detail">by Tri Ho</span><span class="time-detail">posted on March 18, 2016</span></h5>
-                    <p>A place we share to each other, care of things around us.   
-                    It's our pleasure to share culture, thoughts, interests in technology with you - our clients as well as the new visitors</p>
+                    <p>A place we share to each other, care of things around us.
+                        It's our pleasure to share culture, thoughts, interests in technology with you - our clients as well as the new visitors</p>
                 </div>
                 <div class="main-content">
                     <h3>HEADING TITLE</h3>
