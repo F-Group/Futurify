@@ -1,0 +1,170 @@
+.bl-our-project{
+    margin: 127px 0px 0px;
+	.bl-our-project-title{
+	    padding-left: 15px;
+	    padding-right: 15px;
+		h1{
+			font-size: 38px;
+			line-height: 44px;
+			font-family: $font_montserrat;
+			font-weight: 700;
+			max-width: 225px;
+			margin: 0px;
+		    margin-bottom: 45.8px;
+		    &:after{
+		    	content: "";
+			    display: inline-block;
+			    width: 10px;
+			    height: 10px;
+			    background: $color_main;
+		        margin-left: 8px;
+		    }
+		}
+	}
+	.bl-our-project-items{
+		.bl-our-project-item{
+			margin: 0px 0px 18px;
+		}
+		.bl-our-project-content{
+			h2{
+				font-size: 22px;
+				line-height: 38px;
+				font-family: $font_cabin;
+				font-weight: bold;
+				background: $color_main;
+				color: #fff;
+				margin: 0px 0px 10px;
+				&:nth-of-type(3){
+					position: relative;
+					&:after{
+						content: "";
+						border-bottom: solid 3px $color_main;
+						width: 25px;
+						display: block;
+						position: absolute;
+						bottom: -25px;
+					}
+				}
+			}
+			h5{
+				font-size: 12px;
+				line-height: 36px;
+				font-family: $font_montserrat;
+				font-weight: normal;
+				color: #000;
+			    margin: 30px 0px 0px;
+			}
+		}
+		.bl-our-project-button-more{
+			display: table;
+			min-height: 220px;
+			width: 100%;
+			#btn-project-more{
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				background: $color_main;
+				min-height: 220px;
+				width: 100%;
+				border: none;
+				h5{
+					font-size: 20px;
+					color: #fff;
+					text-transform: uppercase;
+					span{
+						display: block;
+						&:after{
+							content: url('../img/content/our_project/add-button.png');
+							display: block;
+							margin-top: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.bl-our-project-des{
+		max-width: 750px;
+		h2{
+			font-size: 36px;
+			line-height: 55px;
+			font-family: $font_cabin;
+			font-weight: bold;
+			color: #000;
+			margin: 0px 0px 10px;
+			&:nth-of-type(2){
+				position: relative;
+				&:after{
+					content: "";
+					border-bottom: solid 3px $color_main;
+					width: 25px;
+					display: block;
+					position: absolute;
+					bottom: -20px;
+				}
+			}
+			span{
+				background: $color_main;
+				color: #fff;
+			}
+		}
+		h5{
+			font-size: 12px;
+			line-height: 36px;
+			font-family: $font_montserrat;
+			font-weight: normal;
+			color: #000;
+		    margin: 30px 0px 0px;
+		}
+	}
+	.bl-our-project-donate{
+		background: #000;
+		padding: 80px 0px;
+		.bl-our-project-donate-item{
+			img{
+				margin: 0px auto;
+			}
+		}
+		.two-donate{
+			margin-top: 40px;
+		}
+	}
+	.bl-our-project-success{
+		background: $color_main;
+		display: table;
+		min-height: 588px;
+		width: 100%;
+		.bl-our-project-success-content{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			h1{
+				max-width: 688px;
+				margin: 0px auto;
+				font-size: 40px;
+				line-height: 61px;
+				font-family: $font_montserrat;
+				font-weight: 700;
+				color: #fff;
+			}
+			.btn-about-us{
+				background: #fff;
+				font-size: 14px;
+				font-family: $font_montserrat;
+				font-weight: 700;
+				padding: 10px 20px;
+				border: none;
+				color: $color_main;
+				margin-top: 30px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 960px){
+	.bl-our-project .bl-our-project-items .bl-our-project-button-more{
+		min-height: 157px;
+		 #btn-project-more{
+		 	min-height: 157px;
+		 }
+	}
+}
