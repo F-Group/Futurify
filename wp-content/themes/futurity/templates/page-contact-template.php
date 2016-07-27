@@ -30,6 +30,32 @@ $google_map = get_field('location');
             <div class="contact-info">
                 <div class="contact-content">
                     <?php echo get_field("contact_info"); ?>
+                    <h1>DROP IN OUR OFFICE</h1>
+                    <p>Our office is located in a beautiful building inside  the busiest and fast-growing city</p>
+                    <div class="detail-info">
+                        <div class="contact-field contact-address">
+                            <div class="contact-icon"><i class="fa fa-map-marker"></i></div>
+                            <div class="contact-text">
+                                <span>Ho Chi Minh City</span><br>
+                                <span>21A Go Dau Str, Tan Quy Ward, Tan Phu District, HCMC, Vietnam</span>
+                            </div>
+                        </div>
+                        <div class="contact-field contact-mail">
+                            <div class="contact-icon"><i class="fa fa-envelope-o"></i></div>
+                            <div class="contact-text"><span>info@futurify.vn</span></div>
+                        </div>
+                        <div class="contact-field contact-phone">
+                            <div class="contact-icon"><i class="fa fa-phone"></i></div>
+                            <div class="contact-text"><span>(+84) 83-559-0006</span></div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a target="_blank" href="<?php echo $options['eto_facebook'];?>"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="<?php echo $options['eto_twitter'];?>"><i class="fa fa-twitter"></i></a>
+                        <a target="_blank" href="<?php echo $options['eto_linkedin'];?>"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <h3>WE ARE HIRING!</h3>
+                    <button class="btn btn-main">CONTACT US!</button>
                 </div>
             </div>
         </div>

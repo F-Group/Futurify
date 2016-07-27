@@ -1,5 +1,5 @@
 .carousel.vertical .carousel-inner {
-  height: 770px;
+  height: 100%;
   width: auto;
   > .item {
     width: auto;
@@ -27,11 +27,10 @@
     .caption {
       position: absolute;
       text-align: center;
-      top: 42%;
+      top: 50%;
       left: 50%;
       font-family: $font_cabin;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -39%);
+      @include translate(-50%, -50%);
       max-width: 520px;
       h2 {
         color: $color_main;
@@ -160,4 +159,76 @@
   width: 11px;
   margin: 0;
   top: 50%;
+}
+
+.carousel {
+  height: 100vh;
+
+  video {
+    //height: 100vh;
+    width: 100%;
+  }
+}
+
+.home-introduction {
+  background: $color_main;
+  padding: 50px 0;
+
+  h1 {
+    color: $color_light;
+    margin: 0;
+  }
+
+  >.container {
+    position: relative;
+    padding: 0;
+  }
+
+  .home-panel {
+    position: initial;
+  }
+
+  .introduction-img {
+    img {
+      width: 100%;
+      z-index: 1;
+      position: relative;
+    }
+  }
+
+  .panel-chat {
+    position: absolute;
+    right: percentage((1 / $grid-columns) / 2);
+    @include make-col-span(5);
+    height: 383px;
+    background: $color_light;
+    z-index: 2;
+    padding: 20px 45px;
+  }
+
+  .panel-frame {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    @include translate(0, -50%);
+    margin-top: -1 * percentage((1 / $grid-columns) / 2);
+  }
+
+  form {
+    h3 {
+      background: #FFF5D7;
+    }
+
+    .input-style {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $color_base;
+      margin-bottom: 20px;
+      outline: none;
+    }
+
+    .form-btn {
+      text-align: right;
+    }
+  }
 }
