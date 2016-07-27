@@ -17,6 +17,14 @@ h1 {
   font-family: $font_montserrat;
 }
 
+.flex {
+  @include flex;
+}
+
+.flex-center {
+  @include flex;
+  @include flex-align-items(center);
+}
 
 .table {
   display: table;
@@ -39,6 +47,11 @@ h1 {
   @include transform(translate(-50%, -50%));
 }
 
+.vertical-center-Y {
+  position: absolute;
+  top: 50%;
+  @include translate(0, -50%);
+}
 
 .items-group {
   @include flex();
