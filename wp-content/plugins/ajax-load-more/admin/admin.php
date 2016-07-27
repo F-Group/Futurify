@@ -433,7 +433,7 @@ function alm_enqueue_admin_scripts(){
    
    //Load CodeMirror Syntax Highlighting if on Repater Template page 
    $screen = get_current_screen();
-   if ( in_array( $screen->id, array( 'ajax-load-more_page_ajax-load-more-repeaters') ) ){  
+   if ( in_array( $screen->id, array( 'blog-setting_page_ajax-load-more-repeaters') ) ){
       
       //CodeMirror CSS
       wp_enqueue_style( 'alm-codemirror-css', ALM_ADMIN_URL. 'codemirror/lib/codemirror.css' );
@@ -1223,6 +1223,7 @@ function alm_btn_color_callback() {
     //$html .= '<option value="red" ' . $selected3 .'>Red</option>';
     $html .= '<option value="purple" class="alm-color purple" ' . $selected4 .'>Purple</option>';
     $html .= '<option value="grey" class="alm-color grey" ' . $selected5 .'>Grey</option>';
+//    $html .= '<option value="icon" class="bl-btn-load" ' . $selected5 .'>No label</option>';
     //$html .= '<option value="white" ' . $selected6 .'>White (Button)</option>';
     $html .= '</optgroup>';
     $html .= '<optgroup label="Infinite Scroll (no button)">';
