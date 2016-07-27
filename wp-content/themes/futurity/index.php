@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="item">
-            <img src="<?php bloginfo('template_url') ?>/img/menu.png">
+            <video src="<?php bloginfo('template_url') ?>/demo_video.mp4" autoplay></video>
             <div class="caption">
                 <h2>OUR MISSION</h2>
                 <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>

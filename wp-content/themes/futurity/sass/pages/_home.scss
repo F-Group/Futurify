@@ -230,29 +230,5 @@
     .form-btn {
       text-align: right;
     }
-
-    .btn-play1 {
-      width: 40px;
-      height: 40px;
-      border: 2px solid $color_main;
-      background: $color_light;
-      position: relative;
-
-      &:after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 0;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-left: 10px solid $color_main;
-        outline: none;
-        margin: 0 auto;
-      }
-
-      &:focus {
-        outline: none;
-      }
-    }
   }
 }

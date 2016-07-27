@@ -2,11 +2,11 @@
 
   .contact-center {
     @include flex();
+    background: $color_main url("../img/content/contact/contact-bg.png");
   }
 
   .contact-form-container {
     @include make-col-span(7);
-    background: $color_main url("../img/content/contact/contact-bg.png");
     color: $color_light;
     padding: 20px 20px 20px calc((100% - #{$container-large-desktop})/2);
 
@@ -37,9 +37,27 @@
     @include make-col-span(5);
     background: $color_base;
     color: $color_light;
+    padding: 20px calc((100% - #{$container-large-desktop})/2) 20px 20px;
   }
 
   #gMap {
-    height: 350px;
+    height: 565px;
+  }
+
+  .contact-field {
+    @include flex;
+    margin-bottom: 17px;
+  }
+
+  .contact-icon {
+    margin-right: 10px;
+    width: 20px;
+    color: $color_main;
+  }
+
+  .contact-social a {
+    font-size: 23px;
+    color: $color_light;
+    margin-right: 20px;
   }
 }

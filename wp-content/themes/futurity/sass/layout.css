@@ -5819,7 +5819,8 @@ button.close {
 /* Screen sizes
 * ========================================================================== */
 body {
-  font-family: "Cabin", sans-serif; }
+  font-family: "Cabin", sans-serif;
+  font-size: 15px; }
 
 #main {
   min-height: 100%;
@@ -5989,6 +5990,25 @@ h1 {
   padding: 15px 0;
   margin: 0;
   font-size: 18px; }
+
+.btn-play1 {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fa4945;
+  background: #fff;
+  position: relative; }
+  .btn-play1:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fa4945;
+    outline: none;
+    margin: 0 auto; }
+  .btn-play1:focus {
+    outline: none; }
 
 .footer {
   background-color: #000;
@@ -6206,10 +6226,10 @@ h1 {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex; }
+  display: flex;
+  background: #fa4945 url("../img/content/contact/contact-bg.png"); }
 .contact-page .contact-form-container {
   width: 58.33333%;
-  background: #fa4945 url("../img/content/contact/contact-bg.png");
   color: #fff;
   padding: 20px 20px 20px calc((100% - 1000px)/2); }
   .contact-page .contact-form-container > .form-content {
@@ -6237,9 +6257,25 @@ h1 {
 .contact-page .contact-info {
   width: 41.66667%;
   background: #000;
-  color: #fff; }
+  color: #fff;
+  padding: 20px calc((100% - 1000px)/2) 20px 20px; }
 .contact-page #gMap {
-  height: 350px; }
+  height: 565px; }
+.contact-page .contact-field {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 17px; }
+.contact-page .contact-icon {
+  margin-right: 10px;
+  width: 20px;
+  color: #fa4945; }
+.contact-page .contact-social a {
+  font-size: 23px;
+  color: #fff;
+  margin-right: 20px; }
 
 .carousel.vertical .carousel-inner {
   height: 100%;
@@ -6417,24 +6453,6 @@ h1 {
     outline: none; }
   .home-introduction form .form-btn {
     text-align: right; }
-  .home-introduction form .btn-play1 {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #fa4945;
-    background: #fff;
-    position: relative; }
-    .home-introduction form .btn-play1:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 0;
-      border-top: 10px solid transparent;
-      border-bottom: 10px solid transparent;
-      border-left: 10px solid #fa4945;
-      outline: none;
-      margin: 0 auto; }
-    .home-introduction form .btn-play1:focus {
-      outline: none; }
 
 .gutter {
   margin-left: 0px;
