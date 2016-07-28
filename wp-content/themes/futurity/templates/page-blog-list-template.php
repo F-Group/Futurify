@@ -13,7 +13,7 @@ $google_map = get_field('location');
 <div class="bl-blog-list">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="bl-blog-list-title">
                     <h1>SHARING IS CARING</h1>
                     <p>A place we share to each other, care of things around us.   
