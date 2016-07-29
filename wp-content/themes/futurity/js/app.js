@@ -5,9 +5,33 @@
 
     var $site = {
         init: function () {
+            this._initHomePage();
             this._initGMap();
         },
 
+        _initHomePage: function() {
+            $('#homePage').fullpage({
+                verticalCentered: false,
+                scrollBar: true,
+                css3: true,
+                scrollingSpeed: 800,
+                navigation: true,
+                navigationPosition: 'right',
+                normalScrollElements: '.home-introduction',
+                /*scrollOverflow: true,
+                scrollOverflowOptions: {
+                    scrollbars: true,
+                    mouseWheel: true,
+                    hideScrollbars: false,
+                    fadeScrollbars: false,
+                    disableMouse: true
+                },*/
+
+                afterRender: function(){
+                    $('video').get(0).play();
+                }
+            });
+        },
 
         _initGMap: function () {
             function addMarker(location, map) {
