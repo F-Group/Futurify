@@ -21,6 +21,7 @@
 		}
 	}
 	.bl-about-content{
+	    margin: 0px 0px 50px;
 		section.section-right{
 		    padding-right: 66px;
 			h2{
@@ -95,8 +96,11 @@
 	}
 	.bl-about-main-people{
 		padding: 0px 50px;
+	    margin: 50px 0px;
 		.bl-about-main-people-img{
 			background: url('../img/content/about/background-line-red.png');
+		    background-position: top right;
+		    background-repeat: no-repeat;
 			img{
 			    padding: 22px 22px 0px 0px;
 			}
@@ -149,9 +153,33 @@
 	}
 	.bl-about-teams{
 		background: #000;
+		padding: 80px 0px;
+		h1{
+			font-size: 38px;
+			line-height: 44px;
+			font-family: $font_montserrat;
+			font-weight: 700;
+			margin: 0px;
+		    margin-bottom: 45.8px;
+	        color: #fff;
+		    margin-left: 10px;
+		    &:after{
+		    	content: "";
+			    display: inline-block;
+			    width: 10px;
+			    height: 10px;
+			    background: $color_main;
+		        margin-left: 8px;
+		    }
+		}
 		.team-content{
 			margin-bottom: 18px;
+			min-height: 205px;
+			display: table;
 			p{
+				display: table-cell;
+			    padding: 5px;
+				vertical-align: middle;
 				font-size: 15px;
 				font-family: $font_cabin;
 				font-weight: normal;
@@ -159,6 +187,126 @@
 				letter-spacing: 0.3px;
 				color: #fff;
 				margin: 0px;
+				position: relative;
+				&:after{
+					content: "";
+					border-bottom: solid 3px $color_main;
+					width: 25px;
+					display: block;
+					position: absolute;
+					bottom: -20px;
+				}
+			}
+		}
+		.team-red{
+			background: $color_main;
+			p{
+				&:after
+				{
+					border: none;
+					position: static;
+				}
+			}
+		}
+		.main-title{
+			p{
+				font-size: 30px;
+				line-height: 43px;
+				font-family: $font_montserrat;
+				color: #fff;
+			}
+		}
+		.bl-our-project-button-more{
+			display: table;
+			min-height: 220px;
+			width: 100%;
+			#btn-project-more{
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				background: $color_main;
+				min-height: 205px;
+				width: 100%;
+				border: none;
+				h5{
+					font-size: 20px;
+					color: #fff;
+					text-transform: uppercase;
+					&:after{
+						content: url('../img/content/our_project/add-button.png');
+						display: block;
+						margin-top: 20px;
+					}
+				}
+				p{
+					font-size: 15px;
+					text-align: center;
+					font-family: $font_cabin;
+				}
+			}
+		}
+	}
+	.bl-about-our-mission{
+		margin: 50px 0px;
+		.bl-about-our-mission-img{
+		    background: url("../img/content/about/background-line-red.png");
+	        background-position: top right;
+		    background-repeat: no-repeat;
+		    img{
+	    	    padding: 22px 22px 0px 0px;
+		    }
+		}
+		.bl-about-our-mission-content{
+			h1{
+				font-size: 38px;
+				line-height: 44px;
+				font-family: $font_montserrat;
+				font-weight: 700;
+				margin: 0px;
+			    margin-bottom: 45.8px;
+			    &:after{
+			    	content: "";
+				    display: inline-block;
+				    width: 10px;
+				    height: 10px;
+				    background: $color_main;
+			        margin-left: 8px;
+			    }
+			}
+			p{
+				line-height: 59px;
+				font-size: 36px;
+				color: #000;
+				font-weight: bold;
+				font-family: $font_cabin;
+				span{
+					background: $color_main;
+					color: #fff;
+				}
+			}
+			h5{
+				font-size: 12px;
+				line-height: 36px;
+				font-family: $font_montserrat;
+				font-weight: normal;
+				color: $color_main;
+			    margin: 30px 0px 0px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 960px){
+	.bl-about{
+		font-size: 14px;
+		h1{
+				font-size: 25px;
+		}
+		.main-title{
+			font-size: 25px;
+		}
+		.bl-about-our-mission{
+			p{
+				font-size: 20px;
 			}
 		}
 	}
