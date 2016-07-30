@@ -46,13 +46,15 @@ get_header();
         </div>
     </div>
     <div class="bl-about-des">
-        <div class="container">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;?>" alt="about-img"></a>
+        <div class="bl-about-des-img">
+            <div class="container">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;?>" alt="about-img"></a>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="bl-about-des-content">
+        <div class="bl-about-des-content">
+            <div class="container">
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <section class="bl-des-left"><h2>Of course, Tri understood that he could not run a long and challenging road by himself. Dung Dang, one of his close friends since they were in high school, would be the perfect missing piece of the puzzle. Dung is a talented, quick-witted and hard-working software engineer who was working as a team lead at ELCA, a large and well-known technology company in Vietnam. However, Dung believes in the vision, “building world-class engineering team.</h2></section>
                 </div>
@@ -163,8 +165,8 @@ get_header();
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="team-content main-title">FUTURIFY MEANS THE “FUTURE” THAT WE “REFINE” TO ACHIEVE GREATNESS
-                    AND SUCCESS.</div>
+                    <div class="team-content main-title"><p>FUTURIFY MEANS THE “FUTURE” THAT WE “REFINE” TO ACHIEVE GREATNESS
+                    AND SUCCESS.</p></div>
                 </div>
             </div>  
         </div>
