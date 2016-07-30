@@ -7016,34 +7016,6 @@ h1 {
             content: url("../img/content/our_project/add-button.png");
             display: block;
             margin-top: 20px; }
-  .bl-our-project .bl-our-project-des {
-    max-width: 750px; }
-    .bl-our-project .bl-our-project-des h2 {
-      font-size: 36px;
-      line-height: 55px;
-      font-family: "Cabin", sans-serif;
-      font-weight: bold;
-      color: #000;
-      margin: 0px 0px 10px; }
-      .bl-our-project .bl-our-project-des h2:nth-of-type(2) {
-        position: relative; }
-        .bl-our-project .bl-our-project-des h2:nth-of-type(2):after {
-          content: "";
-          border-bottom: solid 3px #fa4945;
-          width: 25px;
-          display: block;
-          position: absolute;
-          bottom: -20px; }
-      .bl-our-project .bl-our-project-des h2 span {
-        background: #fa4945;
-        color: #fff; }
-    .bl-our-project .bl-our-project-des h5 {
-      font-size: 12px;
-      line-height: 36px;
-      font-family: "Montserrat", sans-serif;
-      font-weight: normal;
-      color: #000;
-      margin: 30px 0px 0px; }
   .bl-our-project .bl-our-project-donate {
     background: #000;
     padding: 80px 0px; }
@@ -7107,5 +7079,34 @@ h1 {
   font-weight: normal;
   color: #000;
   margin: 30px 0px 0px; }
+
+.bl-our-project-des {
+  max-width: 750px; }
+  .bl-our-project-des h2 {
+    font-size: 36px;
+    line-height: 55px;
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+    color: #000;
+    margin: 0px 0px 10px; }
+    .bl-our-project-des h2:nth-of-type(2) {
+      position: relative; }
+      .bl-our-project-des h2:nth-of-type(2):after {
+        content: "";
+        border-bottom: solid 3px #fa4945;
+        width: 25px;
+        display: block;
+        position: absolute;
+        bottom: -20px; }
+    .bl-our-project-des h2 span {
+      background: #fa4945;
+      color: #fff; }
+  .bl-our-project-des h5 {
+    font-size: 12px;
+    line-height: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    color: #000;
+    margin: 30px 0px 0px; }
 
 /*# sourceMappingURL=layout.css.map */

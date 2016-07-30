@@ -49,12 +49,6 @@ $projects = getMenu("project", "menu_order date");
                      } else {
                     ?>
                     <div class=" col-xs-12 col-sm-12 col-md-8">
-                        <!--<div class="bl-our-project-content">
-                            <h2>“The FUTURIFY team refined our brand, created a rockin' </h2>
-                            <h2>we're extremely proud of. We heart FUTURIFY.”</h2>
-                            <h2>style guide and brand book, and designed a web site that</h2>
-                            <h5>KONEKA’S TESTIMONAL</h5>
-                        </div>-->
                         <?php the_content(); ?>
                     </div>
                     <?php } ?>
@@ -70,10 +64,11 @@ $projects = getMenu("project", "menu_order date");
                         </div>
                     </div>
                 </div>
-                <div class="bl-our-project-des">
-                    <h2>FUTURIFY is one of the best design agencies  </h2>
-                    <h2>I’ve worked with not only on a  <span>professional level,</span> but personality wise as well.</h2>
-                    <h5>ACTIONAID VIETNAM’S TESTIMONAL</h5>
+                <div class="project-des">
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <?php the_content(); ?>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
