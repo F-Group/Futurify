@@ -114,3 +114,13 @@ function get_background($id=null) {
 
     return $page_bg_image_url ? $page_bg_image_url : get_bloginfo('template_url').'/img/common/header_img.jpg';
 }
+
+function my_acf_google_map_api( $api ){
+
+    $api['key'] = 'AIzaSyATExYoowEjVke3f-99PHj4M07I5D8hy4M';
+
+    return $api;
+
+}
+
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

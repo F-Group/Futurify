@@ -59,14 +59,16 @@
             }
 
             function initMap() {
+                var $map = $("#gMap");
+                var zoom_level = parseFloat($map.attr("data-zoom"));
                 var option = {
-                    zoom: 12,
+                    zoom: zoom_level ? zoom_level : 16,
                     scrollwheel: false,
-                    center: getLocation.call($("#gMap")[0])
+                    center: getLocation.call($map[0])
                 };
 
 
-                var map = new google.maps.Map($("#gMap")[0], option);
+                var map = new google.maps.Map($map[0], option);
                 addMarker(option.center, map);
             }
 

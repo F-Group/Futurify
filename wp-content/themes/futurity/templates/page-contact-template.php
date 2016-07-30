@@ -8,7 +8,7 @@
  */
 get_header();
 $options = get_option("eto_settings");
-$google_map = get_field('location');
+$google_map = get_field('google_map');
 ?>
 <div class="block contact-page">
     <section>
@@ -62,6 +62,7 @@ $google_map = get_field('location');
         <div class="contact-map">
             <div class="clearfix">
                 <div id="gMap"
+                     data-zoom="<?php echo get_field('zoom_level') ?>"
                      data-lat="<?php echo $google_map['lat'] ? $google_map['lat'] : 0; ?>"
                      data-lng="<?php echo $google_map['lng'] ? $google_map['lng'] : 0; ?>">
                 </div>
