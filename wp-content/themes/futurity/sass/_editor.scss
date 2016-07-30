@@ -1,0 +1,30 @@
+.bl-our-project-content{
+  h2{
+    font-size: 22px;
+    line-height: 38px;
+    font-family: $font_cabin;
+    font-weight: bold;
+    background: $color_main;
+    color: #fff;
+    margin: 0px 0px 10px;
+    &:nth-of-type(3){
+      position: relative;
+      &:after{
+        content: "";
+        border-bottom: solid 3px $color_main;
+        width: 25px;
+        display: block;
+        position: absolute;
+        bottom: -25px;
+      }
+    }
+  }
+  h5{
+    font-size: 12px;
+    line-height: 36px;
+    font-family: $font_montserrat;
+    font-weight: normal;
+    color: #000;
+    margin: 30px 0px 0px;
+  }
+}

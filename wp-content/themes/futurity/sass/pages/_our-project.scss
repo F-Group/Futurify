@@ -24,37 +24,25 @@
 	.bl-our-project-items{
 		.bl-our-project-item{
 			margin: 0px 0px 18px;
-		}
-		.bl-our-project-content{
-			h2{
-				font-size: 22px;
-				line-height: 38px;
-				font-family: $font_cabin;
-				font-weight: bold;
-				background: $color_main;
-				color: #fff;
-				margin: 0px 0px 10px;
-				&:nth-of-type(3){
-					position: relative;
-					&:after{
-						content: "";
-						border-bottom: solid 3px $color_main;
-						width: 25px;
-						display: block;
-						position: absolute;
-						bottom: -25px;
-					}
-				}
+			position: relative;
+			overflow: hidden;
+
+			img {
+				@include transition(all 0.3s ease-out);
+				-webkit-transform-style: preserve-3d;
+				transform-style: preserve-3d;
 			}
-			h5{
-				font-size: 12px;
-				line-height: 36px;
-				font-family: $font_montserrat;
-				font-weight: normal;
-				color: #000;
-			    margin: 30px 0px 0px;
+
+			&:hover img {
+				@include scale(1.05);
 			}
 		}
+
+		>div {
+			@include transition(all 0.2s ease);
+		}
+
+
 		.bl-our-project-button-more{
 			display: table;
 			min-height: 220px;

@@ -27,8 +27,11 @@
                     disableMouse: true
                 },*/
 
-                afterRender: function(){
-                    $('video').get(0).play();
+                afterLoad: function(){
+                    try {
+                        $(this).find('video').get(0).play();
+                    }
+                    catch (e){}
                 }
             });
         },
