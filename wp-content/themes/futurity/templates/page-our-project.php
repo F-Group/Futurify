@@ -7,8 +7,22 @@
  * @since Lse 1.0
  */
 get_header();
-$options = get_option("eto_settings");
-$google_map = get_field('location');
+
+function getMenu($type,$order_by="date") {
+
+    $args=array(
+        'post_type' => $type,
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'caller_get_posts'=> 1,
+        'orderby'=>$order_by,
+        'order'=>'DESC');
+    return new WP_Query($args);
+}
+
+$food = getMenu("project", "menu_order date");
+
+
 ?>
 <div class="bl-our-project">
     <div class="container">

@@ -7,8 +7,7 @@
  * @since Lse 1.0
  */
 get_header();
-$options = get_option("eto_settings");
-$google_map = get_field('location');
+
 ?>
 <div class="bl-blog-list">
     <div class="container">
