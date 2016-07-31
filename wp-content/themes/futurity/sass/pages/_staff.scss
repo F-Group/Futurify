@@ -1,175 +1,180 @@
-.bl-staff{
-	p{
-		font-size: 15px;
-		font-family: $font_cabin;
-		line-height: 28px;
-		max-width: 442px;
-	    letter-spacing: 0.3px;
-	    color: #474747;
-	    margin: 0px;
-	    margin-bottom: 49.2px;
-	}
-	.bl-staff-title{
-		h1{
-			font-size: 38px;
-			line-height: 44px;
-			font-family: $font_montserrat;
-			font-weight: 700;
-			max-width: 221px;
-			margin: 0px;
-		    margin-bottom: 45.8px;
-		    &:after{
-		    	content: "";
-			    display: inline-block;
-			    width: 10px;
-			    height: 10px;
-			    background: $color_main;
-		        margin-left: 8px;
-		    }
-		}
-	}
-	.staff-steps{
-		.staff-step-content{
-		    margin-bottom: 100px;
-			h5{
-				text-align: right;
-				font-size: 16px;
-				font-family: $font_montserrat;
-				font-weight: 700;
-				width: 25px;
-			    position: relative;
-				&:after{
-					content: "";
-					border-bottom: 3px solid #000;
-					display: block;
-				    position: absolute;
-				    right: -2px;
-				    left: -20px;
-				    bottom: -7px;
-				}
-			}
-			h1{
-				font-size: 28px;
-				font-family: $font_montserrat;
-				font-weight: 700;
-				color: $color_main;
-				text-transform: uppercase;
-			}
-			span{
-				font-size: 16px;
-				line-height: 31px;
-				letter-spacing: 0.3px;
-				color: #fff;
-				background: $color_main;
-				text-align: center;
-			}
-			img{
-				float: left;
-				margin-right: 14px;
-			    max-width: 300px;
-			    &:last-child{
-		    	    margin: 0px;
-			    }
-			}
-			&:nth-of-type(5){
-				margin: 0px;
-			}
-		}
-		.staff-phase{
-			clear: left;
-		    padding-bottom: 55px;
-			img{
-			    display: inline-block;
-			    float: left;
-			    margin-right: 40px;
-			}
-			h4{
-				font-size: 18px;
-				font-family: $font_montserrat;
-				font-weight: 700;
-				display: table-cell;
-				vertical-align: middle;
-				height: 63px;
-			}
-			&:after{
-				content: "";
-				border-right: 3px solid $color_main;
-			    height: 40px;
-			    display: block;
-			    position: absolute;
-			    left: 45px;
-			    margin: 10px 0px;
-			}
-			&:nth-of-type(5){
-				&:after{
-				border: none;
-				position: static;
-				margin: 0px;
-				height: 0px;
-				}
-			}
-		}
-	}
-	.staff-line{
-		text-align: center;
-		margin: 0px auto;
-		background: $color_main;
-		padding: 100px 0px;
-		h1{
-			font-size: 25px;
-			line-height: 32px;
-			font-family: $font_montserrat;
-			font-weight: bold;
-			max-width: 533px;
-			color: #fff;
-		    margin: 0px auto 20px;
-		     max-width: 360px;
-		}
-		button{
-			font-size: 14px;
-			text-align: center;
-			font-family: $font_montserrat;
-			font-weight: bold;
-			background: #fff;
-			padding: 10px 30px;
-			border: none;
-			color: #fff;
-		}
-	}
+.bl-staff {
+  p {
+    font-size: 15px;
+    font-family: $font_cabin;
+    line-height: 28px;
+    max-width: 442px;
+    letter-spacing: 0.3px;
+    color: #474747;
+    margin: 0px;
+    margin-bottom: 49.2px;
+  }
+  .bl-staff-title {
+    h1 {
+      font-size: 38px;
+      line-height: 44px;
+      font-family: $font_montserrat;
+      font-weight: 700;
+      max-width: 221px;
+      margin: 0px;
+      margin-bottom: 45.8px;
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: $color_main;
+        margin-left: 8px;
+      }
+    }
+  }
+  .staff-steps {
+    .staff-step-content {
+      margin-bottom: 100px;
+      h5 {
+        text-align: right;
+        font-size: 16px;
+        font-family: $font_montserrat;
+        font-weight: 700;
+        width: 25px;
+        position: relative;
+        &:after {
+          content: "";
+          border-bottom: 3px solid #000;
+          display: block;
+          position: absolute;
+          right: -2px;
+          left: -20px;
+          bottom: -7px;
+        }
+      }
+      h1 {
+        font-size: 28px;
+        font-family: $font_montserrat;
+        font-weight: 700;
+        color: $color_main;
+        text-transform: uppercase;
+      }
+      span {
+        font-size: 16px;
+        line-height: 31px;
+        letter-spacing: 0.3px;
+        color: #fff;
+        background: $color_main;
+        text-align: center;
+      }
+      img {
+        float: left;
+        margin-right: 14px;
+        max-width: 300px;
+        &:last-child {
+          margin: 0px;
+        }
+      }
+      &:nth-of-type(5) {
+        margin: 0px;
+      }
+    }
+    .staff-phase {
+      clear: left;
+      padding-bottom: 55px;
+      img {
+        display: inline-block;
+        float: left;
+        margin-right: 40px;
+      }
+      h4 {
+        font-size: 18px;
+        font-family: $font_montserrat;
+        font-weight: 700;
+        display: table-cell;
+        vertical-align: middle;
+        height: 63px;
+      }
+      &:after {
+        content: "";
+        border-right: 3px solid $color_main;
+        height: 40px;
+        display: block;
+        position: absolute;
+        left: 45px;
+        margin: 10px 0px;
+      }
+      &:nth-of-type(5) {
+        &:after {
+          border: none;
+          position: static;
+          margin: 0px;
+          height: 0px;
+        }
+      }
+
+      a {
+        display: block;
+
+      }
+    }
+  }
+  .staff-line {
+    text-align: center;
+    margin: 0px auto;
+    background: $color_main;
+    padding: 100px 0px;
+    h1 {
+      font-size: 40px;
+      line-height: 53px;
+      font-family: $font_montserrat;
+      font-weight: bold;
+      color: #fff;
+      margin: 0px auto 20px;
+      max-width: 490px;
+    }
+    button {
+      font-size: 14px;
+      text-align: center;
+      font-family: $font_montserrat;
+      font-weight: bold;
+      background: #fff;
+      padding: 10px 30px;
+      border: none;
+      color: #fff;
+    }
+  }
 }
-@media only screen and (max-width:767px){
-	.bl-staff{
-		p{
-			font-size:14px;
-			line-height: 25px;
-		}
-		.bl-staff-title{
-			h1{
-				font-size: 25px;
-				line-height: 32px;
-			}
-		}
-		.staff-steps{
-			.staff-step-content{
-			    margin-bottom: 50px;
-				h5{
-					font-size: 16px;
-				}
-				h1{
-					font-size: 20px;
-				}
-				img{
-				    max-width: 100%;
-				    width: 100%;
-				    margin-bottom: 20px;
-				}
-			}
-		}
-		.staff-line{
-			h1{
-				font-size: 25px;
-				line-height: 32px;
-			}
-		}
-	}
+
+@media only screen and (max-width: 767px) {
+  .bl-staff {
+    p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+    .bl-staff-title {
+      h1 {
+        font-size: 25px;
+        line-height: 32px;
+      }
+    }
+    .staff-steps {
+      .staff-step-content {
+        margin-bottom: 50px;
+        h5 {
+          font-size: 16px;
+        }
+        h1 {
+          font-size: 20px;
+        }
+        img {
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .staff-line {
+      h1 {
+        font-size: 25px;
+        line-height: 32px;
+      }
+    }
+  }
 }

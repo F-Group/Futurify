@@ -35,6 +35,14 @@
                     catch (e){}
                 }
             });
+
+            $(document).on("scroll",function(){
+                if($(document).scrollTop()>1){
+                    $("header").addClass("header-stick");
+                } else{
+                    $("header").removeClass("header-stick");
+                }
+            });
         },
 
         _initGMap: function () {

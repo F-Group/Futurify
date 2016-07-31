@@ -2,8 +2,15 @@
 	top: 32px;
 }
 
-.home .header {
-	background: transparent;
+.home .header, .home .header.header-stick {
+	background: transparent !important;
+	@include box-shadow(none);
+	position: fixed;
+}
+
+.header-stick.header {
+	@include box-shadow(3px 4px 5px 0px rgba(1,2,2,0.3));
+	position: fixed;
 }
 
 .header {
@@ -11,9 +18,9 @@
 	width: 100%;
 	padding: 30px 0 15px;
 	z-index: 9;
-	position: fixed;
+	position: relative;
 	background: $color_light;
-	@include box-shadow(3px 4px 5px 0px rgba(1,2,2,0.3));
+	@include transition(all 0.3s ease);
 
 	#logo-header {
 		padding-left: 0;
