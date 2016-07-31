@@ -9,7 +9,8 @@ $videos = getList("home-video", "menu_order date");
             <div class="fp-tableCell">
                 <video src="<?php echo get_field("video"); ?>"></video>
                 <div class="caption">
-                    <?php echo get_field("caption"); ?>
+
+                    <?php the_content() ?>
                     <div class="btn-video-play"></div>
                 </div>
             </div>
@@ -17,48 +18,6 @@ $videos = getList("home-video", "menu_order date");
     </section>
 <?php endwhile; ?>
 <?php endif; ?>
-    <!--<section class="section">
-        <div class="fp-table">
-            <div class="fp-tableCell">
-                <video src="<?php /*bloginfo('template_url') */?>/video/video-2.mp4" autoplay></video>
-                <div class="caption">
-                    <div class="caption-content">
-                        <h2>OUR MISSION</h2>
-                        <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
-                    </div>
-                    <div class="btn-video-play"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="fp-table">
-            <div class="fp-tableCell">
-                <video src="<?php /*bloginfo('template_url') */?>/video/video-3.mp4" autoplay></video>
-                <div class="caption">
-                    <div class="caption-content">
-                        <h2>OUR MISSION</h2>
-                        <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
-                    </div>
-                    <div class="btn-video-play"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="fp-table">
-            <div class="fp-tableCell">
-                <video src="<?php /*bloginfo('template_url') */?>/video/video-4.mp4" autoplay></video>
-                <div class="caption">
-                    <div class="caption-content">
-                        <h2>OUR MISSION</h2>
-                        <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
-                    </div>
-                    <div class="btn-video-play"></div>
-                </div>
-            </div>
-        </div>
-    </section>-->
     <section class="section home-introduction fp-auto-height">
         <div class="container">
             <div class="col-sm-3">
