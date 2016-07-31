@@ -53,38 +53,39 @@ $projects = getList("project", "menu_order date");
                             <p>We offer world-class engineers who work as Part-time (Pay as you go) or Full-time (Monthly subscription) remote staffs. Our talented engineers will work closely with your team to not only finish the assigned tasks, but also drive workflow right away.</p>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 nav navbar">
-                        <div class="staff-phase">
+                    <ul class="col-xs-12 col-sm-4 col-md-4 nav navbar">
+                        <li class="staff-phase">
                             <a href="#step1">
                                 <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/staff/line-models.png' ;?>" alt="staff-phase">
                                 <h4>MODELS</h4>
-                        </div>
                             </a>
-                        <div class="staff-phase">
+                        </li>
+                            </a>
+                        <li class="staff-phase">
                             <a href="#step2">
                                 <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/staff/line-star-talented.png' ;?>" alt="staff-phase">
                                 <h4>TALENTED ENGINEERS</h4>
                             </a>
-                        </div>
-                        <div class="staff-phase">
+                        </li>
+                        <li class="staff-phase">
                             <a href="#step3">
                                 <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/staff/line-gear.png' ;?>" alt="staff-phase">
                                 <h4>TECHNOLOGIES & TOOLS</h4>
                             </a>
-                        </div>
-                        <div class="staff-phase">
+                        </li>
+                        <li class="staff-phase">
                             <a href="#step4">
                                 <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/staff/line-repeat.png' ;?>" alt="staff-phase">
                                 <h4>UP - TO - DATE</h4>
                             </a>
-                        </div>
-                        <div class="staff-phase">
+                        </li>
+                        <li class="staff-phase">
                             <a href="#step5">
                                 <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/staff/line-hand.png' ;?>" alt="staff-phase">
                                 <h4>YOUR CHOICE</h4>
                             </a>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <?php get_template_part("parts/part", "related-project"); ?>

@@ -112,6 +112,14 @@
       a {
         display: block;
 
+        &:hover {
+          color: $color_main;
+          background: none;
+        }
+      }
+
+      &.active {
+        color: $color_main;
       }
     }
   }

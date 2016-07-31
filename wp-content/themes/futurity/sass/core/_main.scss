@@ -7,10 +7,16 @@ a {
   color: $color_base;
   cursor: pointer;
   
-  &:hover {
+  &:hover, &:active {
     text-decoration: none;
     color: $color_base;
   }
+}
+
+ul {
+  list-style: none;
+  padding: none;
+  margin: none;
 }
 
 .home #main {
