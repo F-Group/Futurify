@@ -124,3 +124,15 @@ function my_acf_google_map_api( $api ){
 }
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+function getList($type,$order_by="date") {
+
+    $args=array(
+        'post_type' => $type,
+        'post_status' => 'publish',
+        'posts_per_page' => -1,
+        'caller_get_posts'=> 1,
+        'orderby'=>$order_by,
+        'order'=>'DESC');
+    return new WP_Query($args);
+}

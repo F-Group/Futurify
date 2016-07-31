@@ -1,3 +1,25 @@
+.caption-content {
+  font-family: $font_cabin;
+  text-align: center;
+  max-width: 520px;
+
+  h2 {
+    color: $color_main;
+    font-family: $font_montserrat;
+    font-size: 70px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  p {
+    color: #2f2f2f;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 93px;
+    line-height: 26px;
+  }
+}
+
 .bl-our-project-content{
   h2{
     font-size: 22px;

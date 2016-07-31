@@ -8,19 +8,7 @@
  */
 get_header();
 
-function getMenu($type,$order_by="date") {
-
-    $args=array(
-        'post_type' => $type,
-        'post_status' => 'publish',
-        'posts_per_page' => -1,
-        'caller_get_posts'=> 1,
-        'orderby'=>$order_by,
-        'order'=>'DESC');
-    return new WP_Query($args);
-}
-
-$projects = getMenu("project", "menu_order date");
+$projects = getList("project", "menu_order date");
 
 
 ?>

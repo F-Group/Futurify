@@ -4,32 +4,17 @@
     text-align: center;
     top: 50%;
     left: 50%;
-    font-family: $font_cabin;
     @include translate(-50%, -50%);
     max-width: 520px;
     z-index: 4;
 
-    h2 {
-      color: $color_main;
-      font-family: $font_montserrat;
-      font-size: 70px;
-      font-weight: 600;
-      margin-bottom: 15px;
-      letter-spacing: 2px;
-    }
-    p {
-      color: #2f2f2f;
-      font-size: 16px;
-      font-weight: 500;
-      padding: 0 93px;
-      line-height: 26px;
-    }
 
-    .btn-video-play {
-      margin: 0 auto;
-      @include box-shadow(0px 0px 8px 5px #ccc);
-      @extend .btnScale;
-    }
+  }
+
+  .caption .btn-video-play {
+    margin: 0 auto;
+    @include box-shadow(0px 0px 8px 5px #ccc);
+    @extend .btnScale;
   }
 }
 

@@ -179,3 +179,22 @@
   -o-align-self: $value;
   align-self: $value;
 }
+
+@mixin h1-title($color: $color_base, $dotColor: $color_main) {
+  font-size: 38px;
+  line-height: 44px;
+  font-family: $font_montserrat;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 45.8px;
+  color: $color;
+
+  &:after{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: $dotColor;
+    margin-left: 8px;
+  }
+}

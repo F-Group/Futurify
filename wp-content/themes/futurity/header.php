@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?> >
 <div id="wrapper">
-    <div class="page">
+    <div class="main-page">
             <header class="header">
                 <div class="container">
                     <div class="row">

@@ -179,3 +179,11 @@ h1 {
     outline: none;
   }
 }
+
+.black-title {
+  @include h1-title($color_base, $color_main);
+}
+
+.white-title {
+  @include h1-title($color_light, $color_main);
+}

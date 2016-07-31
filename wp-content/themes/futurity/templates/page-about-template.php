@@ -7,6 +7,8 @@
  * @since Lse 1.0
  */
 get_header();
+
+$members = getList("member", "menu_order date");
 ?>
 
 <div class="bl-about">
@@ -14,7 +16,7 @@ get_header();
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="bl-about-title">
-                    <h1>THE FUTURIFY STORIES</h1>
+                    <h1 class="black-title">THE FUTURIFY STORIES</h1>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -74,73 +76,25 @@ get_header();
     <div class="bl-about-teams">
         <div class="container">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <h1>OUR TEAM</h1>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><p>We are a team of honest, responsible and passionate engineers who strive for greatness of products and services to empower your business success.</p></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content team-red"><p>Futurify is not only where we work but also where we share, laugh, collaborate, debate, nap, drink, eat and code. It’s where we feel like home. We work together as team to make you successful.</p></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/team-people.png' ;?>" alt="about-img"></div>
-                </div>
+                <h1 class="white-title">OUR TEAM</h1>
+                <?php if ($members->have_posts()) : while ($members->have_posts()) : $members->the_post(); ?>
+                <?php
+                    if(has_post_thumbnail()) {
+                ?>
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <div class="team-content"><img class="img-responsive" src="<?php the_post_thumbnail_url("full"); ?>" alt="about-img"></div>
+                    </div>
+                <?php
+                    } else {
+                ?>
+                    <div class="col-xs-12 col-sm-3 col-md-3">
+                        <?php the_content(); ?>
+                    </div>
+                <?php } ?>
+
+                <?php endwhile; ?>
+                <?php endif; ?>
+
                 <div class="col-xs-12 col-sm-3 col-md-3">
                     <div class="bl-our-project-button-more">
                         <button id="btn-project-more">
@@ -166,7 +120,7 @@ get_header();
                 </div>
                 <div class="col-md-8">
                     <div class="bl-about-our-mission-content">
-                        <h1>OUR MISSION</h1>
+                        <h1 class="black-title">OUR MISSION</h1>
                         <h5>JOHN VU - PRODUCT MANANGER</h5>
                         <p>Our focus is to build highly <span>innovative</span>,   <span>interactive</span>    <span>reliable</span> web-based solutions to bring maximum values to our clients and users on time and on budget.</p>
                     </div>
