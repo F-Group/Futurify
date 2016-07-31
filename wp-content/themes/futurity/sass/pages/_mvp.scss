@@ -1,0 +1,145 @@
+.bl-mvp{
+	p{
+		font-size: 15px;
+		font-family: $font_cabin;
+		line-height: 28px;
+		max-width: 442px;
+	    letter-spacing: 0.3px;
+	    color: #474747;
+	    margin: 0px;
+	    margin-bottom: 15px;
+	}
+	.bl-mvp-title{
+	    margin-bottom: 49.2px;
+		h1{
+			font-size: 38px;
+			line-height: 44px;
+			font-family: $font_montserrat;
+			font-weight: 700;
+			max-width: 221px;
+			margin: 0px;
+		    margin-bottom: 45.8px;
+		    &:after{
+		    	content: "";
+			    display: inline-block;
+			    width: 10px;
+			    height: 10px;
+			    background: $color_main;
+		        margin-left: 8px;
+		    }
+		}
+	}
+	.mvp-steps{
+		.mvp-step-content{
+		    margin-bottom: 100px;
+			h5{
+				text-align: right;
+				font-size: 16px;
+				font-family: $font_montserrat;
+				font-weight: 700;
+				width: 25px;
+			    position: relative;
+				&:after{
+					content: "";
+					border-bottom: 3px solid #000;
+					display: block;
+				    position: absolute;
+				    right: -2px;
+				    left: -20px;
+				    bottom: -7px;
+				}
+			}
+			h1{
+				font-size: 28px;
+				font-family: $font_montserrat;
+				font-weight: 700;
+				color: $color_main;
+				text-transform: uppercase;
+			}
+			span{
+				font-size: 16px;
+				line-height: 31px;
+				letter-spacing: 0.3px;
+				color: #fff;
+				background: $color_main;
+				text-align: center;
+				display: block;
+			}
+			img{
+				float: left;
+				margin-right: 14px;
+			    max-width: 300px;
+			    &:last-child{
+		    	    margin: 0px;
+			    }
+			}
+			&:nth-of-type(5){
+				margin: 0px;
+			}
+		}
+		.mvp-phase{
+			clear: left;
+		    padding-bottom: 55px;
+			img{
+			    display: inline-block;
+			    float: left;
+			    margin-right: 40px;
+			}
+			h4{
+				font-size: 18px;
+				font-family: $font_montserrat;
+				font-weight: 700;
+				display: table-cell;
+				vertical-align: middle;
+				height: 63px;
+			}
+			&:after{
+				content: "";
+				border-right: 3px solid $color_main;
+			    height: 40px;
+			    display: block;
+			    position: absolute;
+			    left: 35px;
+			    margin: 10px 0px;
+			}
+			&:nth-of-type(7){
+				&:after{
+				border: none;
+				position: static;
+				margin: 0px;
+				height: 0px;
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width:767px){
+	.bl-mvp{
+		p{
+			font-size:14px;
+			line-height: 25px;
+		}
+		.bl-mvp-title{
+			h1{
+				font-size: 25px;
+				line-height: 32px;
+			}
+		}
+		.mvp-steps{
+			.mvp-step-content{
+			    margin-bottom: 50px;
+				h5{
+					font-size: 16px;
+				}
+				h1{
+					font-size: 20px;
+				}
+				img{
+				    max-width: 100%;
+				    width: 100%;
+				    margin-bottom: 20px;
+				}
+			}
+		}
+	}
+}

@@ -73,6 +73,7 @@ function tsg_scripts() {
         '/js/lib/bootstrap.min.js',
         '/js/lib/jquery.fullPage.min.js',
         '/js/lib/scrolloverflow.min.js',
+        '/js/lib/owl-carousel/owl.carousel.js',
         '/js/app.js'
     );
     foreach ($scripts as $key => $url){
@@ -80,6 +81,8 @@ function tsg_scripts() {
     }
 
     $styles = array(
+        '/js/lib/owl-carousel/owl.theme.css',
+        '/js/lib/owl-carousel/owl.carousel.css',
         '/css/jquery.fullPage.css',
         '/css/font-awesome.min.css'
     );

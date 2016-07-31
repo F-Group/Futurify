@@ -7,6 +7,7 @@
         init: function () {
             this._initHomePage();
             this._initGMap();
+            this._initSlide();
         },
 
         _initHomePage: function() {
@@ -76,6 +77,22 @@
             if(typeof google != 'undefined'){
                 google.maps.event.addDomListener(window, 'load', initMap);
             }
+        },
+
+        _initSlide: function(){
+              $("#owl-project").owlCarousel({
+                  autoPlay: 3000, //Set AutoPlay to 3 seconds
+                  items : 3,
+                  itemsDesktop : [1199,3],
+                  itemsTablet : [767,1],
+                  pagination:false,
+              });              // Custom Navigation Events
+              $(".next").click(function(){
+                owl.trigger('owl.next');
+              })
+              $(".prev").click(function(){
+                owl.trigger('owl.prev');
+              })
         }
 
     };

@@ -9,6 +9,7 @@
 
 @import "parts/_footer.scss";
 @import "parts/_header.scss";
+@import "parts/_related-project.scss";
 
 @import "pages/_contact.scss";
 @import "pages/_home.scss";
@@ -16,5 +17,7 @@
 @import "pages/blog-list.scss";
 @import "pages/blog-detail.scss";
 @import "pages/our-project.scss";
+@import "pages/staff.scss";
+@import "pages/mvp.scss";
 
 @import "_editor.scss";
