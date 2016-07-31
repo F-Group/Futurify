@@ -1,0 +1,12 @@
+@keyframes btnScale {
+  0% {
+    @include scale(1);
+  }
+  100% {
+    @include scale(1.05);
+  }
+}
+
+.btnScale {
+  @include animation(btnScale 0.5s ease-in-out infinite alternate);
+}

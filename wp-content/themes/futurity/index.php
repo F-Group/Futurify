@@ -5,8 +5,11 @@
             <div class="fp-tableCell">
                 <video src="<?php bloginfo('template_url') ?>/video/video-1.mp4" autoplay></video>
                 <div class="caption">
-                    <h2>OUR MISSION</h2>
-                    <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
+                    <div class="caption-content">
+                        <h2>OUR MISSION</h2>
+                        <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
+                    </div>
+                    <div class="btn-video-play"></div>
                 </div>
             </div>
         </div>
@@ -16,8 +19,11 @@
             <div class="fp-tableCell">
                 <video src="<?php bloginfo('template_url') ?>/video/video-2.mp4" autoplay></video>
                 <div class="caption">
-                    <h2>OUR MISSION</h2>
-                    <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
+                    <div class="caption-content">
+                        <h2>OUR MISSION</h2>
+                        <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
+                    </div>
+                    <div class="btn-video-play"></div>
                 </div>
             </div>
         </div>
@@ -27,8 +33,11 @@
             <div class="fp-tableCell">
                 <video src="<?php bloginfo('template_url') ?>/video/video-3.mp4" autoplay></video>
                 <div class="caption">
-                    <h2>OUR MISSION</h2>
-                    <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
+                    <div class="caption-content">
+                        <h2>OUR MISSION</h2>
+                        <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
+                    </div>
+                    <div class="btn-video-play"></div>
                 </div>
             </div>
         </div>
@@ -38,8 +47,11 @@
             <div class="fp-tableCell">
                 <video src="<?php bloginfo('template_url') ?>/video/video-4.mp4" autoplay></video>
                 <div class="caption">
-                    <h2>OUR MISSION</h2>
-                    <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
+                    <div class="caption-content">
+                        <h2>OUR MISSION</h2>
+                        <p>We offer remote world-class engineers and build reliable, scalable and measurable solutions to help you grow and succeed</p>
+                    </div>
+                    <div class="btn-video-play"></div>
                 </div>
             </div>
         </div>

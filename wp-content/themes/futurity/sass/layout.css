@@ -6010,6 +6010,31 @@ h1 {
   .btn-play1:focus {
     outline: none; }
 
+.btn-video-play {
+  width: 33px;
+  height: 33px;
+  background: #fff;
+  position: relative; }
+  .btn-video-play:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid #fa4945;
+    outline: none;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute; }
+  .btn-video-play:focus {
+    outline: none; }
+
 .footer {
   background-color: #000;
   min-height: 310px;
@@ -6097,16 +6122,29 @@ h1 {
         font-size: 17px;
         margin-right: 20px; } }
 .home .header {
-  position: absolute;
-  padding-top: 45px; }
+  padding-top: 45px;
+  position: fixed; }
 
 .header {
   top: 0;
   width: 100%;
   padding: 30px 0 15px;
-  z-index: 9; }
+  z-index: 9;
+  position: fixed; }
   .header #logo-header {
-    padding-left: 0; }
+    padding-left: 0;
+    		/*span:first-child {
+    			color: $color_base;
+    		}
+    
+    		span:last-child {
+    			color: $color_main;
+    		}
+    
+    		span {
+    			font-size: 20px;
+    			font-weight: bolder;
+    		}*/ }
   .header #nav-header {
     float: right;
     padding-right: 12px; }
@@ -6157,7 +6195,12 @@ h1 {
         line-height: 14px;
         text-shadow: initial;
         font-weight: bold;
-        padding: 4px 6px; }
+        padding: 4px 6px;
+        -webkit-transition: color 0.2s ease;
+        -moz-transition: color 0.2s ease;
+        -ms-transition: color 0.2s ease;
+        -o-transition: color 0.2s ease;
+        transition: color 0.2s ease; }
         .header .main-menu .menu-desktop .menu > li a:hover {
           color: #fa4945;
           text-decoration: none; }
@@ -6288,7 +6331,8 @@ h1 {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  max-width: 520px; }
+  max-width: 520px;
+  z-index: 4; }
   .home .caption h2 {
     color: #fa4945;
     font-family: "Montserrat", sans-serif;
@@ -6302,6 +6346,8 @@ h1 {
     font-weight: 500;
     padding: 0 93px;
     line-height: 26px; }
+  .home .caption .btn {
+    margin: 0 auto; }
 
 #homePage video {
   position: absolute;
