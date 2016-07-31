@@ -1,9 +1,15 @@
+.home .footer {
+	top: 0;
+}
+
 .footer {
 	background-color: #000;
 	min-height: 310px;
 	padding-top: 90px;
 	color: #bababa;
 	text-align: left;
+	position: relative;
+	top: 80px;
 	.newsletter {
 		margin-top: 55px;
 		input[type="text"] {
