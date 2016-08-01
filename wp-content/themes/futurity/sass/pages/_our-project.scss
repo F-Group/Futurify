@@ -27,7 +27,8 @@
 			position: relative;
 			overflow: hidden;
 
-			img {
+			@include imgAnim();
+			/*img {
 				@include transition(all 0.3s ease-out);
 				-webkit-transform-style: preserve-3d;
 				transform-style: preserve-3d;
@@ -35,7 +36,7 @@
 
 			&:hover img {
 				@include scale(1.05);
-			}
+			}*/
 		}
 
 		>div {
@@ -115,6 +116,11 @@
 		}
 	}
 }
+
+.alm-reveal {
+	@include clearfix;
+}
+
 @media only screen and (max-width: 960px){
 	.bl-our-project .bl-our-project-items .bl-our-project-button-more{
 		min-height: 157px;

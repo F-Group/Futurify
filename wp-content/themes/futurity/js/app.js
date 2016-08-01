@@ -13,12 +13,12 @@
         _initHomePage: function() {
             $('#homePage').fullpage({
                 verticalCentered: false,
-                scrollBar: true,
+                // scrollBar: true,
                 css3: true,
                 scrollingSpeed: 800,
                 navigation: true,
                 navigationPosition: 'right',
-                normalScrollElements: '.home-introduction',
+                normalScrollElements: '.home-footer',
                 /*scrollOverflow: true,
                 scrollOverflowOptions: {
                     scrollbars: true,

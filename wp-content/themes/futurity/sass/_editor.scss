@@ -109,3 +109,34 @@ body {
   @extend .red-text;
   font-size: 16px;
 }
+
+.bl-our-project-button-more{
+  display: table;
+  min-height: 220px;
+  width: 100%;
+
+  #btn-project-more{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background: $color_main;
+    min-height: 220px;
+    width: 100%;
+    border: none;
+    h5{
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #fff;
+
+      &:after{
+        content: url('../img/content/our_project/add-button.png');
+        display: block;
+        margin-top: 20px;
+      }
+
+      span{
+        display: block;
+      }
+    }
+  }
+}

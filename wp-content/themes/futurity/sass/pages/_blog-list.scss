@@ -155,7 +155,10 @@
 			text-decoration: none;
 			.bl-blog-list-item{
 				margin-bottom: 42px;
-				img{
+				overflow: hidden;
+				@include imgAnim();
+
+				.img-container {
 					margin-bottom: 19px;
 				}
 				h3{
@@ -196,6 +199,10 @@
 					    left: 0;
 					    bottom: -2px;
 					}
+				}
+
+				&:hover {
+
 				}
 			}
 		}

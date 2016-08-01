@@ -75,40 +75,33 @@ $members = getList("member", "menu_order date");
     </div>
     <div class="bl-about-teams">
         <div class="container">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <h1 class="white-title">OUR TEAM</h1>
-                <?php if ($members->have_posts()) : while ($members->have_posts()) : $members->the_post(); ?>
-                <?php
-                    if(has_post_thumbnail()) {
-                ?>
-                    <div class="col-xs-12 col-sm-3 col-md-3">
-                        <div class="team-content"><img class="img-responsive" src="<?php the_post_thumbnail_url("full"); ?>" alt="about-img"></div>
-                    </div>
-                <?php
-                    } else {
-                ?>
-                    <div class="col-xs-12 col-sm-3 col-md-3">
-                        <?php the_content(); ?>
-                    </div>
-                <?php } ?>
-
-                <?php endwhile; ?>
-                <?php endif; ?>
+            <h1 class="white-title">OUR TEAM</h1>
+        </div>
+        <div class="container">
+            <?php
+            $column = 2;
+            if ($members->have_posts()) : while ($members->have_posts()) : $members->the_post();
+            ?>
+            <?php
+                if(has_post_thumbnail()) {
+            ?>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <div class="team-content"><img class="img-responsive" src="<?php the_post_thumbnail_url("full"); ?>" alt="about-img"></div>
+                </div>
+            <?php
+                } else {
+                    $column = get_field("column");
+            ?>
 
                 <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="bl-our-project-button-more">
-                        <button id="btn-project-more">
-                            <h5>JOIN US</h5>
-                            <p>Your avatar will be here!</p>
-                        </button>
-                    </div>
+                    <?php the_content(); ?>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="team-content main-title"><p>FUTURIFY MEANS THE “FUTURE” THAT WE “REFINE” TO ACHIEVE GREATNESS
-                    AND SUCCESS.</p></div>
-                </div>
-            </div>  
+            <?php } ?>
+
+            <?php endwhile; ?>
+            <?php endif; ?>
         </div>
+    </div>
     </div>
     <div class="bl-about-our-mission">
         <div class="container">
