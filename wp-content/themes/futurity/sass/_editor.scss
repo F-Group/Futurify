@@ -1,3 +1,8 @@
+body {
+  font-family: $font_cabin;
+  font-size: 15px;
+}
+
 .black-title {
   @include h1-title($color_base, $color_main);
 }
@@ -92,4 +97,15 @@
     color: #000;
     margin: 30px 0px 0px;
   }
+}
+
+.red-text {
+  color: #fff;
+  background: #fa4945;
+  padding: 3px 5px;
+}
+
+.red-text-16 {
+  @extend .red-text;
+  font-size: 16px;
 }

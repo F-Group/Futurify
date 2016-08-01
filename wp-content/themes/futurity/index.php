@@ -9,9 +9,7 @@ $videos = getList("home-video", "menu_order date");
             <div class="fp-tableCell">
                 <video src="<?php echo get_field("video"); ?>"></video>
                 <div class="caption">
-
                     <?php the_content() ?>
-                    <div class="btn-video-play"></div>
                 </div>
             </div>
         </div>
