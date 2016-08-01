@@ -7,6 +7,7 @@
 if ( ! function_exists( 'tsg_setup' ) ) :
 
     function tsg_setup() {
+       // load_theme_textdomain( 'twentyfourteen', get_template_directory() . '/languages' );
         load_theme_textdomain( 'tsg', THEME_URL . '/languages' );
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'post-thumbnails' );
