@@ -103,7 +103,14 @@
           background: none;
         }
       }
-
+      a:hover {
+        .hover {
+          display: block;
+        }
+        .normal {
+          display: none;
+        }
+      }
       &.active {
 
         a {
