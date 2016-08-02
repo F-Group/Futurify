@@ -60,4 +60,36 @@
     color: $color_light;
     margin-right: 20px;
   }
+
+  .service-choice {
+    @include make-col-span(3);
+    display: block;
+    float: left;
+  }
+
+  .service {
+    @include make-col-span(9);
+    display: block;
+    float: left;
+  }
+
+  .wpcf7-radio {
+    display: block;
+
+    >* {
+      display: block;
+      float: left;
+      @include make-col-span(4);
+      margin: 0;
+      text-align: right;
+    }
+  }
+
+  .wpcf7-form >p {
+    @include clearfix;
+  }
+
+  .btn-main {
+    font-weight: bold;
+  }
 }
