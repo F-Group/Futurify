@@ -110,6 +110,9 @@
               $(".prev").click(function(){
                 owl.trigger('owl.prev');
               })
+            $('[data-spy="scroll"]').each(function(){
+                var $spy = $(this).scrollspy('refresh');
+            });
         }
 
     };
