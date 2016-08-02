@@ -89,8 +89,8 @@ $members = getList("member", "menu_order date");
                     <div class="team-content">
                         <img class="img-responsive" src="<?php the_post_thumbnail_url("full"); ?>" alt="about-img">
                         <div class="member-info">
-                            <div class="member-name">JOHN DOE</div>
-                            <div class="member-position">Product Manager</div>
+                            <div class="member-name"><?php the_title() ?></div>
+                            <div class="member-position"><?php the_field("position") ?></div>
                         </div>
                     </div>
                 </div>
