@@ -11,7 +11,7 @@ get_header();
 $mvp = getList("mvp", "menu_order date");
 
 ?>
-<div class="bl-staff">
+<div class="bl-staff" data-spy="scroll" data-target="#myScrollspy2">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-xs-12 col-sm-12 col-md-12">
@@ -43,7 +43,7 @@ $mvp = getList("mvp", "menu_order date");
                         }
                         ?>
                     </div>
-                    <ul class="col-xs-12 col-sm-4 col-md-4 nav navbar">
+                    <ul id="myScrollspy2" data-offset-top="270" data-offset-bottom="1100" data-spy="affix" class="col-xs-12 col-sm-4 col-md-4 nav navbar">
                         <?php
                         $num = 0;
                         if( $mvp->have_posts() ) {
@@ -52,7 +52,8 @@ $mvp = getList("mvp", "menu_order date");
                                 ?>
                                 <li class="staff-phase">
                                     <a href="<?php echo '#'.$prefix_id.$num ?>">
-                                        <img class="img-responsive" src="<?php echo get_field("normal_icon") ?>" alt="staff-phase">
+                                        <img class="img-responsive normal" src="<?php echo get_field("normal_icon") ?>" alt="staff-phase">
+                                        <img class="img-responsive hover" src="<?php echo get_field("hover_icon") ?>" alt="staff-phase">
                                         <h4><?php the_title() ?></h4>
                                     </a>
                                 </li>

@@ -11,6 +11,15 @@
   }
 
   .staff-steps {
+    .navbar {
+      z-index: 999;
+      &.affix {
+        position: fixed;
+        left: 62%;
+        top: 80px;
+        width: 25%;
+      }
+    }
     .staff-step-content {
       margin-bottom: 100px;
       h5 {
@@ -56,7 +65,7 @@
     }
     .staff-phase {
       clear: left;
-      padding-bottom: 55px;
+      padding-bottom: 35px;
 
       img {
         display: inline-block;
@@ -80,21 +89,39 @@
           display: block;
           position: absolute;
           left: 45px;
-          margin: 10px 0px;
         }
       }
 
+
       a {
         display: block;
-
+        .hover {
+          display: none;
+        }
         &:hover {
           color: $color_main;
           background: none;
         }
       }
-
+      a:hover {
+        .hover {
+          display: block;
+        }
+        .normal {
+          display: none;
+        }
+      }
       &.active {
-        color: $color_main;
+
+        a {
+          color: $color_main;
+          .hover {
+            display: block;
+          }
+          .normal {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -138,6 +165,7 @@
       }
     }
     .staff-steps {
+
       .staff-step-content {
         margin-bottom: 50px;
         h5 {

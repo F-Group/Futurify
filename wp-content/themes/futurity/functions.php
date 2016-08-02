@@ -75,6 +75,8 @@ function tsg_scripts() {
         '/js/lib/jquery.fullPage.min.js',
         '/js/lib/scrolloverflow.min.js',
         '/js/lib/owl-carousel/owl.carousel.js',
+        '/js/lib/masonry/masonry.pkgd.min.js',
+        '/js/lib/imagesLoaded/imagesloaded.pkgd.min.js',
         '/js/app.js'
     );
     foreach ($scripts as $key => $url){
