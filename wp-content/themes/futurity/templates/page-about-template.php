@@ -74,6 +74,7 @@ $members = getList("member", "menu_order date");
         </div>
     </div>
     <div class="bl-about-teams">
+        <div class="bg-pattern"></div>
         <div class="container">
             <h1 class="white-title">OUR TEAM</h1>
         </div>
