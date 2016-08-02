@@ -147,6 +147,8 @@
 			margin-bottom: 18px;
 			min-height: 205px;
 			display: table;
+			position: relative;
+
 			p{
 				display: table-cell;
 			    padding: 5px;
@@ -167,6 +169,26 @@
 					position: absolute;
 					bottom: -20px;
 				}
+			}
+
+			.member-info {
+				width: 80%;
+				bottom: 10px;
+				position: absolute;
+				background: #fff;
+				left: 50%;
+				@include transform(translate(-50%, 0));
+				padding: 5px 10px;
+				opacity: 0;
+				@include transition(opacity 0.2s ease-in);
+
+				.member-name {
+					font-weight: bold;
+				}
+			}
+
+			&.hover .member-info{
+				opacity: 1;
 			}
 		}
 		.team-red{

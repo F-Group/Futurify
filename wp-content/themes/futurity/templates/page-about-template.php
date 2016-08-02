@@ -85,15 +85,21 @@ $members = getList("member", "menu_order date");
             <?php
                 if(has_post_thumbnail()) {
             ?>
-                <div class="col-xs-12 col-sm-3 col-md-3">
-                    <div class="team-content"><img class="img-responsive" src="<?php the_post_thumbnail_url("full"); ?>" alt="about-img"></div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="team-content">
+                        <img class="img-responsive" src="<?php the_post_thumbnail_url("full"); ?>" alt="about-img">
+                        <div class="member-info">
+                            <div class="member-name">JOHN DOE</div>
+                            <div class="member-position">Product Manager</div>
+                        </div>
+                    </div>
                 </div>
             <?php
                 } else {
                     $column = get_field("column");
             ?>
 
-                <div class="col-xs-12 col-sm-3 col-md-3">
+                <div class="col-xs-12 col-sm-6 col-md-3">
                     <?php the_content(); ?>
                 </div>
             <?php } ?>

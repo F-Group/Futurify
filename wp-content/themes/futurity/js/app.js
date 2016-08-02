@@ -8,6 +8,7 @@
             this._initHomePage();
             this._initGMap();
             this._initSlide();
+            this._initAboutPage();
         },
 
         _initHomePage: function() {
@@ -42,6 +43,14 @@
                 } else{
                     $("header").removeClass("header-stick");
                 }
+            });
+        },
+
+        _initAboutPage: function() {
+            $(".team-content").hover(function() {
+                $(this).addClass("hover");
+            }, function() {
+                $(this).removeClass("hover");
             });
         },
 
