@@ -13,7 +13,7 @@
                     <?php the_content(); ?>
                 </div>
                 <div class="bl-blog-detail-relate row">
-                    <div class="col-md-6 tags"> <?php the_tags(__('View posts by tags: '), '', '');?></div>
+                    <div class="col-md-6 col-xs-6 tags"> <?php the_tags(__('View posts by tags: '), '', '');?></div>
                     <div class="social-sharing"> <?php echo __( 'SHARE ') ?>
                         <?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
 <!--                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -25,7 +25,7 @@
         <?php
             // End of the loop.
         endwhile;
-        ?>
+        get_template_part("parts/part", "related-blog"); ?>
     </div>
 </div>
 <?php get_footer(); ?>
