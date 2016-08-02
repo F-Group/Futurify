@@ -69,7 +69,7 @@ get_header();
                         </div>
                     </div>
                     <div class="row list-blog">
-                        <?php echo do_shortcode("[ajax_load_more post_type='post' posts_per_page='6' max_pages='3' container_type='div' css_classes='col-xs-12 col-sm-12 col-md-12' button_loading_label='']") ?>
+                        <?php echo do_shortcode("[ajax_load_more post_type='post' posts_per_page='6' max_pages='3' container_type='div' scroll='false' css_classes='col-xs-12 col-sm-12 col-md-12' button_loading_label='']") ?>
                     </div>
                 </div>
             </div>
