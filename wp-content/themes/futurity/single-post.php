@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="bl-blog-detail-title">
-                    <h4><?php the_category();?></h4>
+                    <h4><?php the_tags("", '', '');?></h4>
                     <h1><?php the_title();?></h1>
                     <h5><span class="user-detail"><?php echo __( 'by', 'tsg' ). ' '; the_author();?></span><span class="time-detail"> <?php echo __( 'Posted on', 'tsg' ). ' '; the_date()?></span></h5>
                 </div>
