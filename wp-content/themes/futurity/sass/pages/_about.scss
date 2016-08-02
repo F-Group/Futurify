@@ -61,6 +61,7 @@
 			background: $color_main url("../img/content/about/futurify.png") no-repeat center bottom;
 			color: #fff;
 			position: relative;
+			background-size: contain;
 
 			section.bl-des-left{
 				h2{
@@ -264,11 +265,6 @@
 	}
 }
 
-.pattern-futurify {
-	/*background: url("../img/content/about/futurify.png") no-repeat center center;
-	width: 100%;
-	background-size: contain;*/
-}
 
 @media only screen and (max-width: 960px){
 	.bl-about{
