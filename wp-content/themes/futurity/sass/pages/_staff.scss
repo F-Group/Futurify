@@ -92,9 +92,12 @@
         }
       }
 
+
       a {
         display: block;
-
+        .hover {
+          display: none;
+        }
         &:hover {
           color: $color_main;
           background: none;
@@ -102,7 +105,16 @@
       }
 
       &.active {
-        color: $color_main;
+
+        a {
+          color: $color_main;
+          .hover {
+            display: block;
+          }
+          .normal {
+            display: none;
+          }
+        }
       }
     }
   }
