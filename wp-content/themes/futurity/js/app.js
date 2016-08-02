@@ -34,17 +34,18 @@
             this._initHomePage();
             this._initGMap();
             this._initSlide();
+            this._initAboutPage();
         },
 
         _initHomePage: function() {
             $('#homePage').fullpage({
                 verticalCentered: false,
-                scrollBar: true,
+                // scrollBar: true,
                 css3: true,
                 scrollingSpeed: 800,
                 navigation: true,
                 navigationPosition: 'right',
-                normalScrollElements: '.home-introduction',
+                normalScrollElements: '.home-footer',
                 /*scrollOverflow: true,
                 scrollOverflowOptions: {
                     scrollbars: true,
@@ -60,6 +61,22 @@
                     }
                     catch (e){}
                 }
+            });
+
+            $(document).on("scroll",function(){
+                if($(document).scrollTop()>1){
+                    $("header").addClass("header-stick");
+                } else{
+                    $("header").removeClass("header-stick");
+                }
+            });
+        },
+
+        _initAboutPage: function() {
+            $(".team-content").hover(function() {
+                $(this).addClass("hover");
+            }, function() {
+                $(this).removeClass("hover");
             });
         },
 
@@ -115,7 +132,7 @@
               });              // Custom Navigation Events
               $(".next").click(function(){
                 owl.trigger('owl.next');
-              })
+              });
               $(".prev").click(function(){
                 owl.trigger('owl.prev');
               })

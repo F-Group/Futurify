@@ -31,7 +31,7 @@
     background-position: center center;
     background-size: contain;
     object-fit: cover;
-    z-index: 3;
+    z-index: -1;
   }
 }
 
@@ -47,6 +47,8 @@
   .container {
     position: relative;
     padding: 0;
+    transform: translateY(-50%);
+    top: 50%;
   }
 
   .home-panel {

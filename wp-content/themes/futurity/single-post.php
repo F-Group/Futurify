@@ -1,24 +1,31 @@
 <?php get_header(); ?>
 <div class="bl-blog-detail">
     <div class="container">
+        <?php while ( have_posts() ) : the_post();  ?>
         <div class="row">
             <div class="col-md-12">
                 <div class="bl-blog-detail-title">
-                    <h4>TECH CORNER</h4>
-                    <h1>MARCH 2016 COMPANY RETREAT</h1>
-                    <h5><span class="user-detail">by Tri Ho</span><span class="time-detail">posted on March 18, 2016</span></h5>
-                    <p>A place we share to each other, care of things around us.
-                        It's our pleasure to share culture, thoughts, interests in technology with you - our clients as well as the new visitors</p>
+                    <h4><?php the_tags("", '', '');?></h4>
+                    <h1><?php the_title();?></h1>
+                    <h5><span class="user-detail"><?php echo __( 'by', 'tsg' ). ' '; the_author();?></span><span class="time-detail"> <?php echo __( 'Posted on', 'tsg' ). ' '; the_date()?></span></h5>
                 </div>
                 <div class="main-content">
-                    <h3>HEADING TITLE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
-                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/blg-list-1.png' ;?>" alt="blog-img">
-                    <h3>HEADING TITLE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+                    <?php the_content(); ?>
+                </div>
+                <div class="bl-blog-detail-relate row">
+                    <div class="col-md-6 col-xs-6 tags"> <?php the_tags(__('View posts by tags: '), '', '');?></div>
+                    <div class="social-sharing"> <?php echo __( 'SHARE ') ?>
+                        <?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
+<!--                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<!--                        <div class="addthis_sharing_toolbox"></div>-->
+                    </div>
                 </div>
             </div>
         </div>
+        <?php
+            // End of the loop.
+        endwhile;
+        get_template_part("parts/part", "related-blog"); ?>
     </div>
 </div>
 <?php get_footer(); ?>

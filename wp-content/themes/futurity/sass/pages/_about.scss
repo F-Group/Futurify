@@ -147,6 +147,8 @@
 			margin-bottom: 18px;
 			min-height: 205px;
 			display: table;
+			position: relative;
+
 			p{
 				display: table-cell;
 			    padding: 5px;
@@ -168,6 +170,27 @@
 					bottom: -20px;
 				}
 			}
+
+			.member-info {
+				width: 80%;
+				bottom: 10px;
+				position: absolute;
+				background: #fff;
+				left: 50%;
+				@include transform(translate(-50%, 0));
+				padding: 5px 10px;
+				opacity: 0;
+				@include transition(opacity 0.2s ease-in);
+
+				.member-name {
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+			}
+
+			&.hover .member-info{
+				opacity: 1;
+			}
 		}
 		.team-red{
 			background: $color_main;
@@ -185,35 +208,6 @@
 				line-height: 43px;
 				font-family: $font_montserrat;
 				color: #fff;
-			}
-		}
-		.bl-our-project-button-more{
-			display: table;
-			min-height: 220px;
-			width: 100%;
-			#btn-project-more{
-				display: table-cell;
-				vertical-align: middle;
-				text-align: center;
-				background: $color_main;
-				min-height: 205px;
-				width: 100%;
-				border: none;
-				h5{
-					font-size: 20px;
-					color: #fff;
-					text-transform: uppercase;
-					&:after{
-						content: url('../img/content/our_project/add-button.png');
-						display: block;
-						margin-top: 20px;
-					}
-				}
-				p{
-					font-size: 15px;
-					text-align: center;
-					font-family: $font_cabin;
-				}
 			}
 		}
 	}

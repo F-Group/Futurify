@@ -198,3 +198,16 @@
     margin-left: 8px;
   }
 }
+
+@mixin imgAnim () {
+  img {
+    width: 100%;
+    @include transition(all 0.3s ease-out);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  &:hover img {
+    @include scale(1.05);
+  }
+}

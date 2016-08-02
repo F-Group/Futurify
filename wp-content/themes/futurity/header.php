@@ -20,7 +20,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?> >
+<body <?php body_class(); ?> data-spy="scroll" data-target=".navbar" data-offset="0">
 <div id="wrapper">
     <div class="main-page">
             <header class="header">

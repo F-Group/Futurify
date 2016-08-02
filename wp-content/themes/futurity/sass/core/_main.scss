@@ -3,12 +3,32 @@ body {
   font-size: 15px;
 }
 
+a {
+  color: $color_base;
+  cursor: pointer;
+  
+  &:hover, &:active {
+    text-decoration: none;
+    color: $color_base;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: none;
+  margin: none;
+}
+
+.home #main {
+  top: 0;
+}
+
 #main {
   min-height: 100%;
   min-width: 100%;
   background-color: $color_light; /* Needs a background or else the nav will show through */
   position: relative;
-  top: 0;
+  top: 80px;
   bottom: 100%;
   left: 0;
   z-index: 1;
@@ -178,4 +198,8 @@ h1 {
   &:focus {
     outline: none;
   }
+}
+
+.img-container {
+  overflow: hidden;
 }
