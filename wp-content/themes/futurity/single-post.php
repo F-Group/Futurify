@@ -11,7 +11,13 @@
                 </div>
                 <div class="main-content">
                     <?php the_content(); ?>
+                </div>
+                <div class="bl-blog-detail-relate row">
+                    <div class="col-md-6 tags"> <?php the_tags(__('View posts by tags: '), '', '');?></div>
+                    <div class="social-sharing">
+                        <?php if(function_exists('kc_add_social_share')) kc_add_social_share(); ?>
                     </div>
+                </div>
             </div>
         </div>
         <?php

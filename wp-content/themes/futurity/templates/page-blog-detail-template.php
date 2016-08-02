@@ -15,8 +15,8 @@ $google_map = get_field('location');
         <div class="row">
             <div class="col-md-12">
                 <div class="bl-blog-detail-title">
-                    <h4>TECH CORNER</h4> 
-                    <h1>MARCH 2016 COMPANY RETREAT</h1>
+                    <h4>TECH CORNER</h4>
+                    <h1>MARCH 2016 COMPANY RETREAT ngoc dug</h1>
                     <h5><span class="user-detail">by Tri Ho</span><span class="time-detail">posted on March 18, 2016</span></h5>
                     <p>A place we share to each other, care of things around us.   
                     It's our pleasure to share culture, thoughts, interests in technology with you - our clients as well as the new visitors</p>
