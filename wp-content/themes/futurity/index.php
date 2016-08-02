@@ -16,7 +16,7 @@ $videos = getList("home-video", "menu_order date");
     </section>
 <?php endwhile; ?>
 <?php endif; ?>
-    <section class="section home-introduction fp-auto-height">
+    <section class="section home-introduction">
         <div class="container">
             <div class="col-sm-3">
                 <div content="row">
@@ -47,5 +47,14 @@ $videos = getList("home-video", "menu_order date");
             </div>
         </div>
     </section>
+    <section class="section fp-auto-height home-footer">
+        <?php get_template_part("parts/part", "footer") ?>
+    </section>
 </div>
-<?php get_footer(); ?>
+</div>
+</div>
+</div>
+</div>
+<?php wp_footer(); ?>
+</body> <!--end body-->
+</html> <!--end html -->

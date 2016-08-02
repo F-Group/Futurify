@@ -187,35 +187,6 @@
 				color: #fff;
 			}
 		}
-		.bl-our-project-button-more{
-			display: table;
-			min-height: 220px;
-			width: 100%;
-			#btn-project-more{
-				display: table-cell;
-				vertical-align: middle;
-				text-align: center;
-				background: $color_main;
-				min-height: 205px;
-				width: 100%;
-				border: none;
-				h5{
-					font-size: 20px;
-					color: #fff;
-					text-transform: uppercase;
-					&:after{
-						content: url('../img/content/our_project/add-button.png');
-						display: block;
-						margin-top: 20px;
-					}
-				}
-				p{
-					font-size: 15px;
-					text-align: center;
-					font-family: $font_cabin;
-				}
-			}
-		}
 	}
 	.bl-about-our-mission{
 		margin: 50px 0px;
