@@ -1,32 +1,14 @@
 (function ($) {
     $(document).ready(function() {
         $site.init();
-        /* Masonry news */
-        $masonry_news = $('.masonry-case');
-        /*init masonry news after all image have been loaded */
-        $masonry_news.imagesLoaded(function () {
-            $masonry_news.masonry({
-                itemSelector: '.grid-item',
-                /*get gutter-sizer (add horizontal space) in css*/
-                percentPosition: true,
-                resize: true,
-                columnWidth: '.grid-item',
-            });
-        });
-        jQuery(window).resize(function () {
-            $site.init();
-            /*init masonry news after all image have been loaded */
-            $masonry_news.imagesLoaded(function () {
-                $masonry_news.masonry({
-                    itemSelector: '.grid-item',
-                    columnWidth: '.grid-sizer',
-                    /*get gutter-sizer (add horizontal space) in css*/
-                    gutter: '.gutter-sizer',
-                    percentPosition: true,
-                    resize: true
-                });
-            });
-        });
+        $('.masonry-case').isotope({
+          itemSelector: '.grid-item',
+          percentPosition: true,
+          masonry: {
+            // use outer width of grid-sizer for columnWidth
+            columnWidth: '.grid-sizer'
+          }
+        })
     });
 
     var $site = {
