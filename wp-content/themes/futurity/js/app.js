@@ -14,7 +14,7 @@
             });
         });
         jQuery(window).resize(function () {
-            $site.init();
+            // $site.init();
             /*init masonry news after all image have been loaded */
             $masonry_news.imagesLoaded(function () {
                 $masonry_news.masonry({
@@ -58,8 +58,13 @@
                 afterLoad: function(){
                     try {
                         $(this).find('video').get(0).play();
+                        $(this).css({zIndex: 1});
                     }
                     catch (e){}
+                },
+
+                onLeave: function () {
+                    $(this).css({zIndex: -1});
                 }
             });
 
