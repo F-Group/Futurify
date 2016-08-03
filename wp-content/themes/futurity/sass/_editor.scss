@@ -1,4 +1,4 @@
-body {
+* {
   font-family: $font_cabin;
   font-size: 15px;
 }
@@ -101,8 +101,12 @@ body {
 
 .red-text {
   color: #fff;
-  background: #fa4945;
+  background: $color_main;
   padding: 3px 5px;
+}
+
+.red-txt {
+  color: $color_main;
 }
 
 .red-text-16 {
@@ -139,4 +143,22 @@ body {
       }
     }
   }
+}
+
+/* CONTACT*/
+.contact-paragraph {
+  h2 {
+    font-size: 38px;
+    line-height: 44px;
+    font-family: $font_montserrat;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 38px;
+    letter-spacing: 0.4px;
+  }
+
+
 }

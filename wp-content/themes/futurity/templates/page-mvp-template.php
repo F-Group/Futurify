@@ -11,7 +11,7 @@ get_header();
 $mvp = getList("mvp", "menu_order date");
 
 ?>
-<div class="bl-staff" data-spy="scroll" data-target="#myScrollspy2">
+<div class="bl-staff bl-mvp" data-spy="scroll" data-target="#myScrollspy2">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-xs-12 col-sm-12 col-md-12">
@@ -70,7 +70,7 @@ $mvp = getList("mvp", "menu_order date");
     <div class="staff-line clearfix">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="staff-line-des">
-                <h1>TO START A <span>PROJECT </span>,<span> DROP US </span> A LINE</h1>
+                <h1>IF YOU ARE A SUCCESS HUNGER, WE ARE MVP BUILDERS.<br>FUTURIFY EMPOWERS FUTURE OF YOUR BUSINESS.</h1>
                 <button>WE’RE READY!</button>
             </div>
         </div>

@@ -46,21 +46,15 @@
                 navigation: true,
                 navigationPosition: 'right',
                 normalScrollElements: '.home-footer',
-                /*scrollOverflow: true,
-                scrollOverflowOptions: {
-                    scrollbars: true,
-                    mouseWheel: true,
-                    hideScrollbars: false,
-                    fadeScrollbars: false,
-                    disableMouse: true
-                },*/
 
                 afterLoad: function(){
                     try {
-                        $(this).find('video').get(0).play();
-                        $(this).css({zIndex: 1});
+                        var videoNode = $(this).find('video');
+                        videoNode.length && videoNode.get(0).play();
                     }
                     catch (e){}
+
+                    $(this).css({zIndex: 1});
                 },
 
                 onLeave: function () {
