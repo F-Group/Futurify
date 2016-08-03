@@ -18,17 +18,17 @@ $videos = getList("home-video", "menu_order date");
 <?php endif; ?>
     <section class="section home-introduction">
         <div class="container">
-            <div class="col-sm-3">
+            <div class="col-xs-12 col-md-3">
                 <div content="row">
                     <h1>WE'RE EXCITED TO LEARN MORE ABOUT YOU AND YOUR NEEDS</h1>
                 </div>
             </div>
-            <div class="col-sm-5">
+            <div class="col-xs-12 col-sm-7 col-md-5">
                 <div class="row introduction-img">
                     <img class="img-responsive" src="<?php bloginfo('template_url') ?>/img/content/home/home-introdution-img.png">
                 </div>
             </div>
-            <div class="col-sm-4 home-panel">
+            <div class="col-xs-12 col-sm-5 col-md-4 home-panel">
                 <div class="row introduction-panel">
                     <img class="panel-frame img-responsive" src="<?php bloginfo('template_url') ?>/img/content/home/white-line-background.png">
                     <div class="panel-chat vertical-center-Y">

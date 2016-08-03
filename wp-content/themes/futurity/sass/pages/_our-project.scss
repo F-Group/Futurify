@@ -62,11 +62,12 @@
 					text-transform: uppercase;
 					span{
 						display: block;
-						&:after{
-							content: url('../img/content/our_project/add-button.png');
-							display: block;
-							margin-top: 20px;
-						}
+					}
+
+					&:after{
+						content: url('../img/content/our_project/add-button.png');
+						display: block;
+						margin-top: 20px;
 					}
 				}
 			}
@@ -86,7 +87,8 @@
 		}
 	}
 	.bl-our-project-success{
-		background: $color_main;
+		background: $color_main url("../img/common/pattern.png") no-repeat center center;
+		background-size: cover;
 		display: table;
 		min-height: 588px;
 		width: 100%;

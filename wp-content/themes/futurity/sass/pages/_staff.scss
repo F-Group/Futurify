@@ -125,9 +125,10 @@
     }
   }
   .staff-line {
+    background: $color_main url("../img/common/pattern.png") no-repeat center center;
+    background-size: cover;
     text-align: center;
     margin: 0px auto;
-    background: $color_main;
     padding: 100px 0px;
     h1 {
       font-size: 40px;
