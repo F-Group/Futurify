@@ -46,8 +46,7 @@ $projects = getList("project", "menu_order date");
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="bl-our-project-button-more">
                             <button id="btn-project-more">
-                                <h5>SEE MORE ONGOING
-                                <span>PROJECTS..</span></h5>
+                                <h5><span>SEE MORE ONGOING<br>PROJECTS..</span></h5>
                             </button>
                         </div>
                     </div>
