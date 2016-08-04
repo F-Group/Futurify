@@ -83,32 +83,6 @@
     background: url("../img/content/home/white-line-background.png") no-repeat;
   }
 
-  form {
-    h3 {
-      background: #FFF5D7;
-      font-size: 22px;
-      line-height: 30px;
-    }
-
-    p {
-      font-size: 15px;
-      line-height: 27px;
-      margin: 0;
-    }
-
-    .input-style {
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid $color_base;
-      margin-bottom: 18px;
-      outline: none;
-    }
-
-    .form-btn {
-      text-align: right;
-    }
-  }
-
   .action-call-title {
     @media #{$mobile} {
       font-size: 25px;

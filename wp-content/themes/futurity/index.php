@@ -25,25 +25,25 @@ $videos = getList("home-video", "menu_order date");
             </div>
             <div class="col-xs-12 col-md-9">
                 <div class="flex action-call">
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <div class="col-1">
+                        <?php if(has_post_thumbnail()) { ?>
+                        <img class="img-responsive" src="<?php the_post_thumbnail("full") ?>">
+                        <?php } else { ?>
                         <img class="img-responsive" src="<?php bloginfo('template_url') ?>/img/content/home/home-introdution-img.png">
+                        <?php } ?>
                     </div>
                     <div class="col-2 flex">
                         <div class="panel-action">
                             <!--<img class="img-responsive" src="<?php /*bloginfo('template_url') */?>/img/content/home/white-line-background.png">-->
-                            <form class="panel-content">
-                                <h3>Let's chat and create great works together!!!</h3>
-                                <p>Hello, my name is</p>
-                                <input type="text" class="input-style">
-                                <p>Reach me at this email</p>
-                                <input type="email" class="input-style">
-                                <p>And have conversation of my concern about</p>
-                                <input type="text" class="input-style">
-                                <div class="form-btn"><button class="btn-play1"></button></div>
-                            </form>
+
+                                <?php the_content(); ?>
+
                         </div>
 <!--                        <div class="panel-frame"></div>-->
                     </div>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
                 <!--<div class="row introduction-img clearfix">
 
