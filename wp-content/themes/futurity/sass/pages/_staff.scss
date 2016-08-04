@@ -94,6 +94,11 @@
 
       a {
         display: block;
+        .hover, .normal {
+          width: 45px;
+          height: 41px;
+        }
+
         .hover {
           display: none;
         }
