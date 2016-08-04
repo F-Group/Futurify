@@ -470,6 +470,8 @@
     @media (max-width: $grid-float-breakpoint-max) {
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
+        height: 100vh;
+        width: 100vw;
         > li > a {
           color: $navbar-default-link-color;
           &:hover,
@@ -604,6 +606,8 @@
     @media (max-width: $grid-float-breakpoint-max) {
       // Dropdowns get custom display
       .open .dropdown-menu {
+        height: 100vh;
+        width: 100vw;
         > .dropdown-header {
           border-color: $navbar-inverse-border;
         }

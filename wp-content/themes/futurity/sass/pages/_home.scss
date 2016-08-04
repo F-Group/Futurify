@@ -39,6 +39,10 @@
   background: $color_main;
   padding: 50px 0;
 
+  @media #{$mobile} {
+    height: auto !important;
+  }
+
   h1 {
     color: $color_light;
     margin: 0;
@@ -47,8 +51,14 @@
   .container {
     position: relative;
     padding: 0;
-    transform: translateY(-50%);
+    @include translate(0, -50%);
     top: 50%;
+
+    @media #{$mobile} {
+      @include translate(0, 0);
+      top: 0;
+      margin-top: 30px;
+    }
   }
 
   .home-panel {
@@ -63,39 +73,94 @@
     }
   }
 
-  .panel-chat {
-    position: absolute;
-    right: percentage((1 / $grid-columns) / 2);
-    @include make-col-span(5);
-    height: 383px;
-    background: $color_light;
-    z-index: 2;
-    padding: 20px 45px;
-  }
-
   .panel-frame {
     position: absolute;
     top: 50%;
     right: 0;
-    @include translate(0, -50%);
-    margin-top: -1 * percentage((1 / $grid-columns) / 2);
+    left: 0;
+    bottom: 0;
+    @include translate(-50%, -50%);
+    background: url("../img/content/home/white-line-background.png") no-repeat;
   }
 
   form {
     h3 {
       background: #FFF5D7;
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 27px;
+      margin: 0;
     }
 
     .input-style {
       width: 100%;
       border: none;
       border-bottom: 1px solid $color_base;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
       outline: none;
     }
 
     .form-btn {
       text-align: right;
+    }
+  }
+
+  .action-call-title {
+    @media #{$mobile} {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  }
+
+  .action-call {
+    position: relative;
+    overflow: hidden;
+
+    .col-2 {
+      @include make-col-span(6);
+      min-width: percentage((6 / $grid-columns));
+      position: relative;
+    }
+
+    .col-1 {
+      @include make-col-span(7);
+      min-width: percentage((7 / $grid-columns));
+    }
+
+    .panel-action {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      background: $color_light;
+      padding: 20px;
+      @include translate(-1*percentage((2 / 9)) , -50%);
+
+      @media #{$mobile} {
+        position: relative;
+        @include translate(0, 0);
+        top: -1px;
+      }
+    }
+
+    @media #{$mobile_and_tablet} {
+      margin-top: 30px;
+    }
+
+    @media #{$mobile} {
+      display: block;
+
+      .col-1, .col-2 {
+        width: 100%;
+      }
+
+      .col-1 img {
+        width: 100%;
+      }
     }
   }
 }

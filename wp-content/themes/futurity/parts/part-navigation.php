@@ -14,21 +14,15 @@
         </div>
         <div class="menu-mobile visible-xs">
             <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="<?php bloginfo('template_url') ?>/img/common/menu-ico.png">
+                <img class="menu-icon" src="<?php bloginfo('template_url') ?>/img/common/menu-ico.png">
+                <img class="close-icon" src="<?php bloginfo('template_url') ?>/img/common/close.png">
             </button>
-            <ul class="dropdown-menu">
-                <li class="page_item"><a href="/about">About</a></li>
-                <li class="page_item"><a class="active" href="/projects">Projects</a></li>
-                <li class="page_item parent">
-                    <a href="/service-process">Service & process</a>
-                    <ul>
-                        <li><a href="#">Staffing</a></li>
-                        <li><a href="#">Mvp</a></li>
-                    </ul>
-                </li>
-                <li class="page_item"><a href="/we-share">We share</a></li>
-                <li class="page_item"><a href="/contact-us">Contact us</a></li>
-            </ul>
+            <?php
+
+            wp_nav_menu(array(
+                'menu_class' => 'dropdown-menu',
+                'container' => ''));
+            ?>
         </div>
     </div>
 </nav>

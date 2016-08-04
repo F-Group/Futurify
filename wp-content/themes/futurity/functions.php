@@ -167,3 +167,9 @@ function add_class_to_wp_nav_menu($classes)
     return $classes;
 }
 add_filter('nav_menu_css_class', 'add_class_to_wp_nav_menu');
+
+function add_fisrt_nav_item($items) {
+    $homeurl = get_home_url();
+    return  $items = '<li class="menu-item home"><a href="'.$homeurl.'">FUTURIFY</a></li>' . $items;
+}
+add_filter('wp_nav_menu_items','add_fisrt_nav_item');
