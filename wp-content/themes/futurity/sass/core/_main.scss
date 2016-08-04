@@ -15,8 +15,8 @@ a {
 
 ul {
   list-style: none;
-  padding: none;
-  margin: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .home #main {
@@ -206,4 +206,49 @@ h1 {
 
 .img-container {
   overflow: hidden;
+}
+
+
+.items-group {
+  @include flex();
+
+  &.align-row {
+    @include flex-direction(row);
+  }
+
+  &.align-column {
+    @include flex-direction(column);
+  }
+
+  &.align-start {
+    @include flex-justify-content(flex-start);
+  }
+
+  &.align-end {
+    @include flex-justify-content(flex-end);
+  }
+
+  &.align-center {
+    @include flex-justify-content(center);
+  }
+
+  &.flex-wrap {
+    @include flex-wrap(wrap);
+  }
+
+  &.flex-no-wrap {
+    @include flex-wrap(nowrap);
+  }
+
+  &.vertical-top {
+    @include flex-align-items( flex-start);
+  }
+
+  &.vertical-center {
+    @include flex-align-items( center);
+  }
+
+  &.vertical-bottom {
+    @include flex-align-items( flex-end);
+  }
 }

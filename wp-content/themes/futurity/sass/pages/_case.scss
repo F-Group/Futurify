@@ -15,10 +15,7 @@
 		}
 	}
 }
-.case-step-content-des{
-	img{
-		width: 100%;
-	}
+.bl-case{
 	.bl-case-title{
 		h1{
 			font-size: 38px;
@@ -38,10 +35,10 @@
 		    }
 		}
 	}
-	.staff-steps{
-		.staff-step-content{
+	.case-steps{
+		.case-step-content{
 		    margin-bottom: 100px;
-			h5{
+		    h5{
 				text-align: right;
 				font-size: 16px;
 				font-family: $font_montserrat;
@@ -58,6 +55,171 @@
 				    bottom: -7px;
 				}
 			}
+			h1 {
+		        font-size: 28px;
+		        font-family: $font_montserrat;
+		        font-weight: 700;
+		        color: $color_main;
+		        text-transform: uppercase;
+	            margin-bottom: 30px;
+	        }
+		    .case-step-content-des{
+				img{
+					width: 100%;
+				}
+				p {
+				    font-size: 15px;
+				    font-family: $font_cabin;
+				    line-height: 28px;
+				    max-width: 442px;
+				    letter-spacing: 0.3px;
+				    color: #474747;
+				    margin: 0px;
+			        padding: 40px 0px;
+				}
+				h1{
+					font-size: 22px;
+					line-height: 38px;
+					font-family: $font_cabin;
+					font-weight: bold;
+					background: $color_main;
+					color: #fff;
+				}
+				h4{
+					font-size: 12px;
+					line-height: 36px;
+					letter-spacing: 0.3px;
+					font-family: $font_montserrat;
+					font-weight: 700;
+					color: #000;
+				}
+			}
 		}
+	}
+	.case-view{
+		padding: 100px  0px;
+		a{
+			text-decoration: none;
+			color: #fff;
+			button{
+				padding:0px 50px;
+			  	height: 40px;
+			  	background-color: #fa4945;
+			  	font-size: 14px;
+				font-family: $font_montserrat;
+				font-weight: 700;
+				border: none;
+			}
+		}
+		.case-social{
+			float: right;
+			span{
+				font-size: 14px;
+				font-family: $font_montserrat;
+				font-weight: 700;
+				color: #000;
+			}
+			ul{
+				li{
+					display: inline-block;
+					float: left;
+					margin-right: 13px;
+					a{
+						display: inline-block;
+						width: 30px;
+					    height: 28px;
+					    padding: 5px 10px;
+						@include border-radius(50%);
+						color: #fff;
+						background: #000;
+						&:hover{
+							background: $color_main;
+							color: #fff;
+						}
+						i{
+							text-align: center;
+						}
+					}
+					&:last-child{
+						margin-right: 0px;
+					}
+				}
+			}
+		}
+	}
+}
+.case-feel{
+	background: $color_main;
+	background-image: url('../img/common/line-background.png');
+	.case-feel{
+		text-align: center;
+		padding: 100px 0px;
+		h1{
+			font-size: 40px;
+			line-height: 61px;
+			font-family: $font_montserrat;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #fff;
+			margin: 0px;
+		}
+		a{
+			text-decoration: none;
+			color: $color_main;
+			button{
+				background: #fff;
+				padding: 10px 35px;
+				font-size: 14px;
+				font-family: $font_montserrat;
+				font-weight: bold;
+				text-transform: uppercase;
+				border: none;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 767px) {
+	.bl-case .bl-case-title h1{
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.bl-case .case-steps .case-step-content {
+		h5{
+			font-size: 16px;
+		}
+		h1{
+			font-size: 20px;
+		}
+		.case-step-content-des{
+			p{
+				font-size: 14px;
+				line-height: 24px;
+			}
+			h1{
+				font-size: 16px;
+				line-height: 34px;
+			}
+			h4{
+				font-size: 10px;
+				line-height: 34px;
+			}
+		}
+	}
+	.case-view{
+		text-align: center;
+		.case-social{
+			float: none !important;
+		    margin-top: 10px;
+		    ul{
+		    	text-align: center;
+		    	li{
+		    		float: none !important;
+		    	}
+		    }
+		}
+	}
+	.case-feel h1{
+		font-size: 25px;
+		line-height: 32px;
 	}
 }
