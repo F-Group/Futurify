@@ -87,7 +87,7 @@ $projects = getList("project", "menu_order date");
                         <div class="col-xs-12 col-sm-6 col-md-6">
                             <div class="case-social">
                                 <span>Share</span>
-                                <ul class="clearfix ">
+                                <ul class="clearfix">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fa fa-linkedin "></i></a></li>
