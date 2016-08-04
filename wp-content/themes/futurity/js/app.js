@@ -111,16 +111,16 @@
                   items : 3,
                   itemsDesktop : [1199,3],
                   itemsTablet : [767,1],
-                  pagination:false,
+                  pagination:false
               });              // Custom Navigation Events
               $(".next").click(function(){
                 owl.trigger('owl.next');
               });
               $(".prev").click(function(){
                 owl.trigger('owl.prev');
-              })
+              });
             $('[data-spy="scroll"]').each(function(){
-                var $spy = $(this).scrollspy('refresh');
+                $(this).scrollspy('refresh');
             });
         }
 

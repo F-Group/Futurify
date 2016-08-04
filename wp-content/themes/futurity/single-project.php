@@ -1,11 +1,4 @@
-<?php 
-/**
- * Template Name: Page case template
- *
- * @package WordPress
- * @subpackage Lse
- * @since Lse 1.0
- */
+<?php
 get_header();
 
 $projects = getList("project", "menu_order date");
