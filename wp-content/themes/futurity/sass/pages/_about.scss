@@ -235,7 +235,7 @@
 	margin: 50px 0;
 
 	.bl-about-our-mission-img{
-		background: url("../img/content/about/background-line-red.png");
+		background: url("../img/content/about/bg-line-2.png");
 		background-position: top right;
 		background-repeat: no-repeat;
 		img{
@@ -244,14 +244,17 @@
 	}
 	.bl-about-our-mission-content{
 		p{
-			line-height: 59px;
-			font-size: 36px;
 			color: #000;
 			font-weight: bold;
 			font-family: $font_cabin;
+			line-height: 59px;
+			font-size: 36px;
 			span{
 				background: $color_main;
 				color: #fff;
+				line-height: 59px;
+				font-size: 36px;
+				font-weight: bold;
 			}
 		}
 		h5{
@@ -352,6 +355,10 @@
 				p{
 					font-size: 20px;
 					line-height: 35px;
+					span{
+						font-size: 20px;
+						line-height: 35px;
+					}
 				}
 			}
 		}

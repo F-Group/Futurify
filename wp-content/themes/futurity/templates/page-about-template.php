@@ -115,7 +115,6 @@ $members = getList("member", "menu_order date");
                     <?php echo get_field("editor_bottom") ?>
                     <!--<div class="bl-about-our-mission-content">
                         <h1 class="black-title">OUR MISSION</h1>
-                        <h5>JOHN VU - PRODUCT MANANGER</h5>
                         <p>Our focus is to build highly <span>innovative</span>,   <span>interactive</span>    <span>reliable</span> web-based solutions to bring maximum values to our clients and users on time and on budget.</p>
                     </div>-->
                 </div>
