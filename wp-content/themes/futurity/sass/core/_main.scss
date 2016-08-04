@@ -171,6 +171,10 @@ h1 {
   &:focus {
     outline: none;
   }
+
+  &:hover {
+    @include opacity(0.8);
+  }
 }
 
 .btn-video-play {
