@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page Blog List template
+ * Template Name: Page Career List template
  *
  * @package WordPress
  * @subpackage Lse
@@ -73,7 +73,7 @@ get_header();
                         </div>
                     </div>
                     <div class="row list-blog">
-                        <?php echo do_shortcode("[ajax_load_more post_type='post' posts_per_page='6' max_pages='3' container_type='div' scroll='false' css_classes='col-xs-12 col-sm-12 col-md-12' button_loading_label='']") ?>
+                        <?php echo do_shortcode("[ajax_load_more post_type='career' posts_per_page='6' max_pages='3' container_type='div' scroll='false' css_classes='col-xs-12 col-sm-12 col-md-12' button_loading_label='']") ?>
                     </div>
                 </div>
             </div>
