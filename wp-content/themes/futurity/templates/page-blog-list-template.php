@@ -13,11 +13,15 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="bl-blog-list-title">
-                    <h1>SHARING IS CARING</h1>
+                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <?php the_content(); ?>
+                <?php endwhile; ?>
+                <?php endif; ?>
+                <!--<div class="bl-blog-list-title">
+                    <h1 class="black-title">SHARING IS CARING</h1>
                     <p>A place we share to each other, care of things around us.   
                     It's our pleasure to share culture, thoughts, interests in technology with you - our clients as well as the new visitors</p>
-                </div>
+                </div>-->
             </div>
         </div>
         <div class="row">
