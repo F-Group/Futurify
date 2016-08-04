@@ -27,51 +27,6 @@ get_header();
         <div class="row">
             <div class="col-md-12">
                 <div class="bl-blog-list-content ">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 bl-form-search">
-                            <form id="formSearch" class="clearfix col-xs-12 col-sm-4 col-md-4 " method="post" action="#">
-                                <div class="bl-search">
-                                    <span class="glyphicon glyphicon-search"></span>
-                                    <input class="form-control inputSearch" type="text" name="inputSearch" placeholder="Search">
-                                    <button class="btnSearch" type="submit" name="btnSearch"><span class="glyphicon glyphicon-triangle-right"></span></button>
-                                </div>
-                                <div class="bl-result">
-                                    <ul>
-                                        <li>
-                                            <a href="#">Tech stories</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tech corner</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tech Mashup</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tech stories</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tech corner</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tech Mashup</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </form>
-                            <?php
-                                $tags = get_tags();
-                                if($tags) {
-                                    $html = '<ul class="nav navbar-nav col-xs-12 col-sm-8 col-md-8">';
-                                    foreach ($tags as $tag) {
-                                        $tag_link = get_tag_link($tag->term_id);
-                                        $html .= "<li><a href='{$tag_link}'>{$tag->name}</a></li>";
-                                    }
-                                    $html .= '</ul>';
-                                }
-                                echo $html;
-                            ?>
-                        </div>
-                    </div>
                     <div class="row list-blog">
                         <?php echo do_shortcode("[ajax_load_more post_type='career' posts_per_page='6' max_pages='3' container_type='div' scroll='false' css_classes='col-xs-12 col-sm-12 col-md-12' button_loading_label='']") ?>
                     </div>

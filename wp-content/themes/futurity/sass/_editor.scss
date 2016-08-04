@@ -146,7 +146,7 @@ body {
 }
 
 /* HOME - ACTION TO CALL */
-form.panel-content {
+.panel-content {
   h3 {
     background: #FFF5D7;
     font-size: 22px;
@@ -170,6 +170,10 @@ form.panel-content {
   .form-btn {
     text-align: right;
   }
+}
+
+form .form-btn {
+  text-align: right;
 }
 
 /* CONTACT*/

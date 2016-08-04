@@ -36,9 +36,10 @@ $videos = getList("home-video", "menu_order date");
                     <div class="col-2 flex">
                         <div class="panel-action">
                             <!--<img class="img-responsive" src="<?php /*bloginfo('template_url') */?>/img/content/home/white-line-background.png">-->
-
+                            <form action="<?php echo get_field("link") ?>">
                                 <?php the_content(); ?>
-
+                                <div class="form-btn"><button class="btn-play1"></button></div>
+                            </form>
                         </div>
 <!--                        <div class="panel-frame"></div>-->
                     </div>
