@@ -69,6 +69,7 @@
             });
 
             $(document).on("scroll",function(){
+                $(".menu-mobile").removeClass('open');
                 if($(document).scrollTop()>1){
                     $("header").addClass("header-stick");
                 } else{
