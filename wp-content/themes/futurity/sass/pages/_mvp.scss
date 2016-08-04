@@ -1,3 +1,15 @@
+.bl-mvp {
+	.staff-line {
+		background: $color_main url("../img/content/contact/contact-bg.png");
+		background-size: cover;
+
+		h1 {
+			max-width: 700px;
+		}
+	}
+}
+
+/*
 .bl-mvp{
 	p{
 		font-size: 15px;
@@ -142,4 +154,4 @@
 			}
 		}
 	}
-}
+}*/
