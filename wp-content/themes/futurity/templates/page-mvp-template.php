@@ -50,10 +50,10 @@ $mvp = getList("mvp", "menu_order date");
                             while ($mvp->have_posts()) : $mvp->the_post();
                                 $num++;
                                 ?>
-                                <li class="staff-phase">
+                                <li class="mvp-phase">
                                     <a href="<?php echo '#'.$prefix_id.$num ?>">
-                                        <img class="img-responsive normal" src="<?php echo get_field("normal_icon") ?>" alt="staff-phase">
-                                        <img class="img-responsive hover" src="<?php echo get_field("hover_icon") ?>" alt="staff-phase">
+                                        <img class="img-responsive normal" src="<?php echo get_field("normal_icon") ?>" alt="mvp-phase">
+                                        <img class="img-responsive hover" src="<?php echo get_field("hover_icon") ?>" alt="mvp-phase">
                                         <h4><?php the_title() ?></h4>
                                     </a>
                                 </li>
