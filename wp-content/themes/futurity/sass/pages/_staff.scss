@@ -10,13 +10,23 @@
   }
 
   .staff-steps {
+    position: relative;
     .navbar {
       z-index: 999;
+      &.affix-top {
+        position: absolute;
+        left: 50vw;
+        //width: 25%;
+      }
       &.affix {
         position: fixed;
-        left: 62%;
+        margin-left: 50vw;;
         top: 80px;
         width: 25%;
+      }
+      &.affix-bottom {
+        position: absolute;
+        left: 50vw;
       }
     }
     .staff-step-content {
