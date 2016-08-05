@@ -9,7 +9,7 @@
 	.grid-item{
 		width: 50%;
 		padding: 0px 5px;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 		img{
 			width: 100%;
 		}
@@ -67,6 +67,9 @@
 				img{
 					width: 100%;
 				}
+				.heading{
+					padding: 15px 0px 40px;
+				}
 				p {
 				    font-size: 15px;
 				    font-family: $font_cabin;
@@ -77,13 +80,16 @@
 				    margin: 0px;
 			        padding: 40px 0px;
 				}
-				h1{
-					font-size: 22px;
-					line-height: 38px;
-					font-family: $font_cabin;
-					font-weight: bold;
-					background: $color_main;
-					color: #fff;
+				h2{
+					padding-right: 33px;
+					span{
+						background: $color_main;
+						font-size: 22px;
+						line-height: 38px;
+						font-family: $font_cabin;
+						font-weight: bold;
+						color: #fff;
+					}
 				}
 				h4{
 					font-size: 12px;
@@ -195,9 +201,12 @@
 				font-size: 14px;
 				line-height: 24px;
 			}
-			h1{
-				font-size: 16px;
-				line-height: 34px;
+			h2{
+			    padding-right: 0px;
+				span{
+					font-size: 16px;
+					line-height: 34px;
+				}
 			}
 			h4{
 				font-size: 10px;

@@ -10,23 +10,21 @@ get_header();
 
 $members = getList("member", "menu_order date");
 ?>
-
 <div class="bl-about">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="bl-about-title">
-                    <h1 class="black-title">THE FUTURIFY STORIES</h1>
+                    <h1 class="black-title"><?php echo get_field("top_title") ?></h1>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="bl-about-content clearfix">
                     <div class="col-xs-12 col-sm-6 col-md-6">
-                        <section class="section-left"><h2>We gonna tell you a story about Futurify where we call our second home.  Say hello with a young software engineer, Tri Ho, version 2012. After 3 years of working for University of Ottawa while studying and 8 months at Koneka after graduation as a web developer, he went back to Vietnam. Flame of desire and passion of youth inspirit him to build something.</h2></section>
+                        <?php echo get_field("e_top_left") ?>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6">
-                        <section class="section-right"><h2>“Behind every success there is a story</h2><h2>with a humble start, some failures, some</h2> <h2> successes and an ongoing happiness.”</h2>
-                        <h5>JOHN VU - PRODUCT MANANGER</h5></section>
+                        <?php echo get_field("e_top_right") ?>
                     </div>
                 </div>
             </div>
@@ -36,17 +34,17 @@ $members = getList("member", "menu_order date");
         <div class="bl-about-des-img">
             <div class="container">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                    <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;?>" alt="about-img"></a>
+                                                    <a href="#"><img class="img-responsive" src="<?php echo get_field("image_top") ?>" alt="about-img"></a>
                 </div>
             </div>
         </div>
         <div class="bl-about-des-content">
             <div class="container">
                 <div class="col-xs-12 col-sm-6 col-md-6">
-                    <section class="bl-des-left"><h2>Of course, Tri understood that he could not run a long and challenging road by himself. Dung Dang, one of his close friends since they were in high school, would be the perfect missing piece of the puzzle. Dung is a talented, quick-witted and hard-working software engineer who was working as a team lead at ELCA, a large and well-known technology company in Vietnam. However, Dung believes in the vision, “building world-class engineering team.</h2></section>
+                    <?php echo get_field("e_middle_left") ?>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
-                    <section class="bl-des-right"><h2>A great opportunity came from his employer Koneka, who wanted to start a remote team in Vietnam at that time. With the mindset “always start with a customer”, he told himself, <span>“It's time to kickoff a new and exciting journey."</span></h2></section>
+                    <?php echo get_field("e_middle_right") ?>
                 </div>
             </div>
         </div>
@@ -56,18 +54,12 @@ $members = getList("member", "menu_order date");
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="bl-about-main-people-img">
-                        <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/main-people.png' ;?>" alt="about-img">
+                        <img class="img-responsive" src="<?php echo get_field("image_middle") ?>" alt="about-img">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="bl-about-main-people-des">
-                        <div class="bl-about-main-people-des-content">
-                            <h2>Having a paying customer and smart,</h2>
-                            <h2> dedicated and determined founders,</h2>   
-                            <h2>Futurify was formed on June 1st, 2012.</h2>
-                            <h5>JOHN VU - PRODUCT MANANGER</h5>
-                            <p>Not only our customers but also our members want to be successful. If our members are talented and are success hunters, our customers would be benefit from these talents tremendously. It has shown to our elite management team: Vu Le, head of Human Resource and company culture, Tan Hoang, head of outsource team, and Khoa Nguyen, head of our amazing Point of Sales system department.</p>
-                        </div>
+                        <?php echo get_field("e_middle") ?>
                     </div>
                 </div>
             </div>
@@ -107,23 +99,24 @@ $members = getList("member", "menu_order date");
 
             <?php endwhile; ?>
             <?php endif; ?>
+            <?php wp_reset_query(); ?>
         </div>
     </div>
     </div>
     <div class="bl-about-our-mission">
         <div class="container">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="col-md-4">
+                <div class="col-md-5">
                     <div class="bl-about-our-mission-img">
-                        <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/about/main-people.png' ;?>" alt="about-img">
+                        <img class="img-responsive" src="<?php echo get_field("image_bottom") ?>" alt="about-img">
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="bl-about-our-mission-content">
+                <div class="col-md-7">
+                    <?php echo get_field("editor_bottom") ?>
+                    <!--<div class="bl-about-our-mission-content">
                         <h1 class="black-title">OUR MISSION</h1>
-                        <h5>JOHN VU - PRODUCT MANANGER</h5>
                         <p>Our focus is to build highly <span>innovative</span>,   <span>interactive</span>    <span>reliable</span> web-based solutions to bring maximum values to our clients and users on time and on budget.</p>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>

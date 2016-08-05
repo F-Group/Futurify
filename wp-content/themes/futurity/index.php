@@ -20,30 +20,52 @@ $videos = getList("home-video", "menu_order date");
         <div class="container">
             <div class="col-xs-12 col-md-3">
                 <div content="row">
-                    <h1>WE'RE EXCITED TO LEARN MORE ABOUT YOU AND YOUR NEEDS</h1>
+                    <h1 class="action-call-title">WE'RE EXCITED TO LEARN MORE ABOUT YOU AND YOUR NEEDS</h1>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-7 col-md-5">
-                <div class="row introduction-img">
-                    <img class="img-responsive" src="<?php bloginfo('template_url') ?>/img/content/home/home-introdution-img.png">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-5 col-md-4 home-panel">
-                <div class="row introduction-panel">
-                    <img class="panel-frame img-responsive" src="<?php bloginfo('template_url') ?>/img/content/home/white-line-background.png">
-                    <div class="panel-chat vertical-center-Y">
-                        <form class="panel-content">
-                            <h3>Let's chat and create great works together!!!</h3>
-                            <p>Hello, my name is</p>
-                            <input type="text" class="input-style">
-                            <p>Reach me at this email</p>
-                            <input type="email" class="input-style">
-                            <p>And have conversation of my concern about</p>
-                            <input type="text" class="input-style">
-                            <div class="form-btn"><button class="btn-play1"></button></div>
-                        </form>
+            <div class="col-xs-12 col-md-9">
+                <div class="flex action-call">
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <div class="col-1">
+                        <?php if(has_post_thumbnail()) { ?>
+                        <img class="img-responsive" src="<?php the_post_thumbnail("full") ?>">
+                        <?php } else { ?>
+                        <img class="img-responsive" src="<?php bloginfo('template_url') ?>/img/content/home/home-introdution-img.png">
+                        <?php } ?>
                     </div>
+                    <div class="col-2 flex">
+                        <div class="panel-action">
+                            <!--<img class="img-responsive" src="<?php /*bloginfo('template_url') */?>/img/content/home/white-line-background.png">-->
+                            <form action="<?php echo get_field("link") ?>">
+                                <?php the_content(); ?>
+                                <div class="form-btn"><button class="btn-play1"></button></div>
+                            </form>
+                        </div>
+<!--                        <div class="panel-frame"></div>-->
+                    </div>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
                 </div>
+                <!--<div class="row introduction-img clearfix">
+
+                </div>
+                <div class="row introduction-panel">
+                    <div class="col-md-7">
+                        <img class="panel-frame img-responsive" src="<?php /*bloginfo('template_url') */?>/img/content/home/white-line-background.png">-->
+                        <!--<div class="panel-chat vertical-center-Y">
+                            <form class="panel-content">
+                                <h3>Let's chat and create great works together!!!</h3>
+                                <p>Hello, my name is</p>
+                                <input type="text" class="input-style">
+                                <p>Reach me at this email</p>
+                                <input type="email" class="input-style">
+                                <p>And have conversation of my concern about</p>
+                                <input type="text" class="input-style">
+                                <div class="form-btn"><button class="btn-play1"></button></div>
+                            </form>
+                        </div>-->
+                    <!--</div>
+                </div>-->
             </div>
         </div>
     </section>
