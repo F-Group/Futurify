@@ -106,18 +106,34 @@
         },
 
         _initSlide: function(){
-              $("#owl-project").owlCarousel({
-                  autoPlay: 3000, //Set AutoPlay to 3 seconds
+            var $owl = $(".owl-carousel");
+            $owl.owlCarousel({
+                  autoPlay: true, //Set AutoPlay to 3 seconds
                   items : 3,
-                  itemsDesktop : [1199,3],
-                  itemsTablet : [767,1],
-                  pagination:false
-              });              // Custom Navigation Events
-              $(".next").click(function(){
-                owl.trigger('owl.next');
+                  autoplay:true,
+                  autoplayTimeout:3000,
+                  autoplayHoverPause:true ,
+                  loop : true,
+                  //navContainer : 'navContainerClass',
+                  responsive : {
+                      768 : {
+                          items : 3
+                      },
+                      0 : {
+                          items : 1
+                      }
+                  },
+                  pagination:false,
+                  // nav : true
+              });
+
+            // Custom Navigation Events
+            $owl.trigger('play.owl.autoplay',[3000]);
+             $(".next").click(function(){
+                 $owl.trigger('next.owl.carousel');
               });
               $(".prev").click(function(){
-                owl.trigger('owl.prev');
+                  $owl.trigger('prev.owl.carousel');
               });
             $('[data-spy="scroll"]').each(function(){
                 $(this).scrollspy('refresh');
