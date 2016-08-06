@@ -61,6 +61,7 @@ $videos = getList("home-video", "menu_order date");
 </div>
 </div>
 </div>
+
 <?php wp_footer(); ?>
 </body> <!--end body-->
 </html> <!--end html -->

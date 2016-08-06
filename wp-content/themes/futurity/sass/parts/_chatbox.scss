@@ -1,0 +1,46 @@
+.chat-box {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  right: 218px;
+     .chat-box-title {
+       height: 38px ;
+       width: 236px;
+
+       background: #fc7a77;
+       color: #fff;
+       border-radius: 5px 5px 0 0;
+       .chat-title-icon {
+         padding: 0;
+         border-radius: 5px 0 0 0;
+         height:100%;
+         background-color: #ff9997;
+         .chat-icon {
+           //background: url(../images/support-contacts.png) no-repeat top center;
+           display: block;
+           width: 25px;
+           height: 25px;
+           margin: auto;
+           background: url('../img/common/chat.svg') no-repeat center center ;
+           background-size: 100% ;
+         }
+       }
+       .chat-title-content {
+         -webkit-justify-content: space-between;
+         -moz-justify-content: space-between;
+         -ms-justify-content: space-between;
+         -o-justify-content: space-between;
+         justify-content: space-between;
+         .arrow {
+         }
+         .arrow-up {
+           display: block;
+           float: right;
+           width: 25px;
+           height: 25px;
+           background: url('../img/common/up-arrow.svg') no-repeat center center ;
+         }
+       }
+     }
+
+}

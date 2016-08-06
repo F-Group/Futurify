@@ -1,4 +1,6 @@
             </div>
+            <?php get_template_part("parts/part", "chat-box") ?>
+
             <?php get_template_part("parts/part", "footer") ?>
         </div>
     </div>
