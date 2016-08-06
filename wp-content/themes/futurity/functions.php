@@ -74,7 +74,7 @@ function tsg_scripts() {
         '/js/lib/bootstrap.min.js',
         '/js/lib/jquery.fullPage.min.js',
         '/js/lib/scrolloverflow.min.js',
-        '/js/lib/owl-carousel/owl.carousel.js',
+        '/js/lib/owl-carousel/owl.carousel.min.js',
         '/js/lib/isotope/isotope.pkgd.min.js',
         '/js/app.js'
     );
@@ -84,7 +84,7 @@ function tsg_scripts() {
 
     $styles = array(
         '/js/lib/owl-carousel/owl.theme.css',
-        '/js/lib/owl-carousel/owl.carousel.css',
+        '/js/lib/owl-carousel/owl.carousel.min.css',
         '/css/jquery.fullPage.css',
         '/css/font-awesome.min.css'
     );

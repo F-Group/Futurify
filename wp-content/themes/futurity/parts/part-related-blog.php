@@ -3,7 +3,7 @@
 <div class="related-blog clearfix">
     <div class="col-md-12">
         <h1>WHAT'S NEXT?</h1>
-        <div id="owl-project">
+        <div id="owl-project" class="owl-carousel">
            <?php while ($projects->have_posts()) : $projects->the_post(); ?>
 
           <div class="item"><a href="<?php the_permalink(); ?>">

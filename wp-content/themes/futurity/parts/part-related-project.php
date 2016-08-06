@@ -3,7 +3,7 @@
 <div class="related-project clearfix">
     <div class="col-md-12">
         <h1>RELATED PROJECTS</h1>
-        <div id="owl-project">
+        <div id="owl-project" class="owl-carousel">
             <?php if($projects->have_posts()) { ?>
                 <?php while ($projects->have_posts()) : $projects->the_post(); ?>
                     <?php if(has_post_thumbnail()) { ?>
