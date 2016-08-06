@@ -68,7 +68,7 @@
 
   .home-ft >.container {
     position: relative;
-    padding: 0;
+    //padding: 0;
     //@include translate(0, -50%);
     //top: 90px;
 
@@ -136,6 +136,7 @@
         position: relative;
         @include translate(0, 0);
         top: -1px;
+        margin: 0 auto;
       }
     }
 

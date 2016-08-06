@@ -22,8 +22,9 @@ $options = get_option("eto_settings");
             <div class="footer-03 col-xs-12 col-md-3">
                 <p>Subscribe to our newsletter! </p>
                 <div class="newsletter">
-                    <input type="text" class="form-control" placeholder="Email Address">
-                    <button class="btn btn-play"><i class="fa fa-caret-right"></i></button>
+                    <?php dynamic_sidebar("newsletter-sidebar"); ?>
+                    <!--<input type="text" class="form-control" placeholder="Email Address">
+                    <button class="btn btn-play"><i class="fa fa-caret-right"></i></button>-->
                 </div>
             </div>
             <div class="footer-social visible-xs col-xs-12">

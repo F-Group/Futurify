@@ -23,7 +23,7 @@
         _initHomePage: function() {
             $('#homePage').fullpage({
                 verticalCentered: false,
-                scrollBar: true,
+                scrollBar: false,
                 css3: true,
                 scrollingSpeed: 800,
                 navigation: true,
