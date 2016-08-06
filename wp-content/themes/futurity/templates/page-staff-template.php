@@ -44,7 +44,7 @@ $staff = getList("staff", "menu_order date");
                         }
                         ?>
                     </div>
-                    <ul id="myScrollspy" data-offset-top="200" data-offset-bottom="1100" data-spy="affix" class="col-xs-12 col-sm-4 col-md-4 nav navbar">
+                    <ul id="myScrollspy" data-offset-top="200" data-offset-bottom="1200" data-spy="affix" class="col-xs-12 col-sm-4 col-md-4 nav navbar">
                         <?php
                         $num = 0;
                         if( $staff->have_posts() ) {
