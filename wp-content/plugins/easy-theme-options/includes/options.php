@@ -46,7 +46,7 @@ $eto_custom_meta_fields = array(
 		'label'=> 'Address',
 		'desc'	=> 'Your address.',
 		'id'	=> $prefix.'address',
-		'type'	=> 'text'
+		'type'	=> 'textarea'
 	),
 	array(
 		'label'=> 'Phone',

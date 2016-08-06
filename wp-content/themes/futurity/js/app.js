@@ -23,7 +23,7 @@
         _initHomePage: function() {
             $('#homePage').fullpage({
                 verticalCentered: false,
-                scrollBar: true,
+                scrollBar: false,
                 css3: true,
                 scrollingSpeed: 800,
                 navigation: true,
@@ -61,6 +61,11 @@
                 } else{
                     $("header").removeClass("header-stick");
                 }
+            });
+
+            $(".menu-item-has-children").click(function (e) {
+                if(this.firstChild == e.target)
+                    e.preventDefault();
             });
         },
 
