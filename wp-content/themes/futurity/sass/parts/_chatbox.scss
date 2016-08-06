@@ -3,9 +3,9 @@
   bottom: 0;
   z-index: 10;
   right: 218px;
+  width: 236px;
      .chat-box-title {
        height: 38px ;
-       width: 236px;
 
        background: #fc7a77;
        color: #fff;
@@ -41,6 +41,28 @@
            background: url('../img/common/up-arrow.svg') no-repeat center center ;
          }
        }
-     }
 
+
+     }
+  .chat-box-content {
+    height: 270px ;
+    background-color: #fff;
+  }
+  .chat-box-input {
+    background-color: #fff;
+    padding: 12px 13px;
+    border-top:  1px #e3e3e3 solid;
+    input, input:focus, input::selection {
+      border: none;
+      outline : none;
+    }
+    .send {
+      display: block ;
+      width: 25px;
+      height: 25px;
+      margin: auto;
+      background: url('../img/common/chat.svg') no-repeat center center ;
+      background-size: 100% ;
+    }
+  }
 }
