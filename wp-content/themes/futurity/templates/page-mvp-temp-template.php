@@ -1,11 +1,5 @@
 <?php
-/**
- * Template Name: Page mvp draff template
- *
- * @package WordPress
- * @subpackage Lse
- * @since Lse 1.0
- */
+
 get_header();
 
 $projects = getList("project", "menu_order date");

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page Our Project template
+ * Template Name: Page Project template
  *
  * @package WordPress
  * @subpackage Lse
@@ -96,8 +96,9 @@ $projects = getList("project", "menu_order date");
         </div>
         <div class="col-md-12 bl-our-project-success ">
             <div class="bl-our-project-success-content">
-                <h1>WE ARE PASSIONATE ABOUT MAKING PEOPLE WHO WE WORK WITH SUCCESS</h1>
-                <button class="btn-about-us">LEARN ABOUT US!</button>
+                <?php $url = get_field("button_link") ?>
+                <h1><?php echo get_field("block_text") ?></h1>
+                <button class="btn-about-us"><a href="<?php if(!empty($url)) {echo $url["url"];} ?>"><?php echo get_field("button_text") ?></a></button>
             </div>
         </div>
     </div>
