@@ -29,7 +29,8 @@ $videos = getList("home-video", "menu_order date");
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                             <div class="col-1">
                                 <?php if(has_post_thumbnail()) { ?>
-                                    <img class="img-responsive" src="<?php the_post_thumbnail_url("full") ?>">
+                                    <img class="img-responsive desktop" src="<?php the_post_thumbnail_url("full") ?>">
+                                    <img class="img-responsive mobile" src="<?php echo get_field("image_mobile") ?>">
                                 <?php } else { ?>
                                     <img class="img-responsive" src="<?php bloginfo('template_url') ?>/img/content/home/home-introdution-img.png">
                                 <?php } ?>
