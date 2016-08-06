@@ -28,7 +28,6 @@
         }
       }
     }
-
     .btn-main {
       float: right;
     }
@@ -56,12 +55,14 @@
     color: $color_main;
   }
 
-  .contact-social a {
-    font-size: 23px;
-    color: $color_light;
-    margin-right: 20px;
+  .contact-social {
+    padding-left: 30px;
+    a {
+      font-size: 23px;
+      color: $color_light;
+      margin-right: 20px;
+    }
   }
-
   .service-choice {
     @include make-col-span(3);
     display: block;
@@ -92,5 +93,72 @@
 
   .btn-main {
     font-weight: bold;
+    font-family: $font_montserrat;
+    padding: 10px 20px;
+  }
+  .contact-hiring{
+    font-family: $font_montserrat;
+    font-weight: bold;
+  }
+}
+form{
+  .wpcf7-form-control-wrap {
+    input[type=radio]{
+       -webkit-appearance: none;
+       -moz-appearance:    none;
+       appearance:         none;
+       background: #fff !important;
+       width: 17px;
+       height: 17px;
+       @include border-radius(50% !important);
+       position: relative;
+       margin-right: 10px;
+      &:checked{
+        &:after{
+          content: "";
+          width: 5px;
+          height: 5px;  
+          @include border-radius(50%);
+            position: absolute;
+            left: 35%;
+            right: 0;
+            display: block;
+            background: #000;
+            bottom: 35%;
+        }
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
+.form-content{
+  h1{
+    margin-bottom: 50px;
+    &:after{
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: #fff;
+      display: inline-block;
+    }
+  }
+}
+@media #{$mobile}{
+  .contact-paragraph {
+    h2{
+      font-size: 25px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+  .form-content{
+    h1{
+      font-size: 25px;
+      line-height: 30px;
+    }
   }
 }

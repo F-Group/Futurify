@@ -53,7 +53,7 @@ $google_map = get_field('google_map');
                         <a target="_blank" href="<?php echo $options['eto_twitter'];?>"><i class="fa fa-twitter"></i></a>
                         <a target="_blank" href="<?php echo $options['eto_linkedin'];?>"><i class="fa fa-linkedin"></i></a>
                     </div>
-                    <h3>WE ARE HIRING!</h3>
+                    <h3 class="contact-hiring">WE ARE HIRING!</h3>
                     <button class="btn btn-main">CONTACT US!</button>
                 </div>
             </div>
