@@ -42,6 +42,7 @@ $staff = getList("staff", "menu_order date");
                                 <?php
                             endwhile;
                         }
+
                         ?>
                     </div>
                     <ul id="myScrollspy" data-offset-top="200" data-offset-bottom="1200" data-spy="affix" class="col-xs-12 col-sm-4 col-md-4 nav navbar">
@@ -61,6 +62,7 @@ $staff = getList("staff", "menu_order date");
                                 <?php
                             endwhile;
                         }
+
                         ?>
                     </ul>
                 </div>
@@ -71,8 +73,10 @@ $staff = getList("staff", "menu_order date");
     <div class="staff-line clearfix">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="staff-line-des">
-                <h1>TO START A <span>PROJECT </span>,<span> DROP US </span> A LINE</h1>
-                <button>WE’RE READY!</button>
+                <?php wp_reset_query(); ?>
+                <?php $url = get_field("button_link") ?>
+                <h1><?php echo get_field("block_text") ?></h1>
+                <button><a href="<?php if(!empty($url)) {echo $url["url"];} ?>"><?php echo get_field("button_text") ?></a></button>
             </div>
         </div>
     </div>
