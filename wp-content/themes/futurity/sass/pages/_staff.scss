@@ -13,21 +13,24 @@
     position: relative;
     .navbar {
       z-index: 999;
-      &.affix-top {
-        position: absolute;
-        left: 50vw;
-        //width: 25%;
-      }
-      &.affix {
-        position: fixed;
-        margin-left: 50vw;;
-        top: 80px;
-        width: 25%;
-      }
-      &.affix-bottom {
-        position: absolute;
-        left: 50vw;
-      }
+      position: fixed;
+      top : 100px;
+      left: 60vw;
+      //&.affix-top {
+      //  position: absolute;
+      //  left: 50vw;
+      //  //width: 25%;
+      //}
+      //&.affix {
+      //  position: fixed;
+      //  margin-left: 50vw;;
+      //  top: 80px;
+      //  width: 25%;
+      //}
+      //&.affix-bottom {
+      //  position: absolute;
+      //  left: 50vw;
+      //}
     }
     .staff-step-content {
       margin: 50px 0px;
