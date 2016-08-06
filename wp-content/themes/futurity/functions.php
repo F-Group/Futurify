@@ -72,8 +72,8 @@ function tsg_scripts() {
     // custom js
     $scripts = array(
         '/js/lib/bootstrap.min.js',
-        '/js/lib/jquery.fullPage.min.js',
         '/js/lib/scrolloverflow.min.js',
+        '/js/lib/jquery.fullPage.min.js',
         '/js/lib/owl-carousel/owl.carousel.min.js',
         '/js/lib/isotope/isotope.pkgd.min.js',
         '/js/app.js'

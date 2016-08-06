@@ -30,6 +30,14 @@
                 navigationPosition: 'right',
                 normalScrollElements: '.home-footer',
                 fitToSection: false,
+                scrollOverflow: true,
+                scrollOverflowOptions: {
+                    scrollbars: true,
+                    mouseWheel: true,
+                    hideScrollbars: false,
+                    fadeScrollbars: false,
+                    disableMouse: true
+                },
 
                 afterLoad: function(){
                     try {

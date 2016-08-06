@@ -110,7 +110,8 @@ for($x = 0; $x < 4; $x++) {
                 <div class="case-view clearfix">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="col-xs-12 col-sm-6 col-md-6">
-                            <a href="<?php echo get_field('link_project_page')["url"] ;?>"><button>Vist the site</button></a>
+                            <?php $url = get_field('link_project_page'); ?>
+                            <a href="<?php if(!empty($url)) {echo $url["url"];} else {echo '#';}?>"><button>Vist the site</button></a>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
                             <div class="case-social">
