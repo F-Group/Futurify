@@ -64,7 +64,8 @@
             });
 
             $(".menu-item-has-children").click(function (e) {
-                e.preventDefault();
+                if(this.firstChild == e.target)
+                    e.preventDefault();
             });
         },
 
