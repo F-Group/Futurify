@@ -111,6 +111,29 @@
 				margin-left: 10px;
 			}
 
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 13px;
+			}
+
+			span {
+				font-size: 14px;
+				font-family: $font_montserrat;
+				font-weight: 700;
+				color: #000;
+			}
+
+			a {
+				display: inline-block;
+				width: 30px;
+				height: 28px;
+				padding: 5px 10px;
+				@include border-radius(50%);
+				color: $color_light;
+				background: $color_base;
+			}
+
 		}
 	}
 }

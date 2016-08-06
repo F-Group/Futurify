@@ -173,3 +173,5 @@ function add_fisrt_nav_item($items) {
     return  $items = '<li class="menu-item home"><a href="'.$homeurl.'">FUTURIFY</a></li>' . $items;
 }
 add_filter('wp_nav_menu_items','add_fisrt_nav_item');
+
+add_filter( 'tinymce_templates_enable_media_buttons', function(){ return true; } );

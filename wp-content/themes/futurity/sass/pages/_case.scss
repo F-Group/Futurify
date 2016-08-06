@@ -16,25 +16,7 @@
 	}
 }
 .bl-case{
-	.bl-case-title{
-		h1{
-			font-size: 38px;
-			line-height: 44px;
-			font-family: $font_montserrat;
-			font-weight: 700;
-			max-width: 221px;
-			margin: 0px;
-		    margin-bottom: 45.8px;
-		    &:after{
-		    	content: "";
-			    display: inline-block;
-			    width: 10px;
-			    height: 10px;
-			    background: $color_main;
-		        margin-left: 8px;
-		    }
-		}
-	}
+
 	.case-steps{
 		.case-step-content{
 		    margin-bottom: 100px;
@@ -128,7 +110,7 @@
 			ul{
 				li{
 					display: inline-block;
-					float: left;
+					vertical-align: middle;
 					margin-right: 13px;
 					a{
 						display: inline-block;
@@ -231,4 +213,8 @@
 		font-size: 25px;
 		line-height: 32px;
 	}
+}
+
+.addthis_button_pinterest .pin_it_iframe_widget {
+	display: none;
 }
