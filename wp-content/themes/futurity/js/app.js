@@ -62,6 +62,10 @@
                     $("header").removeClass("header-stick");
                 }
             });
+
+            $(".menu-item-has-children").click(function (e) {
+                e.preventDefault();
+            });
         },
 
         _initAboutPage: function() {

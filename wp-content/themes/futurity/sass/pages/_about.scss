@@ -63,6 +63,7 @@
 					height:50% ;
 					content:"";
 					background-color:$color_main;
+					margin-bottom: -1px;
 			}
 
 			img{
@@ -98,19 +99,15 @@
 		}
 	}
 	.bl-about-main-people{
-		padding: 0px 50px;
-	    margin: 50px 0px;
+		padding: 0 50px;
+	    margin: 100px 0 75px;
 		.bl-about-main-people-img{
-			background: url('../img/content/about/background-line-red.png');
-		    background-position: top right;
-		    background-repeat: no-repeat;
-			img{
-			    padding: 22px 22px 0px 0px;
-			}
+			@extend .pattern-bg;
 		}
 		.bl-about-main-people-des{
 			display: table;
-		    min-height: 560px;
+			margin-top: 50px;
+
 			.bl-about-main-people-des-content{
 				display: table-cell;
 				vertical-align: middle;
@@ -245,15 +242,16 @@
 }
 
 .bl-about-our-mission{
-	margin: 50px 0;
+	margin: 100px 0;
 
 	.bl-about-our-mission-img{
-		background: url("../img/content/about/bg-line-2.png");
+		/*background: url("../img/content/about/bg-line-2.png");
 		background-position: top right;
 		background-repeat: no-repeat;
 		img{
 			padding: 22px 22px 0px 0px;
-		}
+		}*/
+		@extend .pattern-bg;
 	}
 	.bl-about-our-mission-content{
 		p{
