@@ -30,6 +30,10 @@ body {
     font-weight: 500;
     padding: 0 93px;
     line-height: 26px;
+
+    @media #{$mobile} {
+      padding: 0;
+    }
   }
 }
 
