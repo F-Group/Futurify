@@ -35,17 +35,16 @@ $google_map = get_field('google_map');
                         <div class="contact-field contact-address">
                             <div class="contact-icon"><i class="fa fa-map-marker"></i></div>
                             <div class="contact-text">
-                                <span>Ho Chi Minh City</span><br>
-                                <span>21A Go Dau Str, Tan Quy Ward, Tan Phu District, HCMC, Vietnam</span>
+                                <?php echo $options['eto_address'];?>
                             </div>
                         </div>
                         <div class="contact-field contact-mail">
                             <div class="contact-icon"><i class="fa fa-envelope-o"></i></div>
-                            <div class="contact-text"><span>info@futurify.vn</span></div>
+                            <div class="contact-text"><span><?php echo $options['eto_email'];?></span></div>
                         </div>
                         <div class="contact-field contact-phone">
                             <div class="contact-icon"><i class="fa fa-phone"></i></div>
-                            <div class="contact-text"><span>(+84) 83-559-0006</span></div>
+                            <div class="contact-text"><span><?php echo $options['eto_phone'];?></span></div>
                         </div>
                     </div>
                     <div class="contact-social">
@@ -54,7 +53,9 @@ $google_map = get_field('google_map');
                         <a target="_blank" href="<?php echo $options['eto_linkedin'];?>"><i class="fa fa-linkedin"></i></a>
                     </div>
                     <h3>WE ARE HIRING!</h3>
-                    <button class="btn btn-main">CONTACT US!</button>
+                    <?php wp_reset_query(); ?>
+                    <?php $url = get_field("button_link") ?>
+                    <button class="btn btn-main"><a href="<?php if(!empty($url)) {echo $url["url"];} ?>">CONTACT US!</a></button>
                 </div>
             </div>
         </div>
