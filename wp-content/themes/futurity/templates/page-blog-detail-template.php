@@ -10,6 +10,7 @@ get_header();
 $options = get_option("eto_settings");
 $google_map = get_field('location');
 ?>
+<img class="img-responsive img-banner" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/banner_detail.png' ;?>" alt="blog-img">
 <div class="bl-blog-detail">
        <div class="container">
         <div class="row">
