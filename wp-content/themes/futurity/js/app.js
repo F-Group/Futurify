@@ -17,6 +17,7 @@
             this._initGMap();
             this._initSlide();
             this._initAboutPage();
+            this._initProjectDetail();
         },
 
         _initHomePage: function() {
@@ -121,6 +122,20 @@
               });
             $('[data-spy="scroll"]').each(function(){
                 $(this).scrollspy('refresh');
+            });
+        },
+
+        _initProjectDetail: function () {
+            var $imgGroup = $(".imgList");
+            $imgGroup.each(function () {
+                try {
+                    var imgList = $(this).find("img").removeAttr("width height");
+                    var parentNode = $(this).parent().find(".masonry-case");
+                    var item = $("<div class='grid-item'></div>");
+                    imgList.each(function () {
+                        parentNode.append(item.clone().html(this));
+                    })
+                } catch(e){}
             });
         }
 

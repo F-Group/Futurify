@@ -1,7 +1,16 @@
 <?php
 get_header();
 
-$projects = getList("project", "menu_order date");
+$steps = array();
+$num = 0;
+
+for($x = 0; $x < 4; $x++) {
+    $title = get_field("step_title_s".($x+1));
+    if(!empty($title)) {
+        $steps[$num++] = $title;
+    }
+}
+
 ?>
 <div class="block">
     <div class="bl-case">
@@ -9,63 +18,90 @@ $projects = getList("project", "menu_order date");
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="bl-case-title">
-                        <h1 class="black-title">SMART PROPOSITITION</h1>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                            <?php
+                                $title = get_field("display_title");
+                                if(!empty($title)) {
+                                    echo $title;
+                                } else {
+                            ?>
+                            <h1 class="black-title"><?php the_title() ?></h1>
+                        <?php } endwhile; ?>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="case-steps clearfix">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="case-step-content ">
-                            <h5>1/4</h5> 
+                            <h5>1/4</h5>
                             <div class="case-step-content-des clearfix">
                                 <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <h1>THE CHALLENGE</h1>
+                                    <h1><?php echo get_field("step_title_s1") ?></h1>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <p>Wanna develop a new idea or improve on the existing software? Although your organization have their internal development team or not, our honest, quick-witted and hard-working will help you to fulfill your needs to accomplish high-functioning products. </p>
+                                    <?php echo get_field("editor_s1") ?>
+                                </div>
+                            </div>
+                            <div class="case-step-content-des clearfix">
+<!--                                --><?php //echo get_field("editor_image") ?>
+                                <!--<div class="col-xs-12 col-sm-6 col-md-6">
+                                    <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;*/?>" alt="about-img">
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;?>" alt="about-img">
+                                    <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;*/?>" alt="about-img">
+                                </div>-->
+                                <div class="hidden imgList">
+                                    <?php echo get_field("editor_image") ?>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;?>" alt="about-img">
+                                <div class="masonry-case">
+                                    <div class="grid-sizer"></div>
+                                    <div class="gutter-sizer"></div>
+                                    <!--<div class="grid-item">
+                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;*/?>" alt="about-img">
+                                    </div>
+                                    <div class="grid-item">
+                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;*/?>" alt="about-img">
+                                    </div>-->
                                 </div>
                             </div>
                         </div>
                         <div class="case-step-content">
                             <h5>2/4</h5>
-                            <h1>OUR APPROACH</h1>
+                            <h1><?php echo get_field("step_title_s2") ?></h1>
                             <div class="case-step-content-des clearfix">
                                 <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <p>We gonna tell you a story about Futurify where we call our second home.  Say hello with a young software engineer, Tri Ho, version 2012. After 3 years of working for University of Ottawa while studying and 8 months at Koneka after graduation as a web developer, he went back to Vietnam. Flame of desire and passion of youth inspirit him to build something.</p>
+                                    <?php echo get_field("editor_s2_left") ?>
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <h2><span>“The FUTURIFY team refined our brand,</span> <span>created a rockin' style guide and brand</span> <span>book, and designed a web site that we're</span> <span>extremely proud of.”</span></h2>
-                                    <h4>JOHN VU - PRODUCT MANANGER</h4>
+                                    <?php echo get_field("editor_s2_right") ?>
                                 </div>
                             </div>
                         </div>
                         <div class="case-step-content">
                             <h5>3/4</h5>
-                            <h1>THE RESULT</h1>
+                            <h1><?php echo get_field("step_title_s3") ?></h1>
                             <div class="case-step-content-des clearfix">
+                                <div class="hidden imgList">
+                                    <?php echo get_field("editor_s3") ?>
+                                </div>
                                 <div class="masonry-case">
                                     <div class="grid-sizer"></div>
                                     <div class="gutter-sizer"></div>
-                                    <div class="grid-item">
-                                        <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;?>" alt="about-img">
+                                    <!--<div class="grid-item">
+                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;*/?>" alt="about-img">
                                     </div>
                                     <div class="grid-item">
-                                        <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;?>" alt="about-img">
+                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/case/phone.png' ;*/?>" alt="about-img">
                                     </div>
                                     <div class="grid-item">
-                                        <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/case/case2.png' ;?>" alt="about-img">
+                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/case/case2.png' ;*/?>" alt="about-img">
                                     </div>
                                     <div class="grid-item">
-                                        <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/case/case3.png' ;?>" alt="about-img">
+                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/case/case3.png' ;*/?>" alt="about-img">
                                     </div>
                                     <div class="grid-item">
-                                        <img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/case/case1.png' ;?>" alt="about-img">
-                                    </div>
+                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/case/case1.png' ;*/?>" alt="about-img">
+                                    </div>-->
                                 </div>
                             </div>
                         </div>
@@ -74,17 +110,17 @@ $projects = getList("project", "menu_order date");
                 <div class="case-view clearfix">
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="col-xs-12 col-sm-6 col-md-6">
-                            <a href="#"><button>Vist the site</button></a>
+                            <a href="<?php echo get_field('link_project_page')["url"] ;?>"><button>Vist the site</button></a>
                         </div>
                         <div class="col-xs-12 col-sm-6 col-md-6">
                             <div class="case-social">
-                                <span>Share</span>
-                                <ul class="clearfix">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin "></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <ul class="clearfix addthis_toolbox addthis_default_style">
+                                    <li><span>Share</span></li>
+                                    <li><a href="#" class="addthis_button_facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#" class="addthis_button_twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" class="addthis_button_linkedin"><i class="fa fa-linkedin "></i></a></li>
+                                    <li><a href="#" class="addthis_button_google_plusone_share"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#" class="addthis_button_pinterest"><i class="fa fa-pinterest-p"></i></a></li>
                                 </ul>
                             </div>
                         </div>

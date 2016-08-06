@@ -14,10 +14,15 @@
                 </div>
                 <div class="bl-blog-detail-relate row">
                     <div class="col-md-6 col-xs-6 tags"> <?php the_tags(__('View posts by tags: '), '', '');?></div>
-                    <div class="social-sharing"> <?php echo __( 'SHARE ') ?>
-                        <?php if ( function_exists( 'ADDTOANY_SHARE_SAVE_KIT' ) ) { ADDTOANY_SHARE_SAVE_KIT(); } ?>
-<!--                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<!--                        <div class="addthis_sharing_toolbox"></div>-->
+                    <div class="col-md-6 col-xs-6">
+                        <ul class="social-sharing addthis_toolbox addthis_default_style">
+                            <li><span>Share</span></li>
+                            <li><a href="#" class="addthis_button_facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="addthis_button_twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="addthis_button_linkedin"><i class="fa fa-linkedin "></i></a></li>
+                            <li><a href="#" class="addthis_button_google_plusone_share"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" class="addthis_button_pinterest"><i class="fa fa-pinterest-p"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
