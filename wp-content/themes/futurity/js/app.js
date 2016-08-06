@@ -53,10 +53,15 @@
                     $(this).css({zIndex: -1});
                 }
             });
-            $('#preloader').delay(350).fadeOut('slow');
-            $('body').delay(350).css({
-                'overflow': 'visible'
+
+            $(window).load(function() {
+                // Animate loader off screen
+                $('#preloader').fadeOut('slow');
+                $('body').css({
+                    'overflow': 'visible'
+                });
             });
+
             $(document).on("scroll",function(){
                 $(".menu-mobile").removeClass('open');
                 if($(document).scrollTop()>1){
