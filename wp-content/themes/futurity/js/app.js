@@ -21,6 +21,11 @@
         },
 
         _initHomePage: function() {
+            $(".section").click(function () {
+                var videoNode = $(this).find('video');
+                videoNode.length && videoNode[0].play();
+            });
+
             $('#homePage').fullpage({
                 verticalCentered: false,
                 scrollBar: false,
@@ -41,8 +46,7 @@
 
                 afterLoad: function(){
                     try {
-                        var videoNode = $(this).find('video');
-                        videoNode.length && videoNode.get(0).play();
+                        $(this).trigger('click');
                     }
                     catch (e){}
 
