@@ -56,8 +56,13 @@
     right: 0;
     bottom: 0;
     margin-top: 100px;
+    @include transition(all 0.2s ease);
 
     @media #{$mobile_and_tablet} {
+      position: relative;
+    }
+    
+    @media only screen and (max-height: 940px) {
       position: relative;
     }
   }
