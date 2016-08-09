@@ -114,6 +114,10 @@ body {
   color: $color_main;
 }
 
+.yellow-txt {
+  background-color: #FFF5D7;
+}
+
 .red-text-16 {
   @extend .red-text;
   font-size: 16px;
@@ -153,7 +157,6 @@ body {
 /* HOME - ACTION TO CALL */
 .panel-content {
   h3 {
-    background: #FFF5D7;
     font-size: 22px;
     line-height: 30px;
   }
