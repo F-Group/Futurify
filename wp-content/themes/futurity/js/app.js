@@ -161,8 +161,12 @@
               $(".prev").click(function(){
                   $owl.trigger('prev.owl.carousel');
               });
-            $('[data-spy="scroll"]').each(function(){
-                $(this).scrollspy('refresh');
+            // $('[data-spy="scroll"]').each(function(){
+            //     $(this).scrollspy('refresh');
+            // });
+            $("a[rel='m_PageScroll2id']").mPageScroll2id({
+                scrollSpeed: 500,
+                offset : 100
             });
         },
 

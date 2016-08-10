@@ -77,6 +77,17 @@
 					display: inline-block;
 					text-align: center;
 					float: left;
+					&.current-menu-item {
+						a {
+							background-color: $color_main;
+							color: #fff;
+							&:hover {
+								opacity: 0.8;
+								color: #fff;
+								background-color : $color_main;
+							}
+						}
+					}
 					a {
 						padding: 0px 10px !important;
 					}

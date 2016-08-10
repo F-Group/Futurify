@@ -62,9 +62,8 @@
 				display: none;
 			}
 		}
-		&.active {
 
-			a {
+		a.mPS2id-highlight-first  {
 				color: $color_main;
 				.hover {
 					display: block;
@@ -72,8 +71,8 @@
 				.normal {
 					display: none;
 				}
-			}
 		}
+
 	}
 
 }
