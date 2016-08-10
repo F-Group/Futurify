@@ -54,6 +54,111 @@
       font-family: $font_montserrat;
       font-weight: 700;
   }
+
+  .owl-carousel {
+    .bl-our-project-item{
+      margin: 0px 0px 18px;
+      position: relative;
+      overflow: hidden;
+
+      a {
+        display: block;
+        position: relative;
+
+        &:hover {
+          .outer {
+            opacity: 1;
+          }
+
+          .title {
+            @include translate(0 , 0);
+          }
+
+          .action {
+            @include translate(0 , 0);
+          }
+        }
+      }
+
+      .outer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        background: rgba(0,0,0,0.7);
+        padding: 20px;
+        color: $color_light !important;
+        text-align: center;
+        @include transition(all 0.3s ease-in-out);
+      }
+
+      .inner {
+        display: table;
+        width: 100%;
+        height: 100%;
+      }
+
+      .align-middle {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      h3 {
+        text-transform: uppercase;
+        color: $color_light !important;
+      }
+
+      .title {
+        margin-bottom: 25px;
+        @include translate(0, -35px);
+        @include transition(all 0.3s ease-in-out);
+      }
+
+      .action {
+        @include translate(0, 35px);
+        @include transition(all 0.3s ease-in-out);
+      }
+
+      .btn {
+        border: 1px solid $color_light;
+        padding: 7px 10px;
+        @include border-radius(0);
+        color: $color_light;
+        @include transition(all 0.3s ease);
+
+        span {
+          @include translate(20px, 0);
+        }
+
+        &:hover {
+          color: $color_main;
+          background-color: $color_light;
+
+          span {
+            @include translate(0, 0);
+          }
+        }
+
+        .fa {
+          margin-left: 8px;
+        }
+      }
+
+      //@include imgAnim();
+      /*img {
+          @include transition(all 0.3s ease-out);
+          -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+      }
+
+      &:hover img {
+          @include scale(1.05);
+      }*/
+    }
+  }
+
 }
 @media only screen and(max-width: 767px){
   .related-project{
