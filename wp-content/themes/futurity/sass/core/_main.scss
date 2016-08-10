@@ -140,6 +140,11 @@ h1 {
   background: $color_light;
   color: $color_main;
   @include border-radius(0);
+
+  &:hover {
+    color: $color_main;
+    @include opacity(0.8);
+  }
 }
 
 button {
