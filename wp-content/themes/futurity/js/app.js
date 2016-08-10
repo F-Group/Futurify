@@ -18,6 +18,7 @@
             this._initSlide();
             this._initAboutPage();
             this._initProjectDetail();
+            this._initContactPage();
         },
 
         _initHomePage: function() {
@@ -181,6 +182,13 @@
                     })
                 } catch(e){}
             });
+        },
+
+        _initContactPage: function () {
+            $(".wpcf7-form input[type='text']").addClass("form-control");
+            $(".wpcf7-form input[type='email']").addClass("form-control");
+            $(".wpcf7-form input[type='tel']").addClass("form-control");
+            $(".wpcf7-form textarea").addClass("form-control");
         }
 
     };
