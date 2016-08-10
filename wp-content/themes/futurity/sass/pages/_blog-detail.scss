@@ -18,6 +18,8 @@
 		    }
 		}
 		h5{
+			font-size: 12px;
+			color: #9a9a9a;
 			.user-detail{
 				padding-left: 20px;
 				position: relative;
@@ -42,7 +44,7 @@
 				    position: absolute;
 				    left: 0;
 				    bottom: 0;
-				    color: #979797;
+				    color: #9a9a9a;
 				}
 			}
 		}
@@ -59,6 +61,7 @@
 			a {
 				color: $color_main;
 				padding: 0 15px;
+				font-size: 11px;
 				&:first-child{
 					padding-left: 0;
 				}
@@ -96,7 +99,10 @@
 			a {
 				color: $color_main;
 				padding: 0 15px;
-
+				font-size: 11px;
+				&:hover{
+					text-decoration: underline;
+				}
 				&:last-child {
 					border: none;
 				}
@@ -127,11 +133,15 @@
 			a {
 				display: inline-block;
 				width: 30px;
-				height: 28px;
-				padding: 5px 10px;
+				height: 30px;
+				padding: 6px 0px;
 				@include border-radius(50%);
 				color: $color_light;
 				background: $color_base;
+				text-align: center;
+				.fa{
+					font-size: 14px !important;
+				}
 			}
 
 		}
