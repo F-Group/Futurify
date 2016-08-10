@@ -189,6 +189,7 @@
             $(".wpcf7-form input[type='email']").addClass("form-control");
             $(".wpcf7-form input[type='tel']").addClass("form-control");
             $(".wpcf7-form textarea").addClass("form-control");
+            $(".wpcf7-form .wpcf7-submit").addClass("btn btn-main");
         }
 
     };
