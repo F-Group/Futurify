@@ -134,9 +134,8 @@
         _initSlide: function(){
             var $owl = $(".owl-carousel");
             $owl.owlCarousel({
-                  autoPlay: true, //Set AutoPlay to 3 seconds
+                   //Set AutoPlay to 3 seconds
                   items : 3,
-                  autoplay:true,
                   autoplayTimeout:3000,
                   autoplayHoverPause:true ,
                   loop : true,
@@ -154,7 +153,7 @@
               });
 
             // Custom Navigation Events
-            $owl.trigger('play.owl.autoplay',[3000]);
+            //$owl.trigger('play.owl.autoplay',[3000]);
              $(".next").click(function(){
                  $owl.trigger('next.owl.carousel');
               });
