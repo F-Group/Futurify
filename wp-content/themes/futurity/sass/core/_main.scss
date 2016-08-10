@@ -239,3 +239,9 @@ button {
     @include translate(25px, -25px);
   }
 }
+.hvr-sweep-to-right{
+    &:before{
+      background: #fa4945 !important;
+      color: #fff;
+    }
+  }

@@ -127,31 +127,41 @@
 			@include transition(all 0.2s ease);
 		}
 
-
-		.bl-our-project-button-more{
-			display: table;
-			min-height: 220px;
-			width: 100%;
-			#btn-project-more{
-				display: table-cell;
-				vertical-align: middle;
-				text-align: center;
-				background: $color_main;
+		.bl-project-button{
+			.bl-project-button-inner{
 				min-height: 220px;
 				width: 100%;
-				border: none;
-				h5{
-					font-size: 20px;
-					color: #fff;
-					text-transform: uppercase;
-					span{
-						display: block;
+				text-align: center;
+				background: $color_main;
+				display: table;
+				.btn-align-middle{
+					display: table-cell;
+					vertical-align: middle;
+					min-height: 220px;
+				}
+				.bl-project-button-title{
+					h5{
+						font-size: 20px;
+						color: #fff;
+						text-transform: uppercase;
+						span{
+							display: block;
+						}
 					}
-
-					&:after{
-						content: url('../img/content/our_project/add-button.png');
+				}
+				.bl-project-button-action{
+					#btn-project-more{
+						border: none;
+						background: url('../img/content/our_project/add-button.png');
 						display: block;
 						margin-top: 20px;
+					    width: 36px;
+					    height: 35px;
+					    margin: 0px auto;
+					    outline: none;
+					    &:focus{
+					    	outline: none;
+					    }
 					}
 				}
 			}

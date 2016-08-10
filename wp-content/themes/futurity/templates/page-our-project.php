@@ -56,11 +56,21 @@ $projects = getList("project", "menu_order date");
                 <?php endwhile; ?>
                 <?php endif; ?>
                     <div class="col-xs-12 col-sm-4 col-md-4">
-                        <div class="bl-our-project-button-more">
-                            <button id="btn-project-more">
-                                <h5><span>SEE MORE ONGOING<br>PROJECTS..</span></h5>
-                            </button>
-                        </div>
+                        <a href="#">
+                            <div class="bl-project-button">
+                                <div class="bl-project-button-inner">
+                                    <div class="btn-align-middle">
+                                        <div class="bl-project-button-title">
+                                            <h5><span>SEE MORE ONGOING<br>PROJECTS..</span></h5>
+                                        </div>
+                                        <div class="bl-project-button-action">
+                                            <button id="btn-project-more">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="project-des">
@@ -110,7 +120,7 @@ $projects = getList("project", "menu_order date");
             <div class="bl-our-project-success-content">
                 <?php $url = get_field("button_link") ?>
                 <h1><?php echo get_field("block_text") ?></h1>
-                <button class="btn-about-us"><a href="<?php if(!empty($url)) {echo $url["url"];} ?>"><?php echo get_field("button_text") ?></a></button>
+                <button class="btn-about-us hvr-sweep-to-right"><a href="<?php if(!empty($url)) {echo $url["url"];} ?>"><?php echo get_field("button_text") ?></a></button>
             </div>
         </div>
     </div>

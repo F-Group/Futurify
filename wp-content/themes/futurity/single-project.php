@@ -132,9 +132,9 @@ for($x = 0; $x < 4; $x++) {
         </div>
         <div class="case-feel clearfix">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="case-feel">
+                <div class="case-feel-in">
                     <h1>still hungry ?</h1>
-                    <a href="#"><button>Feeding Now!</button></a>
+                    <a class="hvr-sweep-to-right" href="#"><button>Feeding Now!</button></a>
                 </div>
             </div>
         </div>

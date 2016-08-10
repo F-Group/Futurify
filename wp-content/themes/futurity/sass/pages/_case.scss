@@ -99,47 +99,47 @@
 				border: none;
 			}
 		}
-		.case-social{
+		.case-social {
 			float: right;
-			span{
+			font-weight: bolder;
+			.addtoany_list {
+				margin-left: 10px;
+			}
+
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 13px;
+			}
+
+			span {
 				font-size: 14px;
 				font-family: $font_montserrat;
 				font-weight: 700;
 				color: #000;
 			}
-			ul{
-				li{
-					display: inline-block;
-					vertical-align: middle;
-					margin-right: 13px;
-					a{
-						display: inline-block;
-						width: 30px;
-					    height: 28px;
-					    padding: 5px 10px;
-						@include border-radius(50%);
-						color: #fff;
-						background: #000;
-						&:hover{
-							background: $color_main;
-							color: #fff;
-						}
-						i{
-							text-align: center;
-						}
-					}
-					&:last-child{
-						margin-right: 0px;
-					}
+
+			a {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				padding: 6px 0px;
+				@include border-radius(50%);
+				color: $color_light;
+				background: $color_base;
+				text-align: center;
+				.fa{
+					font-size: 14px !important;
 				}
 			}
+
 		}
 	}
 }
 .case-feel{
-	background: $color_main;
-	background-image: url('../img/common/line-background.png');
-	.case-feel{
+	background: $color_main url('../img/common/line-background.png') no-repeat;
+	background-size: cover;
+	.case-feel-in{
 		text-align: center;
 		padding: 100px 0px;
 		h1{

@@ -87,7 +87,8 @@ function tsg_scripts() {
         '/js/lib/owl-carousel/owl.theme.css',
         '/js/lib/owl-carousel/owl.carousel.min.css',
         '/css/jquery.fullPage.css',
-        '/css/font-awesome.min.css'
+        '/css/font-awesome.min.css',
+        '/css/hover-min.css'
     );
     foreach ($styles as $key => $url){
         wp_enqueue_style( 'tsg-style-'.$key, $path .  $url, array());
