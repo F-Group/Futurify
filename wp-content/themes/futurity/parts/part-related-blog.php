@@ -21,7 +21,7 @@
                           }
                           ?>
                           <h2><?php the_title(); ?></h2>
-                          <p>by  <?php echo get_the_author(); ?> </p>
+                          <p class="author-info">by  <?php echo get_the_author(); ?> </p>
                       </div>
                   </div>
               </a> </div>
