@@ -8,7 +8,7 @@
                 <div class="bl-blog-detail-title">
                     <h4><?php the_tags("", '', '');?></h4>
                     <h1><?php the_title();?></h1>
-                    <h5><span class="user-detail"><?php echo __( 'by', 'tsg' ). ' '; the_author();?></span><span class="time-detail"> <?php echo __( 'Posted on', 'tsg' ). ' '; the_date()?></span></h5>
+                    <h5 class="author-info"><span class="user-detail"><?php echo __( 'by', 'tsg' ). ' '; the_author();?></span><span class="time-detail"> <?php echo __( 'Posted on', 'tsg' ). ' '; the_date()?></span></h5>
                 </div>
                 <div class="main-content">
                     <?php the_content(); ?>
