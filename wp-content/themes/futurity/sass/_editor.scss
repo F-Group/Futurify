@@ -205,3 +205,58 @@ form .form-btn {
 
 
 }
+
+a.acttactment{
+  display: block;
+  -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  .bl-project-button{
+    .bl-project-button-inner{
+      min-height: 212px;
+      width: 100%;
+      text-align: center;
+      background: $color_main;
+      display: table;
+      .btn-align-middle{
+        display: table-cell;
+        vertical-align: middle;
+        min-height: 212px;
+      }
+      .bl-project-button-title{
+        h5{
+          font-size: 20px;
+          color: #fff;
+          text-transform: uppercase;
+          span{
+            display: block;
+          }
+        }
+      }
+      .bl-project-button-action{
+        #btn-project-more{
+          border: none;
+          background: url('../img/content/our_project/add-button.png');
+          display: block;
+          margin: 20px 0px;
+            width: 36px;
+            height: 35px;
+            margin: 0px auto;
+            outline: none;
+            &:focus{
+              outline: none;
+            }
+        }
+      }
+    }
+  }
+  &:hover{
+      -moz-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05);
+  }
+}

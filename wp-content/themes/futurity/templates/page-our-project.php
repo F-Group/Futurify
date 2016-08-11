@@ -120,7 +120,7 @@ $projects = getList("project", "menu_order date");
             <div class="bl-our-project-success-content">
                 <?php $url = get_field("button_link") ?>
                 <h1><?php echo get_field("block_text") ?></h1>
-                <button class="btn-about-us hvr-sweep-to-right"><a href="<?php if(!empty($url)) {echo $url["url"];} ?>"><?php echo get_field("button_text") ?></a></button>
+                <button class="btn-about-us hvr-ripple-out"><a href="<?php if(!empty($url)) {echo $url["url"];} ?>"><?php echo get_field("button_text") ?></a></button>
             </div>
         </div>
     </div>
