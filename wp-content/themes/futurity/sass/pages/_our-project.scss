@@ -57,6 +57,7 @@
 				padding: 20px;
 				color: $color_light;
 				text-align: center;
+				font-family: $font_montserrat;
 				@include transition(all 0.3s ease-in-out);
 			}
 
@@ -144,6 +145,7 @@
 						font-size: 20px;
 						color: #fff;
 						text-transform: uppercase;
+						font-family: $font_montserrat;
 						span{
 							display: block;
 						}
