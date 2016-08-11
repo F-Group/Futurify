@@ -82,6 +82,40 @@
 					color: #000;
 				}
 			}
+			&.step2 {
+				position: relative;
+				&:before{
+					content: 'hard';
+					text-transform: uppercase;
+					opacity: 0.04;
+					position: absolute;
+					font-family: 'Montserrat';
+					font-size: 180px;
+					font-weight: 600;
+					color: #000000;
+					right:-20%;
+					top: -130px;
+					@media #{$mobile_and_tablet} {
+						display: none !important;
+					}
+				}
+				&:after {
+					content: 'working';
+					text-transform: uppercase;
+					opacity: 0.04;
+					position: absolute;
+					font-family: 'Montserrat';
+					font-size: 180px;
+					font-weight: 600;
+					color: #000000;
+					left: -20%;
+					bottom: -180px;
+					@media #{$mobile_and_tablet} {
+						display: none !important;
+					}
+				}
+			}
+
 		}
 	}
 	.case-view{

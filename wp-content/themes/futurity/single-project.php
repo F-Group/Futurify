@@ -65,7 +65,7 @@ for($x = 0; $x < 4; $x++) {
                                 </div>
                             </div>
                         </div>
-                        <div class="case-step-content">
+                        <div class="case-step-content step2">
                             <h5>2/4</h5>
                             <h1><?php echo get_field("step_title_s2") ?></h1>
                             <div class="case-step-content-des clearfix">
