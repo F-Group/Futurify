@@ -18,6 +18,9 @@
       top : 20vh ;
       left: 70% ;
       width: 25%;
+      @media #{$mobile_and_tablet} {
+        display: none !important;
+      }
 
     }
     .staff-step-content {
