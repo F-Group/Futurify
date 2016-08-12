@@ -127,8 +127,12 @@ body {
 
 .bl-our-project-button-more{
   display: table;
-  min-height: 220px;
+  min-height: 212px;
   width: 100%;
+
+  &:hover {
+    @include scale(1.05);
+  }
 
   #btn-project-more{
     display: table-cell;
