@@ -129,6 +129,7 @@ body {
   display: table;
   min-height: 212px;
   width: 100%;
+  @include transition(all 0.3s ease-out);
 
   &:hover {
     @include scale(1.05);
