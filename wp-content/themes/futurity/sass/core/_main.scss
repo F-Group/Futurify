@@ -141,9 +141,8 @@ h1 {
   color: $color_main;
   @include border-radius(0);
 
-  &:hover {
+  &:hover, &:visited {
     color: $color_main;
-    @include opacity(0.8);
   }
 }
 
@@ -267,11 +266,8 @@ button {
 }
 a.acttactment{
   display: block;
-  -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+  @include transition(all 0.3s ease-out);
+
   .bl-project-button{
     .bl-project-button-inner{
       min-height: 220px;
@@ -312,10 +308,6 @@ a.acttactment{
     }
   }
   &:hover{
-      -moz-transform: scale(1.05);
-      -o-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      -webkit-transform: scale(1.05);
-      transform: scale(1.05);
+    @include scale(1.05);
   }
 }

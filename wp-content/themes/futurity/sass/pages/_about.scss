@@ -222,11 +222,23 @@
 		}
 		.team-red{
 			background: $color_main;
+			@include transition(background 0.3s ease);
+			cursor: pointer;
+
 			p{
+				@include transition(color 0.3s ease);
 				&:after
 				{
 					border: none;
 					position: static;
+				}
+			}
+
+			&:hover {
+				background: $color_light;
+
+				p {
+					color: $color_main;
 				}
 			}
 		}
