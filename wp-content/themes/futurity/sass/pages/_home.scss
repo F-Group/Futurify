@@ -157,6 +157,39 @@
         top: -1px;
         margin: 0 auto;
       }
+      &:after {
+        content: "";
+        position: absolute;
+        left: 78px;
+        top: -25px;
+        height: 25px;
+        z-index: -1;
+        width: 100%;
+        @media #{$mobile} {
+          display: none;
+        }
+
+        background: url("../img/content/home/white-line-background.png") no-repeat top right;
+        //background-size: 100% 100%;
+        //-moz-transform: translate(25px, -25px);
+        //-o-transform: translate(25px, -25px);
+        //-ms-transform: translate(25px, -25px);
+        //-webkit-transform: translate(25px, -25px);
+        //transform: translate(25px, -25px);
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        right: -25px;
+        top: -14px;
+        height: 100%;
+        @media #{$mobile} {
+          display: none;
+        }
+        z-index: -1;
+        width: 25px;
+        background: url("../img/content/home/white-line-background.png") no-repeat top right;
+      }
     }
 
     @media #{$mobile_and_tablet} {
