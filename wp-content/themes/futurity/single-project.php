@@ -105,6 +105,15 @@ for($x = 0; $x < 4; $x++) {
                                 </div>
                             </div>
                         </div>
+                        <div class="case-step-content">
+                            <h5>4/4</h5>
+                            <h1><?php echo get_field("step_title_s4") ?></h1>
+                            <div class="case-step-content clearfix">
+                                <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <?php echo get_field("editor_s4") ?>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="case-view clearfix">
