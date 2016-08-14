@@ -7,7 +7,7 @@ $videos = getList("home-video", "menu_order date");
     <section class="section fp-section">
         <div class="fp-table">
             <div class="fp-tableCell">
-                <video src="<?php echo get_field("video"); ?>"></video>
+                <video muted src="<?php echo get_field("video").'#t=0.1,20'; ?>"></video>
                 <div class="caption">
                     <?php the_content() ?>
                 </div>
