@@ -165,7 +165,7 @@
             // });
             $("a[rel='m_PageScroll2id']").mPageScroll2id({
                 scrollSpeed: 500,
-                offset : 100
+                offset : 200
             });
         },
 
