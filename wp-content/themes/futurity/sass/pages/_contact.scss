@@ -152,6 +152,11 @@ form{
       margin-left: 10px;
     }
   }
+  p{
+    &:last-child{
+      margin: 0px;
+    }
+  }
 }
 .contact-content{
   h1{
