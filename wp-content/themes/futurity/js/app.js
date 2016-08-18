@@ -184,7 +184,7 @@
 
             setTimeout(function () {
                 $(window).trigger("resize");
-            }, 500);
+            }, 2000);
         }
     };
 })(jQuery);
