@@ -133,13 +133,21 @@
 				margin-left: 40px;
 			}
 
-			&.current-menu-item {
+			&.current-menu-item  {
 				a {
 					background-color: $color_main;
 					color: #fff;
 					&:hover {
 						opacity: 0.8;
 					}
+				}
+			}
+
+			&.current-menu-parent > a {
+				background-color: $color_main;
+				color: #fff;
+				&:hover {
+					opacity: 0.8;
 				}
 			}
 		}
