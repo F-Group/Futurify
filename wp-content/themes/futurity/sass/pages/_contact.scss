@@ -186,14 +186,93 @@ form{
     margin-bottom: 25px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 960px){
+  .contact-page .contact-form-container>.form-content{
+    max-width: 100%;
+    margin-left: 20px;
+  }
+  .contact-page .contact-form-container{
+    width: 100%;
+  }
+}
 @media #{$mobile}{
-  .contact-paragraph {
-    h2{
+  .contact-page .service-choice{
+    width: 50%;
+  }
+  .contact-page .service{
+    width: 50%;
+    float: right;
+  }
+  .form-content p:last-child{
+    text-align: center;
+    padding: 50px 0px;
+    button{
+      float: none !important;
+    }
+  }
+  .contact-page .contact-form-container>.form-content{
+    max-width: 100%;
+    width: 100%;
+  }
+  .contact-page .contact-info{
+    padding: 20px 0px 0px;
+    width: 100%;
+  }
+  .contact-content{
+    h1{
       font-size: 25px;
+      padding-left: 20px;
     }
     p{
-      font-size: 14px;
-      line-height: 25px;
+      padding-left: 20px;
+    }
+    .detail-info{
+      padding-left: 20px;
+    }
+    .contact-social{
+      padding-left: 20px;
+    }
+    .bl-contact-hirring{
+      background: #fa4945 url('../img/common/contact-bg.png') no-repeat;
+      background-size: cover;
+      padding: 50px 0px 60px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+  form .wpcf7-form-control-wrap input[type=radio]{
+    margin: 0px;
+    float: left;
+  }
+  span.wpcf7-list-item-label{
+    display: inline-block;
+    float: left;
+    margin-left: 15px;
+  }
+  span.wpcf7-list-item{
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    float: none !important;
+    margin-bottom: 20px !important;
+  }
+  .contact-paragraph{
+    margin-left: 20px; 
+  }
+  .contact-page .contact-center{
+    display: block;
+  }
+  .contact-page .contact-form-container{
+    padding: 20px 20px 20px 20px;
+    width: 100%;
+  }
+  .contact-paragraph {
+    h2{
+      font-size: 25px !important;
+    }
+    p{
+      font-size: 14px !important;
+      line-height: 25px !important;
     }
   }
   .form-content{

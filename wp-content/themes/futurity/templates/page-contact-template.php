@@ -52,10 +52,12 @@ $google_map = get_field('google_map');
                         <a target="_blank" href="<?php echo $options['eto_twitter'];?>"><i class="fa fa-twitter"></i></a>
                         <a target="_blank" href="<?php echo $options['eto_linkedin'];?>"><i class="fa fa-linkedin"></i></a>
                     </div>
-                    <h3 class="contact-hiring">WE ARE HIRING!</h3>
-                    <?php wp_reset_query(); ?>
-                    <?php $url = get_field("button_link") ?>
-                    <button class="btn btn-main hvr-ripple-out"><a href="<?php if(!empty($url)) {echo $url["url"];} ?>">CAREER</a></button>
+                    <div class="bl-contact-hirring">
+                        <h3 class="contact-hiring">WE ARE HIRING!</h3>
+                        <?php wp_reset_query(); ?>
+                        <?php $url = get_field("button_link") ?>
+                        <button class="btn btn-main hvr-ripple-out"><a href="<?php if(!empty($url)) {echo $url["url"];} ?>">CAREER</a></button>
+                    </div>
                 </div>
             </div>
         </div>
