@@ -1,5 +1,5 @@
 .contact-page {
-  padding-top: 60px;
+  @extend .heading;
 
   .contact-center {
     @include flex();
@@ -138,6 +138,11 @@ form{
         outline: none;
       }
     }
+  }
+
+  .wpcf7-response-output {
+    border: none;
+    font-size: 16px;
   }
 }
 .form-content{

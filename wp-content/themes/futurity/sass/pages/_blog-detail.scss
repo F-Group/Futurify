@@ -1,5 +1,6 @@
 .bl-blog-detail{
-    margin: 60px 0px 0px;
+	@extend .heading;
+
 	.bl-blog-detail-title{
 		h1{
 			font-size: 38px;

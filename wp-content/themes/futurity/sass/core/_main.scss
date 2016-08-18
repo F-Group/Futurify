@@ -331,3 +331,11 @@ a.acttactment{
     outline: none;
   }
 }
+
+.heading {
+  margin-top: $heading-margin-top;
+
+  @media #{$mobile} {
+    margin-top: 60px;
+  }
+}

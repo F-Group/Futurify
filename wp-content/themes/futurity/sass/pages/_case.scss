@@ -16,7 +16,7 @@
 	}
 }
 .bl-case{
-	margin-top: 60px ;
+	@extend .heading;
 	.case-steps{
 		.case-step-content{
 		    margin-bottom: 100px;

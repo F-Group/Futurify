@@ -3,7 +3,7 @@
 	margin-right: 0px;
 }
 .bl-blog-list{
-    margin: 60px 0px 0px;
+	@extend .heading;
 	.bl-blog-list-title{
 	    padding-left: 15px;
 	    padding-right: 15px;
