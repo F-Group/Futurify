@@ -165,6 +165,16 @@ function add_class_to_wp_nav_menu($classes)
                 $classes[] = 'current-menu-item';
             }
             break;
+        case 'project':
+            // we're viewing a custom post type, so remove the 'current_page_xxx and current-menu-item' from all menu items.
+            $classes = array_filter($classes, "remove_parent_classes");
+
+            // add the current page class to a specific menu item (replace ###).
+            if (in_array('menu-item-18', $classes))
+            {
+                $classes[] = 'current-menu-item';
+            }
+            break;
     }
     return $classes;
 }
