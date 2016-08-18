@@ -22,95 +22,71 @@ for($x = 0; $x < 4; $x++) {
                             <?php
                                 $title = get_field("display_title");
                                 if(!empty($title)) {
-                                    echo $title;
+                                    echo '<div class="row">'.$title.'</div>';
                                 } else {
                             ?>
-                            <h1 class="black-title"><?php the_title() ?></h1>
+                            <div class="row">
+                                <h1 class="black-title"><?php the_title() ?></h1>
+                            </div>
                         <?php } endwhile; ?>
                         <?php endif; ?>
                     </div>
                 </div>
                 <div class="case-steps clearfix">
                     <div class="col-xs-12 col-sm-12 col-md-12">
-                        <div class="case-step-content ">
-                            <h5>1/4</h5>
-                            <div class="case-step-content-des clearfix">
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <h1><?php echo get_field("step_title_s1") ?></h1>
+                        <div class="row">
+                            <div class="case-step-content ">
+                                <h5>1/4</h5>
+                                <div class="case-step-content-des clearfix">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <h1><?php echo get_field("step_title_s1") ?></h1>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <?php echo get_field("editor_s1") ?>
+                                    </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <?php echo get_field("editor_s1") ?>
+                                <div class="case-step-content-des clearfix">
+                                    <div class="hidden imgList">
+                                        <?php echo get_field("editor_image") ?>
+                                    </div>
+                                    <div class="masonry-case">
+                                        <div class="grid-sizer"></div>
+                                        <div class="gutter-sizer"></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="case-step-content-des clearfix">
-<!--                                --><?php //echo get_field("editor_image") ?>
-                                <!--<div class="col-xs-12 col-sm-6 col-md-6">
-                                    <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;*/?>" alt="about-img">
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;*/?>" alt="about-img">
-                                </div>-->
-                                <div class="hidden imgList">
-                                    <?php echo get_field("editor_image") ?>
-                                </div>
-                                <div class="masonry-case">
-                                    <div class="grid-sizer"></div>
-                                    <div class="gutter-sizer"></div>
-                                    <!--<div class="grid-item">
-                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;*/?>" alt="about-img">
+                            <div class="case-step-content step2">
+                                <h5>2/4</h5>
+                                <h1><?php echo get_field("step_title_s2") ?></h1>
+                                <div class="case-step-content-des clearfix">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <?php echo get_field("editor_s2_left") ?>
                                     </div>
-                                    <div class="grid-item">
-                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;*/?>" alt="about-img">
-                                    </div>-->
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <?php echo get_field("editor_s2_right") ?>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="case-step-content step2">
-                            <h5>2/4</h5>
-                            <h1><?php echo get_field("step_title_s2") ?></h1>
-                            <div class="case-step-content-des clearfix">
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <?php echo get_field("editor_s2_left") ?>
-                                </div>
-                                <div class="col-xs-12 col-sm-6 col-md-6">
-                                    <?php echo get_field("editor_s2_right") ?>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="case-step-content">
-                            <h5>3/4</h5>
-                            <h1><?php echo get_field("step_title_s3") ?></h1>
-                            <div class="case-step-content-des clearfix">
-                                <div class="hidden imgList">
-                                    <?php echo get_field("editor_s3") ?>
-                                </div>
-                                <div class="masonry-case">
-                                    <div class="grid-sizer"></div>
-                                    <div class="gutter-sizer"></div>
-                                    <!--<div class="grid-item">
-                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/our_project/project-6.png' ;*/?>" alt="about-img">
+                            <div class="case-step-content">
+                                <h5>3/4</h5>
+                                <h1><?php echo get_field("step_title_s3") ?></h1>
+                                <div class="case-step-content-des clearfix">
+                                    <div class="hidden imgList">
+                                        <?php echo get_field("editor_s3") ?>
                                     </div>
-                                    <div class="grid-item">
-                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/case/phone.png' ;*/?>" alt="about-img">
+                                    <div class="masonry-case">
+                                        <div class="grid-sizer"></div>
+                                        <div class="gutter-sizer"></div>
                                     </div>
-                                    <div class="grid-item">
-                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/case/case2.png' ;*/?>" alt="about-img">
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/case/case3.png' ;*/?>" alt="about-img">
-                                    </div>
-                                    <div class="grid-item">
-                                        <img class="img-responsive" src="<?php /*echo get_bloginfo('template_url').'/img/content/case/case1.png' ;*/?>" alt="about-img">
-                                    </div>-->
                                 </div>
                             </div>
-                        </div>
-                        <div class="case-step-content">
-                            <h5>4/4</h5>
-                            <h1><?php echo get_field("step_title_s4") ?></h1>
-                            <div class="case-step-content clearfix">
-                                <div class="col-xs-12 col-sm-12 col-md-12">
-                                    <?php echo get_field("editor_s4") ?>
+                            <div class="case-step-content">
+                                <h5>4/4</h5>
+                                <h1><?php echo get_field("step_title_s4") ?></h1>
+                                <div class="case-step-content clearfix">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <?php echo get_field("editor_s4") ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
