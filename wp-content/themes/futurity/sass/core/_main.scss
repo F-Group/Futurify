@@ -141,7 +141,7 @@ h1 {
   color: $color_main;
   @include border-radius(0);
 
-  &:hover, &:visited {
+  &:hover, &:visited, &:focus {
     color: $color_main;
   }
 }
