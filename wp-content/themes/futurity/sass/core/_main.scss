@@ -145,6 +145,10 @@ h1 {
   &:hover, &:visited, &:focus {
     color: $color_main;
   }
+
+  &:active:focus {
+    outline-color: transparent;
+  }
 }
 
 button {
@@ -244,9 +248,9 @@ button {
     @include translate(25px, -25px);
   }
 }
-.hvr-ripple-out:before{
+.hvr-ripple-out:before {
     border-color: #fff !important;
-  }
+}
 
 .tag-name {
   font-size: 11px;
@@ -314,8 +318,12 @@ a.acttactment{
 }
 
 .hvr-ripple-out {
-  &:hover, &:focus, &:active {
+
+  &:hover, &:active, &:focus {
     outline: none;
+  }
+
+  &:hover {
 
     &:after, &:before {
       -moz-animation-iteration-count: infinite;

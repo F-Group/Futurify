@@ -18,6 +18,7 @@
             this._initSlide();
             this._initAboutPage();
             this._initProjectDetail();
+            this._initContactPage();
         },
 
         _initHomePage: function() {
@@ -185,6 +186,20 @@
             setTimeout(function () {
                 $(window).trigger("resize");
             }, 5000);
+        },
+
+        _initContactPage: function() {
+            var submitInput = $(".wpcf7-form .wpcf7-submit");
+            var submitBtn = $("<button type='submit'></button>");
+
+            if(submitInput.length) {
+                submitBtn.attr("class", submitInput.attr("class"));
+                submitBtn.text(submitInput.attr("value"));
+                submitBtn.addClass("hvr-ripple-out");
+            }
+
+            submitBtn.insertAfter(submitInput);
+            submitInput.remove();
         }
     };
 })(jQuery);
