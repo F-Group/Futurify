@@ -17,7 +17,7 @@ $projects = getList("project", "menu_order date");
         <div class="row">
             <div class="col-md-6">
                 <div class="bl-our-project-title">
-                    <h1>OUR PROJECTS</h1>
+                    <h1>OUR  PROJECTS</h1>
                 </div>
             </div>
         </div>
