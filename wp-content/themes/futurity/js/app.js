@@ -178,7 +178,8 @@
                     var item = $("<div class='grid-item'></div>");
                     imgList.each(function () {
                         parentNode.append(item.clone().html(this));
-                    })
+                    });
+                    $(window).trigger("resize");
                 } catch(e){}
             });
 
