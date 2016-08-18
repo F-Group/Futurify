@@ -181,6 +181,10 @@
                     })
                 } catch(e){}
             });
+
+            setTimeout(function () {
+                $(window).trigger("resize");
+            }, 500);
         }
     };
 })(jQuery);
