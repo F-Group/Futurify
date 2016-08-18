@@ -179,13 +179,12 @@
                     imgList.each(function () {
                         parentNode.append(item.clone().html(this));
                     });
-                    $(window).trigger("resize");
                 } catch(e){}
             });
 
             setTimeout(function () {
                 $(window).trigger("resize");
-            }, 2000);
+            }, 5000);
         }
     };
 })(jQuery);
