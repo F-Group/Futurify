@@ -315,7 +315,6 @@ a.acttactment{
 .hvr-ripple-out {
   &:hover, &:focus, &:active {
     outline: none;
-    border: none;
 
     &:after, &:before {
       -moz-animation-iteration-count: infinite;
