@@ -34,7 +34,7 @@ $members = getList("member", "menu_order date");
         <div class="bl-about-des-img">
             <div class="container">
                 <div class="col-xs-12 col-sm-12 col-md-12">
-                                                    <a href="#"><img class="img-responsive" src="<?php echo get_field("image_top") ?>" alt="about-img"></a>
+                    <div class="row"><a href="#"><img class="img-responsive" src="<?php echo get_field("image_top") ?>" alt="about-img"></a></div>
                 </div>
             </div>
         </div>
@@ -51,16 +51,14 @@ $members = getList("member", "menu_order date");
     </div>
     <div class="bl-about-main-people">
         <div class="container">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="bl-about-main-people-img">
-                        <img class="img-responsive" src="<?php echo get_field("image_middle") ?>" alt="about-img">
-                    </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="bl-about-main-people-img">
+                    <img class="img-responsive" src="<?php echo get_field("image_middle") ?>" alt="about-img">
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="bl-about-main-people-des">
-                        <?php echo get_field("e_middle") ?>
-                    </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="bl-about-main-people-des">
+                    <?php echo get_field("e_middle") ?>
                 </div>
             </div>
         </div>
@@ -71,6 +69,7 @@ $members = getList("member", "menu_order date");
             <h1 class="white-title">OUR TEAM</h1>
         </div>
         <div class="container">
+            <div class="row">
             <?php
             $column = 2;
             if ($members->have_posts()) : while ($members->have_posts()) : $members->the_post();
@@ -100,23 +99,26 @@ $members = getList("member", "menu_order date");
             <?php endwhile; ?>
             <?php endif; ?>
             <?php wp_reset_query(); ?>
+            </div>
         </div>
     </div>
     </div>
     <div class="bl-about-our-mission">
         <div class="container">
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <div class="col-md-5">
-                    <div class="bl-about-our-mission-img">
-                        <img class="img-responsive" src="<?php echo get_field("image_bottom") ?>" alt="about-img">
+                <div class="row">
+                    <div class="col-md-5 no-p-l">
+                        <div class="bl-about-our-mission-img">
+                            <img class="img-responsive" src="<?php echo get_field("image_bottom") ?>" alt="about-img">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-7">
-                    <?php echo get_field("editor_bottom") ?>
-                    <!--<div class="bl-about-our-mission-content">
-                        <h1 class="black-title">OUR MISSION</h1>
-                        <p>Our focus is to build highly <span>innovative</span>,   <span>interactive</span>    <span>reliable</span> web-based solutions to bring maximum values to our clients and users on time and on budget.</p>
-                    </div>-->
+                    <div class="col-md-7 no-p-r">
+                        <?php echo get_field("editor_bottom") ?>
+                        <!--<div class="bl-about-our-mission-content">
+                            <h1 class="black-title">OUR MISSION</h1>
+                            <p>Our focus is to build highly <span>innovative</span>,   <span>interactive</span>    <span>reliable</span> web-based solutions to bring maximum values to our clients and users on time and on budget.</p>
+                        </div>-->
+                    </div>
                 </div>
             </div>
         </div>

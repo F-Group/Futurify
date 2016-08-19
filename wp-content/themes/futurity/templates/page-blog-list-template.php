@@ -13,10 +13,13 @@ get_header();
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                    <?php the_content(); ?>
-                <?php endwhile; ?>
-                <?php endif; ?>
+                <div class="row">
+                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        <?php the_content(); ?>
+                    <?php endwhile; ?>
+                    <?php endif; ?>
+                </div>
+
                 <!--<div class="bl-blog-list-title">
                     <h1 class="black-title">SHARING IS CARING</h1>
                     <p>A place we share to each other, care of things around us.   
@@ -29,36 +32,37 @@ get_header();
                 <div class="bl-blog-list-content ">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 bl-form-search">
-                            <form id="formSearch" class="clearfix col-xs-12 col-sm-4 col-md-4 " method="post" action="#">
-                                <div class="bl-search">
-                                    <span class="glyphicon glyphicon-search"></span>
-                                    <input class="form-control inputSearch" type="text" name="inputSearch" placeholder="Search">
-                                    <button class="btnSearch" type="submit" name="btnSearch"><span class="glyphicon glyphicon-triangle-right"></span></button>
-                                </div>
-                                <div class="bl-result">
-                                    <ul>
-                                        <li>
-                                            <a href="#">Tech stories</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tech corner</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tech Mashup</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tech stories</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tech corner</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Tech Mashup</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </form>
-                            <?php
+                            <div class="row">
+                                <form id="formSearch" class="clearfix col-xs-12 col-sm-4 col-md-4 " method="post" action="#">
+                                    <div class="bl-search">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                        <input class="form-control inputSearch" type="text" name="inputSearch" placeholder="Search">
+                                        <button class="btnSearch" type="submit" name="btnSearch"><span class="glyphicon glyphicon-triangle-right"></span></button>
+                                    </div>
+                                    <div class="bl-result">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Tech stories</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tech corner</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tech Mashup</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tech stories</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tech corner</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Tech Mashup</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                                <?php
                                 $tags = get_tags();
                                 if($tags) {
                                     $html = '<ul class="nav navbar-nav col-xs-12 col-sm-8 col-md-8">';
@@ -69,7 +73,8 @@ get_header();
                                     $html .= '</ul>';
                                 }
                                 echo $html;
-                            ?>
+                                ?>
+                            </div>
                         </div>
                     </div>
                     <div class="row list-blog">
@@ -83,13 +88,15 @@ get_header();
         <div class="row gutter">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="container">
-                    <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h1>MAY YOU WANT TO SHARE WITH US? COME IN, HAVE A CUP OF COFFEE AND
-                        <a href="<?php echo get_field("link") ?>">LET'S TALK!</a></h1>
-                    </div>
-                    <div class=" col-xs-12 col-sm-8 col-md-8">
-                        <div class="bl-img">
-                            <img class="img-responsive" src="<?php echo get_field("image") ?>" alt="blog-img">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <h1>MAY YOU WANT TO SHARE WITH US? COME IN, HAVE A CUP OF COFFEE AND
+                                <a href="<?php echo get_field("link") ?>">LET'S TALK!</a></h1>
+                        </div>
+                        <div class=" col-xs-12 col-sm-8 col-md-8">
+                            <div class="bl-img">
+                                <img class="img-responsive" src="<?php echo get_field("image") ?>" alt="blog-img">
+                            </div>
                         </div>
                     </div>
                 </div>

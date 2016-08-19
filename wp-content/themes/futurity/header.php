@@ -26,7 +26,7 @@
     <div class="main-page">
             <header class="header">
                 <div class="container">
-                    <div class="row">
+                    <div class="clearfix">
                         <?php get_template_part("parts/part", "navigation"); ?>
                     </div>
                 </div>

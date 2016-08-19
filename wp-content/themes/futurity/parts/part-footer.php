@@ -3,7 +3,6 @@ $options = get_option("eto_settings");
 ?>
 <footer id="footer" class="footer">
     <div class="container">
-        <div class="row">
             <div class="footer-01 col-xs-12 col-md-5 hidden-xs">
                 <a href="<?php echo esc_url( get_home_url() ) ?>">
                     <img class="logo" src="<?php echo get_bloginfo('template_url').'/img/common/white-logo.png'; ?>">
@@ -32,6 +31,5 @@ $options = get_option("eto_settings");
                 <a target="_blank" href="<?php echo $options['eto_twitter'];?>"><i class="fa fa-twitter"></i></a>
                 <a target="_blank" href="<?php echo $options['eto_linkedin'];?>"><i class="fa fa-linkedin"></i></a>
             </div>
-        </div>
     </div>
 </footer>

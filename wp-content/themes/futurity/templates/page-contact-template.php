@@ -13,7 +13,7 @@ $google_map = get_field('google_map');
 <div class="block contact-page">
     <section>
         <div class="container">
-            <div class="row paragraph">
+            <div class="paragraph">
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                     <?php the_content(); ?>
                 <?php endwhile; ?>

@@ -23,7 +23,7 @@ $projects = getList("project", "menu_order date");
         </div>
         <div class="row">
             <div class="col-md-12">
-                <div class="bl-our-project-items clearfix">
+                <div class="bl-our-project-items row">
                 <?php if ($projects->have_posts()) : while ($projects->have_posts()) : $projects->the_post(); ?>
                     <?php
                         if(has_post_thumbnail()) {
