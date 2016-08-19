@@ -26,6 +26,12 @@
 			position: relative;
 			overflow: hidden;
 
+			img {
+				@media #{$mobile} {
+					width: 100%;
+				}
+			}
+
 			a {
 				display: block;
 				position: relative;

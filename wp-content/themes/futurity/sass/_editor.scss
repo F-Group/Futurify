@@ -5,6 +5,12 @@ body {
 
 .black-title {
   @include h1-title($color_base, $color_main);
+  
+  @media #{$mobile} {
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 1px;
+  }
 }
 
 .white-title {
