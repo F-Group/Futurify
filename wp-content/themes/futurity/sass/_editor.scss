@@ -129,13 +129,15 @@ body {
   display: table;
   min-height: 212px;
   width: 100%;
-  @include transition(all 0.3s ease-out);
 
-  &:hover {
-    @include scale(1.05);
-  }
+/*  &:hover {
 
-  #btn-project-more{
+    #btn-project-more .btn-plus {
+      @include scale(1.05);
+    }
+  }*/
+
+  #btn-project-more {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
@@ -149,14 +151,34 @@ body {
       color: #fff;
       font-family: $font_montserrat;
 
-      &:after{
+      /*&:after{
         content: url('../img/content/our_project/add-button.png');
         display: block;
         margin-top: 20px;
-      }
+        @include transition(all 0.3s ease-out);
+      }*/
 
       span{
         display: block;
+      }
+    }
+
+    .btn-plus {
+      background: url('../img/content/our_project/add-button.png') no-repeat center center;
+      display: block;
+      width: 36px;
+      height: 36px;
+      margin: 20px auto 10px auto;
+      @include transition(all 0.3s ease-out);
+      cursor: pointer;
+      border: none;
+
+      &:hover {
+        @include scale(1.2);
+      }
+
+      span {
+        display: none;
       }
     }
   }

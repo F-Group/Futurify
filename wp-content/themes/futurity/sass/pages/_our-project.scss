@@ -127,13 +127,9 @@
 		>div {
 			@include transition(all 0.2s ease);
 		}
-		a{
+		a {
 			display: block;
-			-webkit-transition: all 0.3s ease-out;
-		    -moz-transition: all 0.3s ease-out;
-		    -ms-transition: all 0.3s ease-out;
-		    -o-transition: all 0.3s ease-out;
-		    transition: all 0.3s ease-out;
+
 			.bl-project-button{
 				.bl-project-button-inner{
 					min-height: 220px;
@@ -172,21 +168,26 @@
 							border: none;
 							background: url('../img/content/our_project/add-button.png');
 							display: block;
-							margin-top: 20px;
 						    width: 36px;
 						    height: 35px;
-						    margin: 0px auto;
+						    margin: 0 auto;
 						    outline: none;
-						    &:focus{
+							@include transition(all 0.3s ease-out);
+
+						    &:focus {
 						    	outline: none;
 						    }
+
+							&:hover {
+								@include scale(1.2);
+							}
 						}
 					}
 				}
 			}
-			&:hover{
+			/*&:hover{
 				@include scale(1.05);
-			}
+			}*/
 		}
 	}
 
