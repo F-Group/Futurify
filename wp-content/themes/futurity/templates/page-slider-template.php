@@ -16,6 +16,10 @@ get_header();
         <?php endif; ?>
     </section>
 </div>
-<?php
-    get_footer();
-?>
+</div>
+</div>
+</div>
+</div>
+<?php wp_footer(); ?>
+</body> <!--end body-->
+</html> <!--end html -->
