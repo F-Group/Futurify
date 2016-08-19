@@ -2,7 +2,7 @@
 	top: 32px;
 }
 
-.home .header, .home .header.header-stick {
+.home .header, .home .header.header-stick, .page-template-page-slider-template .header, .page-template-page-slider-template .header.header-stick {
 	background: transparent !important;
 	@include box-shadow(none);
 	position: fixed;
