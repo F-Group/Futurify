@@ -1,7 +1,7 @@
 <div class="col-xs-12 col-sm-4 col-md-4">
 	<a href="<?php the_permalink(); ?>">
     	<div class="bl-blog-list-item">
-    		<img class="img-responsive" src="<?php the_post_thumbnail_url() ?>" alt="blog-img">
+    		<div style="overflow: hidden"><img class="img-responsive" src="<?php the_post_thumbnail_url() ?>" alt="blog-img"></div>
     		<div class="bl-blog-list-item-des">      		
                 	<?php
                         $posttags = get_the_tags();
