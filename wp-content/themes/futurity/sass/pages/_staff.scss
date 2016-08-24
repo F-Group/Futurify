@@ -32,14 +32,15 @@
         font-family: $font_montserrat;
         font-weight: 700;
         width: 25px;
+        left : -20px;
         position: relative;
         &:after {
           content: "";
           border-bottom: 3px solid #000;
           display: block;
           position: absolute;
-          right: -2px;
-          left: -20px;
+          right: -14px;
+          left: 0;
           bottom: -7px;
         }
       }
