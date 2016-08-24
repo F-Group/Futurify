@@ -1,14 +1,17 @@
 (function ($) {
     $(document).ready(function() {
         $site.init();
-        $('.masonry-case').isotope({
+        var $grid = $('.masonry-case').isotope({
           itemSelector: '.grid-item',
           percentPosition: true,
           masonry: {
             // use outer width of grid-sizer for columnWidth
             columnWidth: '.grid-sizer'
           }
-        })
+        });
+        $grid.imagesLoaded().progress( function() {
+            $grid.isotope('layout');
+        });
     });
 
     var $site = {
