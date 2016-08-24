@@ -32,8 +32,8 @@
 					border-bottom: 3px solid #000;
 					display: block;
 				    position: absolute;
-				    right: -2px;
-				    left: -20px;
+				    right: -15px;
+				    left: 0;
 				    bottom: -7px;
 				}
 			}
@@ -45,6 +45,9 @@
 		        text-transform: uppercase;
 	            margin-bottom: 30px;
 	        }
+			.case-step-content-des > div {
+				padding: 0;
+			}
 		    .case-step-content-des{
 				img{
 					width: 100%;
@@ -52,6 +55,7 @@
 				.heading{
 					padding: 15px 0px 40px;
 				}
+
 				p {
 				    font-size: 15px;
 				    font-family: $font_cabin;
