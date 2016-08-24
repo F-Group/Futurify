@@ -132,6 +132,7 @@ body {
 
 .bl-our-project-button-more{
   display: table;
+  height: 220px;
   min-height: 220px;
   width: 100%;
 
@@ -147,8 +148,6 @@ body {
     vertical-align: middle;
     text-align: center;
     background: $color_main;
-    height: 220px;
-    min-height: 220px;
     width: 100%;
     border: none;
     h5{
