@@ -9,9 +9,12 @@
             columnWidth: '.grid-sizer'
           }
         });
-        $grid && $grid.imagesLoaded().progress( function() {
-            $grid.isotope('layout');
-        });
+
+        try {
+            $grid && $grid.imagesLoaded().progress( function() {
+                $grid.isotope('layout');
+            });
+        } catch(e){}
     });
 
     var $site = {
@@ -27,7 +30,11 @@
         _initHomePage: function() {
             $(".section").click(function () {
                 var videoNode = $(this).find('video');
-                videoNode.length && videoNode[0].play();
+
+                try {
+                    videoNode.length && videoNode[0].play();
+                } catch(e){}
+
             });
 
             $('#homePage').fullpage({
