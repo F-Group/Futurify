@@ -122,7 +122,7 @@ h1 {
   }
 }
 
-.fa-facebook, .fa-twitter, .fa-linkedin {
+.fa-facebook, .fa-twitter, .fa-linkedin, .fa-google-plus, .fa-pinterest-p {
   @include transition(all .3s ease-in-out);
 
   &:hover {
@@ -354,4 +354,8 @@ a.acttactment{
 
 .no-p-r {
   padding-right: 0;
+}
+
+.addthis_toolbox li a:hover {
+  background: $color_main !important;
 }
