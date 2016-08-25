@@ -92,7 +92,7 @@ $members = getList("member", "menu_order date");
             ?>
 
                 <div class="col-xs-12 col-sm-6 col-md-3">
-                    <?php the_content(); ?>
+                    <div class="quote"><?php the_content(); ?></div>
                 </div>
             <?php } ?>
 
