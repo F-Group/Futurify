@@ -15,7 +15,7 @@ for($x = 0; $x < 4; $x++) {
 <div class="block">
     <div class="bl-case">
         <div class="container">
-            <div class="row">
+            <div class="">
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="bl-case-title">
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
