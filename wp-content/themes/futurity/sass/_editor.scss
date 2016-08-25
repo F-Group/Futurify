@@ -140,6 +140,11 @@ body {
   min-height: 220px;
   width: 100%;
 
+  @media #{$tablet} {
+    height: 345px;
+    min-height: 345px;
+  }
+
 /*  &:hover {
 
     #btn-project-more .btn-plus {

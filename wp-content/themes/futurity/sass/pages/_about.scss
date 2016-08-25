@@ -129,6 +129,10 @@
 		padding: 0 50px;
 	    margin: 100px 0 75px;
 
+		@media #{$mobile} {
+			margin: 0 0 30px 0;
+		}
+
 		.container >div {
 			&:first-child {
 				padding-left: 0;
@@ -206,9 +210,21 @@
 	.bl-about-teams{
 		background: #000 url("../img/content/about/wordhard.png") no-repeat center top;
 		padding: 80px 0px;
+
+		@media #{$tablet} {
+			.quote .team-content {
+				height: 345px;
+				min-height: 345px;
+			}
+		}
+
 		@media #{$mobile} {
 			background : #000;
 			padding: 20px 0;
+
+			.quote .team-content {
+				height: auto;
+			}
 		}
 		background-size: 90%;
 		background-position: 0 40px;
@@ -316,6 +332,10 @@
 .bl-about-our-mission{
 	margin: 100px 0;
 
+	@media #{$tablet} {
+		margin: 70px 0;
+	}
+
 	@media #{$mobile} {
 		margin-top: 0;
 		margin-bottom: 30px;
@@ -383,6 +403,12 @@
 				margin-top: 0;
 			}
 		}
+
+		@media #{$tablet} {
+			.black-title {
+				margin-top: 45px;
+			}
+		}
 	}
 }
 
@@ -428,7 +454,6 @@
 		} 
 		.bl-about-main-people{
 			padding: 0px;
-			margin: 0 0 30px 0;
 
 			[class*='col-']{
 				padding: 0px;
@@ -465,13 +490,10 @@
 					width: 100%;
 				}
 			}
-
-			.quote .team-content {
-				height: auto;
-			}
 		}
 		.bl-about-our-mission{
 			.bl-about-our-mission-content{
+
 				h1{
 					font-size: 25px;
 					line-height: 35px;
