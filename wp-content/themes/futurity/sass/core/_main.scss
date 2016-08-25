@@ -235,9 +235,14 @@ button {
     z-index: 1;
     width: 100%;
   }
-
+  @media #{$mobile} {
+    margin-right: 0;
+  }
   &:after {
     content: "";
+    @media #{$mobile} {
+      display: none;
+    }
     position: absolute;
     top: 0;
     left: 0;
