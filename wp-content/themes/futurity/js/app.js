@@ -1,14 +1,20 @@
 (function ($) {
     $(document).ready(function() {
         $site.init();
-        $('.masonry-case').isotope({
+        var $grid = $('.masonry-case').isotope({
           itemSelector: '.grid-item',
           percentPosition: true,
           masonry: {
             // use outer width of grid-sizer for columnWidth
             columnWidth: '.grid-sizer'
           }
-        })
+        });
+
+        try {
+            $grid && $grid.imagesLoaded().progress( function() {
+                $grid.isotope('layout');
+            });
+        } catch(e){}
     });
 
     var $site = {
@@ -24,7 +30,11 @@
         _initHomePage: function() {
             $(".section").click(function () {
                 var videoNode = $(this).find('video');
-                videoNode.length && videoNode[0].play();
+
+                try {
+                    videoNode.length && videoNode[0].play();
+                } catch(e){}
+
             });
 
             $('#homePage').fullpage({
