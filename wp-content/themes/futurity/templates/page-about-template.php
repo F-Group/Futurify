@@ -112,7 +112,7 @@ $members = getList("member", "menu_order date");
                             <img class="img-responsive" src="<?php echo get_field("image_bottom") ?>" alt="about-img">
                         </div>
                     </div>
-                    <div class="col-md-7 no-p-r">
+                    <div class="col-md-7 mb-no-p-l no-p-r">
                         <?php echo get_field("editor_bottom") ?>
                         <!--<div class="bl-about-our-mission-content">
                             <h1 class="black-title">OUR MISSION</h1>

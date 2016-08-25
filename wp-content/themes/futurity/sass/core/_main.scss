@@ -357,6 +357,11 @@ a.acttactment{
 .no-p-l {
   padding-left: 0;
 }
+@media #{$mobile} {
+  .mb-no-p-l {
+     padding-left: 0;
+  }
+}
 
 .no-p-r {
   padding-right: 0;
