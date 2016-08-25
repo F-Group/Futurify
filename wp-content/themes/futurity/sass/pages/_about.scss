@@ -88,7 +88,9 @@
 			color: #fff;
 			position: relative;
 			background-size: contain;
-
+			@media #{$mobile} {
+				background : $color_main ;
+			}
 			.container >div {
 				padding: 0;
 			}
@@ -202,6 +204,9 @@
 			left: 0;
 			bottom: 0;
 			right: 0;
+			@media #{$mobile} {
+				background : none ;
+			}
 			background: url("../img/content/about/playhard.png") no-repeat right bottom;
 			background-size: 90%;
 		}
