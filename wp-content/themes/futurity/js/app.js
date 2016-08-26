@@ -62,6 +62,12 @@
                     catch (e){}
 
                     $(this).css({zIndex: 1});
+
+                    if($(this).hasClass("home-introduction")) {
+                        $(".header").css({background: '#fff'});
+                    } else {
+                        $(".header").css({background: ''});
+                    }
                 },
 
                 onLeave: function () {
