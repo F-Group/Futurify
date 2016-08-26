@@ -241,6 +241,9 @@
 		}
 		.menu-item {
 			margin: 40px 50px;
+			@media #{$iphone} {
+				margin: 20px 50px ;
+			}
 			&.home {
 				a {
 					font-size: 30px;
