@@ -109,6 +109,9 @@
 			display: inline-block;
 			list-style: none;
 			margin-left: 43px;
+			@media #{$tablet} {
+				margin-left: 0;
+			}
 			&.home {
 				display: none;
 			}
@@ -132,6 +135,9 @@
 
 			&:last-child {
 				margin-left: 40px;
+				@media #{$tablet} {
+					margin-left: 0;
+				}
 			}
 
 			&.current-menu-item  {
