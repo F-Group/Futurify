@@ -84,33 +84,31 @@ $projects = getList("project", "menu_order date");
     </div>
     <div class="row gutter">
         <div class="bl-our-project-donate clearfix">
-            <div class="col-md-12">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="bl-our-project-donate-item">
-                        <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/donate-1.png' ;?>" alt="project-img"></a>
-                    </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="bl-our-project-donate-item">
+                    <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/donate-1.png' ;?>" alt="project-img"></a>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="bl-our-project-donate-item">
-                        <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/donate-2.png' ;?>" alt="project-img"></a>
-                    </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="bl-our-project-donate-item">
+                    <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/donate-2.png' ;?>" alt="project-img"></a>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="bl-our-project-donate-item">
-                        <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/donate-3.png' ;?>" alt="project-img"></a>
-                    </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="bl-our-project-donate-item">
+                    <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/donate-3.png' ;?>" alt="project-img"></a>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 two-donate">
-                    <div class="container">
-                        <div class="colxs-12 col-sm-6 col-md-6">
-                            <div class="bl-our-project-donate-item">
-                                <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/donate-4.png' ;?>" alt="project-img"></a>
-                            </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 two-donate">
+                <div class="container">
+                    <div class="colxs-12 col-sm-6 col-md-6">
+                        <div class="bl-our-project-donate-item">
+                            <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/donate-4.png' ;?>" alt="project-img"></a>
                         </div>
-                        <div class="colxs-12 col-sm-6 col-md-6">
-                            <div class="bl-our-project-donate-item">
-                                <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/donate-5.png' ;?>" alt="project-img"></a>
-                            </div>
+                    </div>
+                    <div class="colxs-12 col-sm-6 col-md-6">
+                        <div class="bl-our-project-donate-item">
+                            <a href="#"><img class="img-responsive" src="<?php echo get_bloginfo('template_url').'/img/content/our_project/donate-5.png' ;?>" alt="project-img"></a>
                         </div>
                     </div>
                 </div>

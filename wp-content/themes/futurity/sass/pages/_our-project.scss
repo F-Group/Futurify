@@ -200,13 +200,28 @@
 	.bl-our-project-donate{
 		background: #000;
 		padding: 80px 0px;
+
+		@media #{$mobile} {
+			padding: 50px 0 20px;
+		}
+
 		.bl-our-project-donate-item{
+
+			@media #{$mobile} {
+				padding-bottom: 30px;
+			}
+
 			img{
-				margin: 0px auto;
+				margin: 0 auto;
 			}
 		}
+
 		.two-donate{
 			margin-top: 40px;
+
+			@media #{$mobile} {
+				margin-top: 0;
+			}
 		}
 	}
 	.bl-our-project-success{
