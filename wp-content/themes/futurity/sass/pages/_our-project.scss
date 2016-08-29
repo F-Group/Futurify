@@ -224,6 +224,9 @@
 				max-width: 688px;
 				margin: 0px auto;
 				font-size: 40px;
+				@media #{$iphone} {
+					font-size: 30px;
+				}
 				line-height: 61px;
 				font-family: $font_montserrat;
 				font-weight: 700;
