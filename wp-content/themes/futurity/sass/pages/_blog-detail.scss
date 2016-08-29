@@ -120,6 +120,9 @@
 		}
 		.social-sharing {
 			float: right;
+			@media #{$mobile} {
+				float: left;
+			}
 			font-weight: bolder;
 			.addtoany_list {
 				margin-left: 10px;
