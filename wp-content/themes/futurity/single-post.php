@@ -14,8 +14,8 @@
                     <?php the_content(); ?>
                 </div>
                 <div class="bl-blog-detail-relate row">
-                    <div class="col-md-6 col-xs-6 tags"> <?php the_tags(__('View posts by tags: '), '', '');?></div>
-                    <div class="col-md-6 col-xs-6">
+                    <div class="col-md-6 col-xs-12 tags"> <?php the_tags(__('View posts by tags: '), '', '');?></div>
+                    <div class="col-md-6 col-xs-12">
                         <ul class="social-sharing addthis_toolbox addthis_default_style">
                             <li><span>Share</span></li>
                             <li><a href="#" class="addthis_button_facebook"><i class="fa fa-facebook"></i></a></li>
