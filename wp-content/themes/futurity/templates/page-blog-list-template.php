@@ -63,7 +63,7 @@ get_header();
                                     </div>
                                 </form>
                                 <?php
-                                $tags = get_tags();
+                                $tags = get_categories();
                                 if($tags) {
                                     $html = '<ul class="nav navbar-nav col-xs-12 col-sm-8 col-md-8">';
                                     foreach ($tags as $tag) {
