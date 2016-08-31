@@ -109,7 +109,7 @@
         _initGMap: function () {
             var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-            var isDraggable = w > 480 ? true : false;
+            var isDraggable = w > 767 ? true : false;
 
 
             function addMarker(location, map) {
