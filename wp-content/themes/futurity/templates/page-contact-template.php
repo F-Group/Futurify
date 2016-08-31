@@ -56,7 +56,7 @@ $google_map = get_field('google_map');
                         <h3 class="contact-hiring">WE ARE HIRING!</h3>
                         <?php wp_reset_query(); ?>
                         <?php $url = get_field("button_link") ?>
-                        <button class="btn btn-main hvr-ripple-out"><a href="<?php if(!empty($url)) {echo $url["url"];} ?>">CAREER</a></button>
+                        <a href="<?php if(!empty($url)) {echo $url["url"];} ?>"><button class="btn btn-main hvr-ripple-out">CAREER</button></a>
                     </div>
                 </div>
             </div>
