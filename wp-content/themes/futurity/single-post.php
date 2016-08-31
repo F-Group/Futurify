@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<img class="img-responsive img-banner" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/banner_detail.png' ;?>" alt="blog-img">
+<img class="img-responsive img-banner" src="<?php echo get_field("title_image") ?>" alt="blog-img">
 <div class="bl-blog-detail">
     <div class="container">
         <?php while ( have_posts() ) : the_post();  ?>
