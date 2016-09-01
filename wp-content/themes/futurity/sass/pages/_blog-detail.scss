@@ -120,6 +120,9 @@
 		}
 		.social-sharing {
 			float: right;
+			@media #{$mobile} {
+				float: left;
+			}
 			font-weight: bolder;
 			.addtoany_list {
 				margin-left: 10px;
@@ -129,6 +132,9 @@
 				display: inline-block;
 				vertical-align: middle;
 				margin-right: 13px;
+				@media #{$iphone} {
+					margin-right: 5px;
+				}
 			}
 
 			span {

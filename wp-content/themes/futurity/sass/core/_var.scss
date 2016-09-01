@@ -16,6 +16,7 @@ $heading-margin-top: 100px;
 /*
 /* Screen sizes
 * ========================================================================== */
+$iphone: "only screen and (min-width: 320px)";
 $mobile: "only screen and (max-width: #{$screen-xs-max})";
 $mobile_and_tablet : "only screen and (max-width: #{$screen-sm-max}) ";
 $tablet: "only screen and (min-width:#{$screen-tablet}) and (max-width:#{$screen-sm-max})";

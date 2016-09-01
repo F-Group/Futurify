@@ -107,6 +107,11 @@
         },
 
         _initGMap: function () {
+            var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+            var isDraggable = w > 767 ? true : false;
+
+
             function addMarker(location, map) {
                 // Add the marker at the clicked location, and add the next-available label
                 // from the array of alphabetical characters.
@@ -134,6 +139,7 @@
                 var option = {
                     zoom: zoom_level ? zoom_level : 16,
                     scrollwheel: false,
+                    draggable: isDraggable,
                     center: getLocation.call($map[0])
                 };
 

@@ -1,5 +1,8 @@
 <?php get_header(); ?>
-<img class="img-responsive img-banner" src="<?php echo get_bloginfo('template_url').'/img/content/blog_list/banner_detail.png' ;?>" alt="blog-img">
+<?php $img = get_field("title_image"); ?>
+<?php if(!empty($img)) : ?>
+<img class="img-responsive img-banner" src="<?php echo $img ?>" alt="blog-img">
+<?php endif; ?>
 <div class="bl-blog-detail">
     <div class="container">
         <?php while ( have_posts() ) : the_post();  ?>
@@ -14,8 +17,8 @@
                     <?php the_content(); ?>
                 </div>
                 <div class="bl-blog-detail-relate row">
-                    <div class="col-md-6 col-xs-6 tags"> <?php the_tags(__('View posts by tags: '), '', '');?></div>
-                    <div class="col-md-6 col-xs-6">
+                    <div class="col-md-6 col-xs-12 tags"> <?php the_tags(__('View posts by tags: '), '', '');?></div>
+                    <div class="col-md-6 col-xs-12" style="padding: 0">
                         <ul class="social-sharing addthis_toolbox addthis_default_style">
                             <li><span>Share</span></li>
                             <li><a href="#" class="addthis_button_facebook"><i class="fa fa-facebook"></i></a></li>

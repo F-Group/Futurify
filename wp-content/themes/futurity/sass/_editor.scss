@@ -117,7 +117,8 @@ body {
 
 .red-text {
   color: #fff;
-  background: $color_main;
+  background-color: $color_main;
+  box-shadow: 0.5em 0 0 $color_main,-0.5em 0 0 $color_main;
   padding: 3px 5px;
 }
 
@@ -302,4 +303,11 @@ a.acttactment{
       -webkit-transform: scale(1.05);
       transform: scale(1.05);
   }
+}
+
+.heading-title {
+  color: $color_main;
+  font-family: $font_montserrat;
+  font-size: 28px;
+  font-weight: 600;
 }

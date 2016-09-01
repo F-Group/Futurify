@@ -88,6 +88,7 @@
 				    top: 0;
 				    right: 0;
 				    bottom: 0;
+					text-align: center;
 				    background: $color_main;
 				    color: #fff;
 				    border: none;
@@ -310,7 +311,7 @@
 			h1{
 			    font-size: 25px;
 			    line-height: 32px;
-			    max-width: 149px;
+			    max-width: 159px;
 			    &:after{
 		    	    margin-left: 5px;
 			    }
