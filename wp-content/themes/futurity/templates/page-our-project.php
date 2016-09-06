@@ -21,9 +21,9 @@ $projects = getList("project", "menu_order date");
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="content">
             <div class="col-md-12">
-                <div class="bl-our-project-items row">
+                <div class="bl-our-project-items row ajax_posts" >
                 <?php if ($projects->have_posts()) : while ($projects->have_posts()) : $projects->the_post(); ?>
                     <?php
                         if(has_post_thumbnail()) {
@@ -55,8 +55,8 @@ $projects = getList("project", "menu_order date");
 
                 <?php endwhile; ?>
                 <?php endif; ?>
-                    <div class="col-xs-12 col-sm-4 col-md-4">
-                        <a href="#">
+                    <div id="load-more-project" class="col-xs-12 col-sm-4 col-md-4">
+                        <a id="loadmore" href="#">
                             <div class="bl-project-button">
                                 <div class="bl-project-button-inner">
                                     <div class="btn-align-middle">

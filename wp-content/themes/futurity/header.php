@@ -14,6 +14,9 @@
     <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_url') ?>/js/lib/respond.min.js"/>
     </script><![endif]-->
+    <script type="text/javascript">
+        var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';
+    </script>
     <!--[if lt IE 9]>
     <script src="<?php bloginfo('template_url') ?>/js/lib/html5shiv.js"/>
     </script><![endif]-->

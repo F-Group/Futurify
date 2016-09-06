@@ -25,8 +25,28 @@
             this._initAboutPage();
             this._initProjectDetail();
             this._initContactPage();
+            this._initLoadMore();
         },
+        _initLoadMore : function () {
+            $('#loadmore').click(function() {
+                $.ajax({
+                    url: ajaxurl,
+                    data: {
+                        'action' : 'get_portfolio',
+                        'offset' : 3
+                    },
+                    success:function(data) {
+                        var $new = $(data);
+                        $new.css("display", "none");
+                        $('#load-more-project').before($new);
+                        //$(data).fadeIn("slow");
+                        $new.fadeIn('slow');
+                    }
+                });
 
+                return false;
+            });  
+        },    
         _initHomePage: function() {
             $(".section").click(function () {
                 var videoNode = $(this).find('video');

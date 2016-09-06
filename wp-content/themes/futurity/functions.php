@@ -137,7 +137,7 @@ function getList($type,$order_by="date") {
     $args=array(
         'post_type' => $type,
         'post_status' => 'publish',
-        'posts_per_page' => -1,
+        'posts_per_page' => 6,
         'caller_get_posts'=> 1,
         'orderby'=>$order_by,
         'order'=>'DESC');
@@ -187,3 +187,44 @@ function add_fisrt_nav_item($items) {
 add_filter('wp_nav_menu_items','add_fisrt_nav_item');
 
 add_filter( 'tinymce_templates_enable_media_buttons', function(){ return true; } );
+function get_portfolio() {
+    if ( isset($_REQUEST) ) {
+        $offset = $_REQUEST['offset'];
+        $args = array(
+            'post_status' => 'publish',
+            'caller_get_posts'=> 1,
+            'order'=>'DESC',
+            'post_type' => 'project',
+            'posts_per_page' => 3) ;
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+            if(has_post_thumbnail()) {
+                            echo '<div class="col-xs-12 col-sm-6 col-md-4"><div class="bl-our-project-item"><a href="'; echo esc_url(the_permalink());
+                echo  '"> <img class="img-responsive" src="';
+                echo esc_url(the_post_thumbnail_url("full"));
+                echo '" alt="project-img">
+                                        <div class="outer">
+                                            <div class="inner">
+                                                <div class="align-middle">
+                                                    <div class="title"><h3>';
+                echo esc_url(the_title());
+                echo '</h3></div> <div class="action">
+                                                        <div class="btn"><span>VIEW PROJECT</span><i class="fa fa-arrow-right"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>';
+                        } else {
+                            echo '<div class=" col-xs-12 col-sm-12 col-md-8">';
+                echo the_content() ;
+                echo '</div>';
+                         }
+                endwhile;
+    }
+    die();
+}
+add_action( 'wp_ajax_get_portfolio', 'get_portfolio' );
+add_action( 'wp_ajax_nopriv_get_portfolio', 'get_portfolio' );
