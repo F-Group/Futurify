@@ -8,7 +8,7 @@
  */
 get_header();
 $max = wp_count_posts('project')->publish;
-$firstPageOffset = 6;
+$firstPageOffset = 10;
 $args=array(
     'post_type' => 'project',
     'post_status' => 'publish',
