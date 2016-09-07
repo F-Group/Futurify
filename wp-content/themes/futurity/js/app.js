@@ -28,12 +28,26 @@
             this._initLoadMore();
         },
         _initLoadMore : function () {
-            $('#loadmore').click(function() {
+            var $loadBtn = $('#btn-project-more'),
+                $loadSpin = $('#loader'),
+                $loadmore =  $('#loadmore'),
+                $offset = $loadmore.data('offset'),
+                $max = $loadmore.data('max');
+            if ($offset >= $max) {
+                $loadmore.hide();
+            }
+                $loadmore.click(function() {
+                if ($loadSpin.is(":visible")) {
+                    return;
+                }
+                var $new_offset = $loadmore.data('offset');
+                $loadBtn.hide();
+                $loadSpin.show();
                 $.ajax({
                     url: ajaxurl,
                     data: {
                         'action' : 'get_portfolio',
-                        'offset' : 3
+                        'offset' : $new_offset
                     },
                     success:function(data) {
                         var $new = $(data);
@@ -41,6 +55,12 @@
                         $('#load-more-project').before($new);
                         //$(data).fadeIn("slow");
                         $new.fadeIn('slow');
+                        $loadBtn.show();
+                        $loadSpin.hide();
+                        if ($new_offset >= $max || $new.length < 3) {
+                            $loadmore.hide();
+                        }
+                        $loadmore.data('offset',$new_offset + 3);
                     }
                 });
 

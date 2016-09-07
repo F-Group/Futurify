@@ -137,7 +137,7 @@ function getList($type,$order_by="date") {
     $args=array(
         'post_type' => $type,
         'post_status' => 'publish',
-        'posts_per_page' => 6,
+        'posts_per_page' => -1,
         'caller_get_posts'=> 1,
         'orderby'=>$order_by,
         'order'=>'DESC');
@@ -195,7 +195,8 @@ function get_portfolio() {
             'caller_get_posts'=> 1,
             'order'=>'DESC',
             'post_type' => 'project',
-            'posts_per_page' => 3) ;
+            'posts_per_page' => 3,
+            'offset' => $offset) ;
         $loop = new WP_Query( $args );
         while ( $loop->have_posts() ) : $loop->the_post();
             if(has_post_thumbnail()) {

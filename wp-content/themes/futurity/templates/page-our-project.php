@@ -7,9 +7,16 @@
  * @since Lse 1.0
  */
 get_header();
-
-$projects = getList("project", "menu_order date");
-
+$max = wp_count_posts('project')->publish;
+$firstPageOffset = 6;
+$args=array(
+    'post_type' => 'project',
+    'post_status' => 'publish',
+    'posts_per_page' => $firstPageOffset,
+    'caller_get_posts'=> 1,
+    'orderby'=>'menu_order date',
+    'order'=>'DESC');
+$projects = new WP_Query($args);
 
 ?>
 <div class="bl-our-project">
@@ -56,7 +63,7 @@ $projects = getList("project", "menu_order date");
                 <?php endwhile; ?>
                 <?php endif; ?>
                     <div id="load-more-project" class="col-xs-12 col-sm-4 col-md-4">
-                        <a id="loadmore" href="#">
+                        <a id="loadmore" data-offset="<?php echo $firstPageOffset ?>" data-max="<?php echo $max ?>">
                             <div class="bl-project-button">
                                 <div class="bl-project-button-inner">
                                     <div class="btn-align-middle">
@@ -64,6 +71,7 @@ $projects = getList("project", "menu_order date");
                                             <h5><span>SEE MORE ONGOING<br>PROJECTS..</span></h5>
                                         </div>
                                         <div class="bl-project-button-action">
+                                            <div id="loader" class="loader"></div>
                                             <button id="btn-project-more">
                                             </button>
                                         </div>
