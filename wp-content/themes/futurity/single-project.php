@@ -118,8 +118,10 @@ for($x = 0; $x < 4; $x++) {
         <div class="case-feel clearfix">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="case-feel-in">
-                    <h1>still hungry ?</h1>
-                    <a class="hvr-ripple-out" href="#"><button>Feeding Now!</button></a>
+                    <?php wp_reset_query(); ?>
+                    <?php $url = get_field("button_link") ?>
+                    <h1><?php echo get_field("block_text") ?></h1>
+                    <a class="hvr-ripple-out" href="<?php if(!empty($url)) {echo $url["url"];} ?>"><button><?php echo get_field("button_text") ?></button></a>
                 </div>
             </div>
         </div>
