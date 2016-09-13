@@ -257,7 +257,7 @@
             if(submitInput.length) {
                 submitBtn.attr("class", submitInput.attr("class"));
                 submitBtn.text(submitInput.attr("value"));
-                submitBtn.addClass("hvr-ripple-out");
+                $(".contact-page").length && submitBtn.addClass("hvr-ripple-out");
             }
 
             submitBtn.insertAfter(submitInput);
