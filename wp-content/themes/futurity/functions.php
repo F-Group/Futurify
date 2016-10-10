@@ -76,6 +76,7 @@ function tsg_scripts() {
         '/js/lib/jquery.fullPage.min.js',
         '/js/lib/jquery.malihu.PageScroll2id.min.js',
         '/js/lib/owl-carousel/owl.carousel.min.js',
+        '/js/lib/imagesloaded.pkgd.min.js',
         '/js/lib/isotope/isotope.pkgd.min.js',
         '/js/app.js'
     );

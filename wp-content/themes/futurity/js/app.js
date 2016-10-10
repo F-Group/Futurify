@@ -11,9 +11,11 @@
         });
 
         try {
-            $grid && $grid.imagesLoaded().progress( function() {
-                $grid.isotope('layout');
-            });
+            setTimeout(function () {
+                $grid && $grid.imagesLoaded().progress( function() {
+                    $grid.isotope('layout');
+                });
+            },100);
         } catch(e){}
     });
 
