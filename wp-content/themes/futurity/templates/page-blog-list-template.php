@@ -33,11 +33,11 @@ get_header();
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 bl-form-search">
                             <div class="row">
-                                <form id="formSearch" class="clearfix col-xs-12 col-sm-4 col-md-4 " method="post" action="#">
+                                <form id="formSearch" class="clearfix col-xs-12 col-sm-4 col-md-4 "  role="search" method="get" action="<?php echo home_url( '/' ); ?>">
                                     <div class="bl-search">
                                         <span class="glyphicon glyphicon-search"></span>
-                                        <input class="form-control inputSearch" type="text" name="inputSearch" placeholder="Search">
-                                        <button class="btnSearch" type="submit" name="btnSearch"><span class="glyphicon glyphicon-triangle-right"></span></button>
+                                        <input class="form-control inputSearch" type="text" name="s" id="s" autocomplete="off" data-provide="typeahead" data-items="4" data-source='<?php echo $typeahead_data; ?>'  placeholder="Search">
+                                        <button class="btnSearch" type="submit" ><span class="glyphicon glyphicon-triangle-right"></span></button>
                                     </div>
                                     <div class="bl-result">
                                         <ul>
