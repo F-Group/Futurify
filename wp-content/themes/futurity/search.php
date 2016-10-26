@@ -50,28 +50,30 @@ get_header(); ?>
 										<!--/ article -->
 
 									<?php endwhile; ?>
+									<?php else : ?>
+
+										<!-- this area shows up if there are no results -->
+
+										<article id="post-not-found">
+											<header>
+												<h1><?php _e("Not Found", "ignited_bootstrap"); ?></h1>
+											</header>
+											<section class="post_content">
+												<p><?php _e("Sorry, but the requested resource was not found on this site.", "ignited_bootstrap"); ?></p>
+											</section>
+										</article>
+
+									<?php endif; ?>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 
 
-				<?php else : ?>
 
-				<!-- this area shows up if there are no results -->
-
-				<article id="post-not-found">
-					<header>
-						<h1><?php _e("Not Found", "ignited_bootstrap"); ?></h1>
-					</header>
-					<section class="post_content">
-						<p><?php _e("Sorry, but the requested resource was not found on this site.", "ignited_bootstrap"); ?></p>
-					</section>
-				</article>
-
-			<?php endif; ?>
 
 		</div>
 		<!--/ #main -->

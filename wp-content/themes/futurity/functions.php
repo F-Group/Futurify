@@ -230,3 +230,14 @@ function get_portfolio() {
 }
 add_action( 'wp_ajax_get_portfolio', 'get_portfolio' );
 add_action( 'wp_ajax_nopriv_get_portfolio', 'get_portfolio' );
+
+function searchfilter($query) {
+
+    if ($query->is_search && !is_admin() ) {
+        $query->set('post_type',array('post'));
+    }
+
+    return $query;
+}
+
+add_filter('pre_get_posts','searchfilter');
